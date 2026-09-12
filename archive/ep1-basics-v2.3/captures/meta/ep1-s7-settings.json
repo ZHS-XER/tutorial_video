@@ -1,0 +1,931 @@
+{
+  "slot": "ep1-s7-settings",
+  "url": "https://youart.ai/workflow/d933cf96-fe7e-4660-9189-3720611bdf8f",
+  "pageW": 1920,
+  "pageH": 1080,
+  "els": [
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 456,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 509,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 549,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 589,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "g",
+      "text": "",
+      "testid": "rf__edge-LoadImage-71329618-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-image_1",
+      "x": 433,
+      "y": 306,
+      "w": 551,
+      "h": 77
+    },
+    {
+      "tag": "g",
+      "text": "",
+      "testid": "rf__edge-Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-text_input-1",
+      "x": 896,
+      "y": 268,
+      "w": 88,
+      "h": 359
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to upload Supports JPEG, PNG, WebP (max 10",
+      "testid": "rf__node-LoadImage-71329618",
+      "x": 64,
+      "y": 173,
+      "w": 360,
+      "h": 286
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 382,
+      "y": 185,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "tag": "div",
+      "text": "Text",
+      "testid": "rf__node-Text-890d5e5c",
+      "x": 528,
+      "y": 173,
+      "w": 360,
+      "h": 211
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 846,
+      "y": 185,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 851,
+      "y": 231,
+      "w": 21,
+      "h": 21
+    },
+    {
+      "tag": "div",
+      "text": "Seedance 2.5 Omni Reference 200 Reference videos 0/10 Reference images 1/30 Refe",
+      "testid": "rf__node-SeedancePro25OmniReferenceGenerate-1e5a2a82",
+      "x": 991,
+      "y": 173,
+      "w": 360,
+      "h": 734
+    },
+    {
+      "tag": "button",
+      "text": "Seedance 2.5 Omni Reference 200",
+      "x": 1003,
+      "y": 185,
+      "w": 301,
+      "h": 31
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1309,
+      "y": 185,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1003,
+      "y": 257,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "x": 1003,
+      "y": 340,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1060,
+      "y": 340,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1003,
+      "y": 422,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "label",
+      "text": "Prompt",
+      "x": 1003,
+      "y": 487,
+      "w": 53,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1319,
+      "y": 487,
+      "w": 21,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "16:9",
+      "x": 1003,
+      "y": 725,
+      "w": 106,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "5″",
+      "x": 1119,
+      "y": 725,
+      "w": 106,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "720p",
+      "x": 1234,
+      "y": 725,
+      "w": 106,
+      "h": 41
+    },
+    {
+      "tag": "label",
+      "text": "Real Faces Mode · On",
+      "x": 1014,
+      "y": 800,
+      "w": 218,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1240,
+      "y": 801,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "tag": "button",
+      "text": "on",
+      "x": 1289,
+      "y": 800,
+      "w": 37,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "Run",
+      "x": 1003,
+      "y": 854,
+      "w": 88,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1090,
+      "y": 854,
+      "w": 31,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1299,
+      "y": 854,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader",
+      "testid": "rf__node-LoadImage-4c36e1ad",
+      "x": 560,
+      "y": 432,
+      "w": 360,
+      "h": 446
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 499,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 546,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 592,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 639,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 685,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 731,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 789,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 835,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 893,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 940,
+      "y": 338,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 16,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 48,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 80,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 112,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 144,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "x": 176,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 208,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 252,
+      "y": 1028,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1204,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "3,608",
+      "x": 1285,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1372,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 621,
+      "y": 1024,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "New",
+      "x": 671,
+      "y": 1024,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 711,
+      "y": 1024,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run All",
+      "x": 768,
+      "y": 1022,
+      "w": 89,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 857,
+      "y": 1022,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "New Chat",
+      "x": 1446,
+      "y": 18,
+      "w": 99,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1834,
+      "y": 16,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1870,
+      "y": 16,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "h3",
+      "text": "Start a conversation",
+      "x": 1482,
+      "y": 455,
+      "w": 384,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Could you help me create a logo for my website ?",
+      "x": 1522,
+      "y": 514,
+      "w": 304,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "I want to make a poster for my event",
+      "x": 1559,
+      "y": 550,
+      "w": 230,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "Could you put my product into the model ?",
+      "x": 1542,
+      "y": 586,
+      "w": 265,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1451,
+      "y": 1027,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "2",
+      "x": 1491,
+      "y": 1027,
+      "w": 53,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Agent",
+      "x": 1552,
+      "y": 1027,
+      "w": 102,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Auto-run",
+      "x": 1662,
+      "y": 1027,
+      "w": 96,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 1766,
+      "y": 1027,
+      "w": 53,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Thinking",
+      "x": 1765,
+      "y": 1027,
+      "w": 94,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1865,
+      "y": 1027,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "h1",
+      "text": "Settings",
+      "x": 465,
+      "y": 71,
+      "w": 192,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Profile",
+      "x": 457,
+      "y": 127,
+      "w": 208,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Billing",
+      "x": 457,
+      "y": 163,
+      "w": 208,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Preferences",
+      "x": 457,
+      "y": 199,
+      "w": 208,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "MCP",
+      "x": 457,
+      "y": 235,
+      "w": 208,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Teams",
+      "x": 457,
+      "y": 271,
+      "w": 208,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 625,
+      "y": 971,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "h2",
+      "text": "Profile",
+      "x": 690,
+      "y": 73,
+      "w": 53,
+      "h": 28
+    },
+    {
+      "tag": "label",
+      "text": "Avatar",
+      "x": 703,
+      "y": 161,
+      "w": 739,
+      "h": 14
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 703,
+      "y": 183,
+      "w": 64,
+      "h": 64
+    },
+    {
+      "tag": "label",
+      "text": "Display Name",
+      "x": 703,
+      "y": 267,
+      "w": 362,
+      "h": 14
+    },
+    {
+      "tag": "input",
+      "text": "Enrong Xie",
+      "x": 703,
+      "y": 289,
+      "w": 362,
+      "h": 36
+    },
+    {
+      "tag": "label",
+      "text": "Email",
+      "x": 1081,
+      "y": 268,
+      "w": 36,
+      "h": 14
+    },
+    {
+      "tag": "input",
+      "text": "enrong@youart.ai",
+      "x": 1081,
+      "y": 291,
+      "w": 362,
+      "h": 36
+    },
+    {
+      "tag": "label",
+      "text": "Creator page cover",
+      "x": 703,
+      "y": 347,
+      "w": 739,
+      "h": 14
+    },
+    {
+      "tag": "button",
+      "text": "None",
+      "x": 706,
+      "y": 377,
+      "w": 54,
+      "h": 29
+    },
+    {
+      "tag": "button",
+      "text": "Image",
+      "x": 760,
+      "y": 377,
+      "w": 59,
+      "h": 29
+    },
+    {
+      "tag": "button",
+      "text": "Video",
+      "x": 819,
+      "y": 377,
+      "w": 57,
+      "h": 29
+    },
+    {
+      "tag": "button",
+      "text": "Drop an image here, or click to upload JPG, PNG or WebP, up to 10MB.",
+      "x": 703,
+      "y": 421,
+      "w": 370,
+      "h": 123
+    },
+    {
+      "tag": "label",
+      "text": "Bio",
+      "x": 703,
+      "y": 602,
+      "w": 739,
+      "h": 14
+    },
+    {
+      "tag": "textarea",
+      "text": "Tell us about yourself...",
+      "x": 703,
+      "y": 624,
+      "w": 739,
+      "h": 64
+    },
+    {
+      "tag": "label",
+      "text": "Roles",
+      "x": 703,
+      "y": 708,
+      "w": 37,
+      "h": 19
+    },
+    {
+      "tag": "input",
+      "text": "e.g. Director, Animator (press Enter)",
+      "x": 712,
+      "y": 742,
+      "w": 344,
+      "h": 24
+    },
+    {
+      "tag": "label",
+      "text": "Tools",
+      "x": 1081,
+      "y": 708,
+      "w": 36,
+      "h": 19
+    },
+    {
+      "tag": "input",
+      "text": "e.g. Blender, Photoshop (press Enter)",
+      "x": 1090,
+      "y": 742,
+      "w": 344,
+      "h": 24
+    },
+    {
+      "tag": "label",
+      "text": "Social links",
+      "x": 703,
+      "y": 831,
+      "w": 250,
+      "h": 14
+    },
+    {
+      "tag": "button",
+      "text": "Add your first link",
+      "x": 991,
+      "y": 954,
+      "w": 162,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Close",
+      "x": 1439,
+      "y": 79,
+      "w": 16,
+      "h": 16
+    }
+  ],
+  "flow": {
+    "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+    "nodes": [
+      {
+        "id": "LoadImage-71329618",
+        "transform": "translate(319px, 192px)",
+        "x": 64,
+        "y": 173,
+        "w": 360,
+        "h": 286,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 425,
+            "cy": 324
+          }
+        ]
+      },
+      {
+        "id": "Text-890d5e5c",
+        "transform": "translate(679px, 192px)",
+        "x": 528,
+        "y": 173,
+        "w": 360,
+        "h": 211,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 528,
+            "cy": 307
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 888,
+            "cy": 286
+          }
+        ]
+      },
+      {
+        "id": "SeedancePro25OmniReferenceGenerate-1e5a2a82",
+        "transform": "translate(1039px, 192px)",
+        "x": 991,
+        "y": 173,
+        "w": 360,
+        "h": 734,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 991,
+            "cy": 609
+          },
+          {
+            "id": "edge-in-text_input-2",
+            "type": "target",
+            "cx": 991,
+            "cy": 609
+          },
+          {
+            "id": "edge-in-image_1",
+            "type": "target",
+            "cx": 991,
+            "cy": 364
+          },
+          {
+            "id": "edge-in-image_2",
+            "type": "target",
+            "cx": 991,
+            "cy": 364
+          },
+          {
+            "id": "edge-in-video_1",
+            "type": "target",
+            "cx": 991,
+            "cy": 281
+          },
+          {
+            "id": "edge-in-audio_1",
+            "type": "target",
+            "cx": 991,
+            "cy": 447
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 1374,
+            "cy": 554
+          }
+        ]
+      },
+      {
+        "id": "LoadImage-4c36e1ad",
+        "transform": "translate(704.028px, 393.282px)",
+        "x": 560,
+        "y": 432,
+        "w": 360,
+        "h": 446,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 942,
+            "cy": 868
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "rf__edge-LoadImage-71329618-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-image_1",
+        "d": "M605.0005888718835,309.0002552564609 C819.0002894593244,309.0002552564609 819.0002894593244,340.59406952006475 1032.9999900467656,340.59406952006475"
+      },
+      {
+        "id": "rf__edge-Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-text_input-1",
+        "d": "M965,280 C998.9999950233828,280 998.9999950233828,530.594447925042 1032.9999900467656,530.594447925042"
+      }
+    ]
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "slot": "ep1-s1-submenu",
+  "url": "https://youart.ai/workflow/d933cf96-fe7e-4660-9189-3720611bdf8f",
+  "pageW": 1920,
+  "pageH": 1080,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Send feedback",
+      "x": 1249,
+      "y": 1020,
+      "w": 149,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 456,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 509,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 549,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 589,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "label",
+      "text": "Add a node",
+      "x": 73,
+      "y": 333,
+      "w": 107,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 207,
+      "y": 331,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 243,
+      "y": 331,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "input",
+      "text": "Search nodes...",
+      "x": 81,
+      "y": 371,
+      "w": 186,
+      "h": 34
+    },
+    {
+      "tag": "button",
+      "text": "Nano Banana 2 50% off 8-16",
+      "x": 284,
+      "y": 534,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Nano Banana 2 Lite 50% off 4",
+      "x": 284,
+      "y": 582,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Nano Banana Pro 67 - 100% off 0-25",
+      "x": 284,
+      "y": 630,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Nano Banana 60 - 100% off 0-4",
+      "x": 284,
+      "y": 678,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "GPT Image 2 50% off 3-40",
+      "x": 284,
+      "y": 726,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Grok Image 4-5",
+      "x": 284,
+      "y": 774,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Seedream 5.0 Pro 9-18",
+      "x": 284,
+      "y": 822,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Seedream 5.0 Lite 8",
+      "x": 284,
+      "y": 870,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Seedream 4.0 5",
+      "x": 284,
+      "y": 918,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Seedream 3.0 5",
+      "x": 284,
+      "y": 966,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "OpenAI Image 20",
+      "x": 284,
+      "y": 1014,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Flux Kontext 10",
+      "x": 284,
+      "y": 1062,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "FLUX 2 2-14",
+      "x": 284,
+      "y": 1110,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "ImageGen 4 10",
+      "x": 284,
+      "y": 1158,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Stable Diffusion v3.5 10",
+      "x": 284,
+      "y": 1206,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Qwen Image 5",
+      "x": 284,
+      "y": 1254,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Z-Image Turbo 3-6",
+      "x": 284,
+      "y": 1302,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Midjourney 20",
+      "x": 284,
+      "y": 1350,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Midjourney v8.1 10-15",
+      "x": 284,
+      "y": 1398,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Midjourney v8.2 10-15",
+      "x": 284,
+      "y": 1446,
+      "w": 300,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 16,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 48,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 80,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 112,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 144,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "x": 176,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 208,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 252,
+      "y": 1028,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1204,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "3,608",
+      "x": 1285,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1372,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Add media",
+      "x": 352,
+      "y": 511,
+      "w": 135,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Text",
+      "x": 497,
+      "y": 511,
+      "w": 86,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Video models",
+      "x": 919,
+      "y": 511,
+      "w": 157,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Image models",
+      "x": 749,
+      "y": 511,
+      "w": 160,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Video tools",
+      "x": 919,
+      "y": 565,
+      "w": 157,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Image tools",
+      "x": 749,
+      "y": 565,
+      "w": 160,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "LLM models",
+      "x": 593,
+      "y": 511,
+      "w": 146,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 621,
+      "y": 1024,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "New",
+      "x": 671,
+      "y": 1024,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 711,
+      "y": 1024,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run All",
+      "x": 768,
+      "y": 1022,
+      "w": 89,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 857,
+      "y": 1022,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "New Chat",
+      "x": 1446,
+      "y": 18,
+      "w": 99,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1834,
+      "y": 16,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1870,
+      "y": 16,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "h3",
+      "text": "Start a conversation",
+      "x": 1482,
+      "y": 455,
+      "w": 384,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Could you help me create a logo for my website ?",
+      "x": 1522,
+      "y": 514,
+      "w": 304,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "I want to make a poster for my event",
+      "x": 1559,
+      "y": 550,
+      "w": 230,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "Could you put my product into the model ?",
+      "x": 1542,
+      "y": 586,
+      "w": 265,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1451,
+      "y": 1027,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "2",
+      "x": 1491,
+      "y": 1027,
+      "w": 53,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Agent",
+      "x": 1552,
+      "y": 1027,
+      "w": 102,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Auto-run",
+      "x": 1662,
+      "y": 1027,
+      "w": 96,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 1766,
+      "y": 1027,
+      "w": 53,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Thinking",
+      "x": 1765,
+      "y": 1027,
+      "w": 94,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1865,
+      "y": 1027,
+      "w": 32,
+      "h": 32
+    }
+  ],
+  "flow": {
+    "viewport": "translate(0px, 0px) scale(1)",
+    "nodes": [],
+    "edges": []
+  }
+}

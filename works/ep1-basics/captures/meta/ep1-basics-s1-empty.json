@@ -1,0 +1,239 @@
+{
+  "slot": "ep1-basics-s1-empty",
+  "url": "https://youart.ai/workflow/d97e9e57-06c6-485c-b3f8-d9a54676dc85",
+  "pageW": 1536,
+  "pageH": 864,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Add node",
+      "x": 18,
+      "y": 348,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Media Assets",
+      "x": 18,
+      "y": 401,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Node Assets",
+      "x": 18,
+      "y": 441,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Community Assets",
+      "x": 18,
+      "y": 481,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "testid": "rf__wrapper",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "testid": "rf__background",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "button",
+      "text": "100%",
+      "x": 16,
+      "y": 816,
+      "w": 48,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Node options",
+      "x": 64,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "Join Discord",
+      "x": 96,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 128,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Info",
+      "x": 172,
+      "y": 812,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Project menu",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1252,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "10,673",
+      "x": 1333,
+      "y": 12,
+      "w": 83,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Account menu",
+      "x": 1424,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Add media",
+      "x": 406,
+      "y": 403,
+      "w": 135,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Text",
+      "x": 551,
+      "y": 403,
+      "w": 86,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Video models",
+      "x": 973,
+      "y": 403,
+      "w": 157,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Image models",
+      "x": 803,
+      "y": 403,
+      "w": 160,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Video tools",
+      "x": 973,
+      "y": 457,
+      "w": 157,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Image tools",
+      "x": 803,
+      "y": 457,
+      "w": 160,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "LLM models",
+      "x": 647,
+      "y": 403,
+      "w": 146,
+      "h": 44
+    },
+    {
+      "tag": "button",
+      "text": "Select",
+      "x": 669,
+      "y": 808,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "New",
+      "x": 719,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Open Video Editor",
+      "x": 759,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run All",
+      "x": 816,
+      "y": 806,
+      "w": 89,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 905,
+      "y": 806,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Open Agent Chat",
+      "x": 1484,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    }
+  ],
+  "flow": {
+    "viewport": "translate(0px, 0px) scale(1)",
+    "nodes": [],
+    "edges": []
+  }
+}

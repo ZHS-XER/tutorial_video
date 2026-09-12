@@ -1,0 +1,708 @@
+{
+  "slot": "ep1-basics-s2-prompt-typing",
+  "url": "https://youart.ai/workflow/d97e9e57-06c6-485c-b3f8-d9a54676dc85",
+  "pageW": 1536,
+  "pageH": 864,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Add node",
+      "x": 18,
+      "y": 348,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Media Assets",
+      "x": 18,
+      "y": 401,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Node Assets",
+      "x": 18,
+      "y": 441,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Community Assets",
+      "x": 18,
+      "y": 481,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to replace Supports JPEG, PNG, WebP (max 1",
+      "testid": "rf__wrapper",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "g",
+      "text": "Edge from LoadImage-170c7710 to GptImage2Generate-d73a6f20",
+      "testid": "rf__edge-LoadImage-170c7710-edge-out_GptImage2Generate-d73a6f20-edge-in-1",
+      "x": 327,
+      "y": 518,
+      "w": 98,
+      "h": 241
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to replace Supports JPEG, PNG, WebP (max 1",
+      "testid": "rf__node-LoadImage-170c7710",
+      "x": 41,
+      "y": 255,
+      "w": 280,
+      "h": 382
+    },
+    {
+      "tag": "button",
+      "text": "Grid Split",
+      "x": -6,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Upscale",
+      "x": 30,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Image Inpaint",
+      "x": 66,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Change Angle",
+      "x": 102,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Remove Background",
+      "x": 138,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "More tools",
+      "x": 174,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 219,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 255,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 300,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 336,
+      "y": 182,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 288,
+      "y": 424,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "div",
+      "text": "GPT Image 2 5 Prompt Sources Image1 1024 × 1024 Balanced x1 Run 1 2",
+      "testid": "rf__node-GptImage2Generate-d73a6f20",
+      "x": 431,
+      "y": 535,
+      "w": 280,
+      "h": 408
+    },
+    {
+      "tag": "button",
+      "text": "GPT Image 2 5",
+      "x": 440,
+      "y": 544,
+      "w": 173,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 678,
+      "y": 544,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "label",
+      "text": "Prompt",
+      "x": 440,
+      "y": 576,
+      "w": 42,
+      "h": 16
+    },
+    {
+      "tag": "button",
+      "text": "Edit fullscreen",
+      "x": 686,
+      "y": 576,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "tag": "label",
+      "text": "Sources",
+      "x": 440,
+      "y": 720,
+      "w": 47,
+      "h": 16
+    },
+    {
+      "tag": "div",
+      "text": "Image1",
+      "x": 445,
+      "y": 747,
+      "w": 60,
+      "h": 78
+    },
+    {
+      "tag": "label",
+      "text": "Image1",
+      "x": 445,
+      "y": 809,
+      "w": 60,
+      "h": 16
+    },
+    {
+      "tag": "button",
+      "text": "1024 × 1024",
+      "x": 440,
+      "y": 846,
+      "w": 82,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Balanced",
+      "x": 530,
+      "y": 846,
+      "w": 82,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "x1",
+      "x": 620,
+      "y": 846,
+      "w": 82,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Run",
+      "x": 440,
+      "y": 902,
+      "w": 68,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 508,
+      "y": 902,
+      "w": 24,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Advanced Settings",
+      "x": 670,
+      "y": 902,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "div",
+      "text": "Untitled Node Video Editor Empty timeline Click to start editing Render",
+      "testid": "rf__node-VideoEditor-50ba57d1",
+      "x": 628,
+      "y": 320,
+      "w": 280,
+      "h": 224
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 875,
+      "y": 329,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Empty timeline Click to start editing",
+      "x": 637,
+      "y": 365,
+      "w": 262,
+      "h": 118
+    },
+    {
+      "tag": "button",
+      "text": "Render",
+      "x": 637,
+      "y": 503,
+      "w": 88,
+      "h": 32
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "testid": "rf__background",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "button",
+      "text": "100%",
+      "x": 16,
+      "y": 816,
+      "w": 48,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Node options",
+      "x": 64,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "Join Discord",
+      "x": 96,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 128,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Info",
+      "x": 172,
+      "y": 812,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Project menu",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1252,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "10,673",
+      "x": 1333,
+      "y": 12,
+      "w": 83,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Account menu",
+      "x": 1424,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Hand tool",
+      "x": 649,
+      "y": 808,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Comments",
+      "x": 699,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Open Video Editor",
+      "x": 739,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run Selected",
+      "x": 796,
+      "y": 806,
+      "w": 130,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 926,
+      "y": 806,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Open Agent Chat",
+      "x": 1484,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Expand to fill",
+      "x": 1454,
+      "y": 12,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Collapse preview",
+      "x": 1484,
+      "y": 12,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Select (V)",
+      "x": 1204,
+      "y": 46,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Add Text",
+      "x": 1228,
+      "y": 46,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Add Solid",
+      "x": 1252,
+      "y": 46,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Add Composition",
+      "x": 1276,
+      "y": 46,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Render",
+      "x": 1347,
+      "y": 46,
+      "w": 78,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Download History",
+      "x": 1431,
+      "y": 46,
+      "w": 41,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Download History",
+      "x": 1472,
+      "y": 46,
+      "w": 40,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Resolution and aspect ratio",
+      "x": 1488,
+      "y": 620,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Undo (Cmd+Z)",
+      "x": 124,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Redo (Cmd+Shift+Z)",
+      "x": 152,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Split Clip at Playhead (C)",
+      "x": 184,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Disable Snapping (S)",
+      "x": 212,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Play (Space)",
+      "x": 642,
+      "y": 624,
+      "w": 40,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Mute",
+      "x": 1088,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Toggle preview",
+      "x": 1118,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Video editor help",
+      "x": 1148,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Collapse (T / Esc)",
+      "x": 1178,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Zoom out",
+      "x": 1044,
+      "y": 829,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Zoom in",
+      "x": 1176,
+      "y": 829,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Parameters",
+      "x": 1498,
+      "y": 624,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "9:16 (1080×1920)",
+      "x": 1232,
+      "y": 723,
+      "w": 172,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "30 fps",
+      "x": 1232,
+      "y": 795,
+      "w": 86,
+      "h": 36
+    }
+  ],
+  "flow": {
+    "viewport": "translate(-429px, 155px) scale(1)",
+    "nodes": [
+      {
+        "id": "LoadImage-170c7710",
+        "transform": "translate(470px, 100px)",
+        "x": 41,
+        "y": 255,
+        "w": 280,
+        "h": 382,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 321,
+            "cy": 532
+          }
+        ]
+      },
+      {
+        "id": "GptImage2Generate-d73a6f20",
+        "transform": "translate(860px, 380px)",
+        "x": 431,
+        "y": 535,
+        "w": 280,
+        "h": 408,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 431,
+            "cy": 709
+          },
+          {
+            "id": "edge-in-1",
+            "type": "target",
+            "cx": 431,
+            "cy": 745
+          },
+          {
+            "id": "edge-in-2",
+            "type": "target",
+            "cx": 431,
+            "cy": 781
+          },
+          {
+            "id": "edge-in",
+            "type": "target",
+            "cx": 435,
+            "cy": 739
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 728,
+            "cy": 750
+          }
+        ]
+      },
+      {
+        "id": "VideoEditor-50ba57d1",
+        "transform": "translate(1057px, 165px)",
+        "x": 628,
+        "y": 320,
+        "w": 280,
+        "h": 224,
+        "selected": true,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 925,
+            "cy": 443
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "rf__edge-LoadImage-170c7710-edge-out_GptImage2Generate-d73a6f20-edge-in-1",
+        "d": "M756,377 C805,377 805,590 854,590"
+      }
+    ]
+  }
+}

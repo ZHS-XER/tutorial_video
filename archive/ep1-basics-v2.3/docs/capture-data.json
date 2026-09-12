@@ -1,0 +1,14437 @@
+{
+ "ep1-s1-ctx": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-ctxmenu": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     954,
+     208,
+     159,
+     20
+    ]
+   ],
+   [
+    "button",
+    "Upload",
+    [
+     924,
+     241,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     924,
+     279,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Video models",
+    [
+     924,
+     317,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Image models",
+    [
+     924,
+     355,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Audio models",
+    [
+     924,
+     393,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Video tools",
+    [
+     924,
+     431,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Image tools",
+    [
+     924,
+     469,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Audio tools",
+    [
+     924,
+     507,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "LLM Models",
+    [
+     924,
+     545,
+     197,
+     36
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-dbl": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     514,
+     528,
+     159,
+     20
+    ]
+   ],
+   [
+    "button",
+    "Upload",
+    [
+     484,
+     561,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     484,
+     599,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Video models",
+    [
+     484,
+     637,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Image models",
+    [
+     484,
+     675,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Audio models",
+    [
+     484,
+     713,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Video tools",
+    [
+     484,
+     751,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Image tools",
+    [
+     484,
+     789,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Audio tools",
+    [
+     484,
+     827,
+     197,
+     36
+    ]
+   ],
+   [
+    "button",
+    "LLM Models",
+    [
+     484,
+     865,
+     197,
+     36
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-empty": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {},
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "Add media",
+    [
+     352,
+     511,
+     135,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     497,
+     511,
+     86,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video models",
+    [
+     919,
+     511,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image models",
+    [
+     749,
+     511,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video tools",
+    [
+     919,
+     565,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image tools",
+    [
+     749,
+     565,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "LLM models",
+    [
+     593,
+     511,
+     146,
+     44
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-menu": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {},
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     81,
+     371,
+     186,
+     34
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "Add media",
+    [
+     352,
+     511,
+     135,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     497,
+     511,
+     86,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video models",
+    [
+     919,
+     511,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image models",
+    [
+     749,
+     511,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video tools",
+    [
+     919,
+     565,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image tools",
+    [
+     749,
+     565,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "LLM models",
+    [
+     593,
+     511,
+     146,
+     44
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-node1": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     81,
+     371,
+     306,
+     34
+    ]
+   ],
+   [
+    "button",
+    "Image Loader",
+    [
+     73,
+     417,
+     322,
+     48
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-node2": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-node3": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     529
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      518
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      476
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     646,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     688,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-search": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {},
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     81,
+     371,
+     306,
+     34
+    ]
+   ],
+   [
+    "button",
+    "Image Loader",
+    [
+     73,
+     417,
+     322,
+     48
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "Add media",
+    [
+     352,
+     511,
+     135,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     497,
+     511,
+     86,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video models",
+    [
+     919,
+     511,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image models",
+    [
+     749,
+     511,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video tools",
+    [
+     919,
+     565,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image tools",
+    [
+     749,
+     565,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "LLM models",
+    [
+     593,
+     511,
+     146,
+     44
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-search2": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     514,
+     528,
+     254,
+     20
+    ]
+   ],
+   [
+    "button",
+    "ElevenLabs v3 40/1k chars",
+    [
+     480,
+     557,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Vidu Text to Video 5-110",
+    [
+     480,
+     605,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Flux Kontext 10",
+    [
+     480,
+     653,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Midjourney 20",
+    [
+     480,
+     701,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     480,
+     749,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Gemini 3.1 Pro 2.4-4.8/1k to",
+    [
+     480,
+     797,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Gemini 3 Flash 0.6-1.2/1k to",
+    [
+     480,
+     845,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Table",
+    [
+     480,
+     893,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Sticky Note",
+    [
+     480,
+     941,
+     300,
+     48
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-search3": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     954,
+     208,
+     309,
+     20
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     920,
+     237,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 40% off 80-3000",
+    [
+     920,
+     285,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Video Extend 80",
+    [
+     920,
+     333,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.0 Omni Reference ",
+    [
+     920,
+     381,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.0 69% off 60-2250",
+    [
+     920,
+     429,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.0 Video Extend 96",
+    [
+     920,
+     477,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.0 Mini 68% off 32",
+    [
+     920,
+     525,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 1.5 20-120",
+    [
+     920,
+     573,
+     355,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedance 1.0 36-216",
+    [
+     920,
+     621,
+     355,
+     48
+    ]
+   ]
+  ]
+ },
+ "ep1-s1-submenu": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {},
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "input",
+    "Search nodes...",
+    [
+     81,
+     371,
+     186,
+     34
+    ]
+   ],
+   [
+    "button",
+    "Nano Banana 2 50% off 8-16",
+    [
+     284,
+     534,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Nano Banana 2 Lite 50% off 4",
+    [
+     284,
+     582,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Nano Banana Pro 67 - 100% of",
+    [
+     284,
+     630,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Nano Banana 60 - 100% off 0-",
+    [
+     284,
+     678,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "GPT Image 2 50% off 3-40",
+    [
+     284,
+     726,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Grok Image 4-5",
+    [
+     284,
+     774,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedream 5.0 Pro 9-18",
+    [
+     284,
+     822,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedream 5.0 Lite 8",
+    [
+     284,
+     870,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedream 4.0 5",
+    [
+     284,
+     918,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Seedream 3.0 5",
+    [
+     284,
+     966,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "OpenAI Image 20",
+    [
+     284,
+     1014,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Flux Kontext 10",
+    [
+     284,
+     1062,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "FLUX 2 2-14",
+    [
+     284,
+     1110,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "ImageGen 4 10",
+    [
+     284,
+     1158,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Stable Diffusion v3.5 10",
+    [
+     284,
+     1206,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Qwen Image 5",
+    [
+     284,
+     1254,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Z-Image Turbo 3-6",
+    [
+     284,
+     1302,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Midjourney 20",
+    [
+     284,
+     1350,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Midjourney v8.1 10-15",
+    [
+     284,
+     1398,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "Midjourney v8.2 10-15",
+    [
+     284,
+     1446,
+     300,
+     48
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "Add media",
+    [
+     352,
+     511,
+     135,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Text",
+    [
+     497,
+     511,
+     86,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video models",
+    [
+     919,
+     511,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image models",
+    [
+     749,
+     511,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Video tools",
+    [
+     919,
+     565,
+     157,
+     44
+    ]
+   ],
+   [
+    "button",
+    "Image tools",
+    [
+     749,
+     565,
+     160,
+     44
+    ]
+   ],
+   [
+    "button",
+    "LLM models",
+    [
+     593,
+     511,
+     146,
+     44
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-deleted": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     529
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      518
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      476
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     646,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     688,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-edge1": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     529
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      518
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      476
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     646,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     688,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-edge2": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     570
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      539
+     ],
+     "edge-in-text_input-2": [
+      920,
+      539
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      496
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     687,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     729,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-edge2b": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     570
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      539
+     ],
+     "edge-in-text_input-2": [
+      920,
+      539
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      496
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     687,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     729,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-edgehover": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     570
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      539
+     ],
+     "edge-in-text_input-2": [
+      920,
+      539
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      496
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     687,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     729,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-edgesel": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     529
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      518
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      476
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     646,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     688,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s2-start": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      777,
+      282
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      777,
+      613
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     529
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      518
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      476
+     ]
+    }
+   }
+  },
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     588,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     646,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     688,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-allcollapsed": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     38
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      185
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     38
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      545
+     ],
+     "edge-out": [
+      760,
+      545
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     38
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-2": [
+      920,
+      225
+     ],
+     "edge-in-text_input-1": [
+      920,
+      225
+     ],
+     "edge-in-image_2": [
+      920,
+      225
+     ],
+     "edge-in-image_1": [
+      920,
+      225
+     ],
+     "edge-in-video_1": [
+      920,
+      225
+     ],
+     "edge-in-audio_1": [
+      920,
+      225
+     ],
+     "edge-out": [
+      1217,
+      230
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-allexpanded": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     570
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      539
+     ],
+     "edge-in-text_input-2": [
+      920,
+      539
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      496
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     687,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     729,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-autocollapse": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     570
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      920,
+      539
+     ],
+     "edge-in-text_input-2": [
+      920,
+      539
+     ],
+     "edge-in-image_1": [
+      920,
+      349
+     ],
+     "edge-in-image_2": [
+      920,
+      349
+     ],
+     "edge-in-video_1": [
+      920,
+      284
+     ],
+     "edge-in-audio_1": [
+      920,
+      413
+     ],
+     "edge-out": [
+      1217,
+      496
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     929,
+     209,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     929,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1019,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1109,
+     629,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1152,
+     687,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     929,
+     729,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-collapsed1": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     38
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-2": [
+      920,
+      225
+     ],
+     "edge-in-text_input-1": [
+      920,
+      225
+     ],
+     "edge-in-image_2": [
+      920,
+      225
+     ],
+     "edge-in-image_1": [
+      920,
+      225
+     ],
+     "edge-in-video_1": [
+      920,
+      225
+     ],
+     "edge-in-audio_1": [
+      920,
+      225
+     ],
+     "edge-out": [
+      1217,
+      230
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-collapsed2": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     38
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      545
+     ],
+     "edge-out": [
+      760,
+      545
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     38
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-2": [
+      920,
+      225
+     ],
+     "edge-in-text_input-1": [
+      920,
+      225
+     ],
+     "edge-in-image_2": [
+      920,
+      225
+     ],
+     "edge-in-image_1": [
+      920,
+      225
+     ],
+     "edge-in-video_1": [
+      920,
+      225
+     ],
+     "edge-in-audio_1": [
+      920,
+      225
+     ],
+     "edge-out": [
+      1217,
+      230
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-ctx": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     38
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      185
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     38
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      545
+     ],
+     "edge-out": [
+      760,
+      545
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     38
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-2": [
+      920,
+      225
+     ],
+     "edge-in-text_input-1": [
+      920,
+      225
+     ],
+     "edge-in-image_2": [
+      920,
+      225
+     ],
+     "edge-in-image_1": [
+      920,
+      225
+     ],
+     "edge-in-video_1": [
+      920,
+      225
+     ],
+     "edge-in-audio_1": [
+      920,
+      225
+     ],
+     "edge-out": [
+      1217,
+      230
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s3-expanded2": {
+  "viewport": "translate(0px, 0px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     480,
+     160,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      760,
+      277
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     480,
+     520,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      480,
+      624
+     ],
+     "edge-out": [
+      760,
+      608
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     920,
+     200,
+     280,
+     38
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-2": [
+      920,
+      225
+     ],
+     "edge-in-text_input-1": [
+      920,
+      225
+     ],
+     "edge-in-image_2": [
+      920,
+      225
+     ],
+     "edge-in-image_1": [
+      920,
+      225
+     ],
+     "edge-in-video_1": [
+      920,
+      225
+     ],
+     "edge-in-audio_1": [
+      920,
+      225
+     ],
+     "edge-out": [
+      1217,
+      230
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s4-fit2": {
+  "viewport": "translate(88px, 118px) scale(1)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     568,
+     278,
+     280,
+     222
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      848,
+      395
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     568,
+     638,
+     280,
+     164
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      568,
+      742
+     ],
+     "edge-out": [
+      848,
+      726
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     1008,
+     318,
+     280,
+     570
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      1008,
+      657
+     ],
+     "edge-in-text_input-2": [
+      1008,
+      657
+     ],
+     "edge-in-image_1": [
+      1008,
+      467
+     ],
+     "edge-in-image_2": [
+      1008,
+      467
+     ],
+     "edge-in-video_1": [
+      1008,
+      402
+     ],
+     "edge-in-audio_1": [
+      1008,
+      531
+     ],
+     "edge-out": [
+      1305,
+      614
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1017,
+     327,
+     234,
+     24
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1017,
+     747,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1107,
+     747,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1197,
+     747,
+     82,
+     32
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1240,
+     805,
+     29,
+     17
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1017,
+     847,
+     68,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Run selected",
+    [
+     389,
+     827,
+     135,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Save as Asset",
+    [
+     528,
+     827,
+     142,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Group",
+    [
+     674,
+     827,
+     89,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto Layout",
+    [
+     767,
+     827,
+     128,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Add to Chat",
+    [
+     899,
+     827,
+     127,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s4-fitall": {
+  "viewport": "translate(-644.012px, -208.435px) scale(1.60954)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     129,
+     49,
+     451,
+     357
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      579,
+      237
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     129,
+     629,
+     451,
+     264
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      129,
+      796
+     ],
+     "edge-out": [
+      579,
+      770
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     837,
+     113,
+     451,
+     918
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      837,
+      658
+     ],
+     "edge-in-text_input-2": [
+      837,
+      658
+     ],
+     "edge-in-image_1": [
+      837,
+      353
+     ],
+     "edge-in-image_2": [
+      837,
+      353
+     ],
+     "edge-in-video_1": [
+      837,
+      249
+     ],
+     "edge-in-audio_1": [
+      837,
+      456
+     ],
+     "edge-out": [
+      1315,
+      590
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     851,
+     128,
+     377,
+     39
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     851,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     996,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1141,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1210,
+     897,
+     46,
+     27
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     851,
+     965,
+     110,
+     52
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s4-fitall2": {
+  "viewport": "translate(-644.012px, -208.435px) scale(1.60954)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     129,
+     49,
+     451,
+     357
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      579,
+      237
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     129,
+     629,
+     451,
+     264
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      129,
+      796
+     ],
+     "edge-out": [
+      579,
+      770
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     837,
+     113,
+     451,
+     918
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      837,
+      658
+     ],
+     "edge-in-text_input-2": [
+      837,
+      658
+     ],
+     "edge-in-image_1": [
+      837,
+      353
+     ],
+     "edge-in-image_2": [
+      837,
+      353
+     ],
+     "edge-in-video_1": [
+      837,
+      249
+     ],
+     "edge-in-audio_1": [
+      837,
+      456
+     ],
+     "edge-out": [
+      1315,
+      590
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     851,
+     128,
+     377,
+     39
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     851,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     996,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1141,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1210,
+     897,
+     46,
+     27
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     851,
+     965,
+     110,
+     52
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s4-focus1": {
+  "viewport": "translate(-36px, 214.8px) scale(1.2)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     540,
+     407,
+     336,
+     266
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      876,
+      547
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     540,
+     839,
+     336,
+     197
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      540,
+      964
+     ],
+     "edge-out": [
+      876,
+      944
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     1068,
+     455,
+     336,
+     684
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      1068,
+      861
+     ],
+     "edge-in-text_input-2": [
+      1068,
+      861
+     ],
+     "edge-in-image_1": [
+      1068,
+      633
+     ],
+     "edge-in-image_2": [
+      1068,
+      633
+     ],
+     "edge-in-video_1": [
+      1068,
+      556
+     ],
+     "edge-in-audio_1": [
+      1068,
+      711
+     ],
+     "edge-out": [
+      1424,
+      810
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1079,
+     466,
+     281,
+     29
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1079,
+     969,
+     98,
+     38
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1187,
+     969,
+     98,
+     38
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1295,
+     969,
+     98,
+     38
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1346,
+     1039,
+     35,
+     20
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1079,
+     1090,
+     82,
+     38
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "1",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s4-sel2": {
+  "viewport": "translate(-644.012px, -208.435px) scale(1.60954)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     129,
+     49,
+     451,
+     357
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      579,
+      237
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     129,
+     629,
+     451,
+     264
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      129,
+      796
+     ],
+     "edge-out": [
+      579,
+      770
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     837,
+     113,
+     451,
+     918
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      837,
+      658
+     ],
+     "edge-in-text_input-2": [
+      837,
+      658
+     ],
+     "edge-in-image_1": [
+      837,
+      353
+     ],
+     "edge-in-image_2": [
+      837,
+      353
+     ],
+     "edge-in-video_1": [
+      837,
+      249
+     ],
+     "edge-in-audio_1": [
+      837,
+      456
+     ],
+     "edge-out": [
+      1315,
+      590
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     851,
+     128,
+     377,
+     39
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     851,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     996,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1141,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1210,
+     897,
+     46,
+     27
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     851,
+     965,
+     110,
+     52
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Run selected",
+    [
+     35,
+     930,
+     135,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Save as Asset",
+    [
+     174,
+     930,
+     142,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Group",
+    [
+     320,
+     930,
+     89,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto Layout",
+    [
+     413,
+     930,
+     128,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Add to Chat",
+    [
+     545,
+     930,
+     127,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s4-start": {
+  "viewport": "translate(-644.012px, -208.435px) scale(1.60954)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     129,
+     49,
+     451,
+     357
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      579,
+      237
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     129,
+     629,
+     451,
+     264
+    ],
+    "tf": "translate(480px, 520px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      129,
+      796
+     ],
+     "edge-out": [
+      579,
+      770
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     837,
+     113,
+     451,
+     918
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      837,
+      658
+     ],
+     "edge-in-text_input-2": [
+      837,
+      658
+     ],
+     "edge-in-image_1": [
+      837,
+      353
+     ],
+     "edge-in-image_2": [
+      837,
+      353
+     ],
+     "edge-in-video_1": [
+      837,
+      249
+     ],
+     "edge-in-audio_1": [
+      837,
+      456
+     ],
+     "edge-out": [
+      1315,
+      590
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     851,
+     128,
+     377,
+     39
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     851,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     996,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1141,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1210,
+     897,
+     46,
+     27
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     851,
+     965,
+     110,
+     52
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s5-arranged": {
+  "viewport": "translate(-217.511px, -152.61px) scale(1.44736)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     245,
+     634,
+     405,
+     321
+    ],
+    "tf": "translate(319.446px, 543.538px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      650,
+      803
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     245,
+     281,
+     405,
+     237
+    ],
+    "tf": "translate(319.446px, 299.538px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      245,
+      431
+     ],
+     "edge-out": [
+      650,
+      408
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     766,
+     125,
+     405,
+     825
+    ],
+    "tf": "translate(679.446px, 191.538px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      766,
+      615
+     ],
+     "edge-in-text_input-2": [
+      766,
+      615
+     ],
+     "edge-in-image_1": [
+      766,
+      340
+     ],
+     "edge-in-image_2": [
+      766,
+      340
+     ],
+     "edge-in-video_1": [
+      766,
+      246
+     ],
+     "edge-in-audio_1": [
+      766,
+      433
+     ],
+     "edge-out": [
+      1196,
+      553
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     779,
+     138,
+     339,
+     35
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     779,
+     745,
+     119,
+     46
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     909,
+     745,
+     119,
+     46
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1039,
+     745,
+     119,
+     46
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1101,
+     829,
+     42,
+     24
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     779,
+     891,
+     99,
+     46
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "3",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Run selected",
+    [
+     390,
+     990,
+     135,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Save as Asset",
+    [
+     529,
+     990,
+     142,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Group",
+    [
+     674,
+     990,
+     89,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto Layout",
+    [
+     767,
+     990,
+     128,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Add to Chat",
+    [
+     900,
+     990,
+     127,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s5-fit": {
+  "viewport": "translate(-346.85px, -73.4343px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     64,
+     173,
+     360,
+     286
+    ],
+    "tf": "translate(319.446px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      425,
+      324
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679.446px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039.45px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s5-horizontal": {
+  "viewport": "translate(-184.565px, 20.9402px) scale(1.08923)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     163,
+     230,
+     305,
+     242
+    ],
+    "tf": "translate(319.446px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      468,
+      357
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     556,
+     230,
+     305,
+     179
+    ],
+    "tf": "translate(679.446px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      556,
+      343
+     ],
+     "edge-out": [
+      860,
+      325
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     948,
+     230,
+     305,
+     621
+    ],
+    "tf": "translate(1039.45px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      948,
+      598
+     ],
+     "edge-in-text_input-2": [
+      948,
+      598
+     ],
+     "edge-in-image_1": [
+      948,
+      391
+     ],
+     "edge-in-image_2": [
+      948,
+      391
+     ],
+     "edge-in-video_1": [
+      948,
+      321
+     ],
+     "edge-in-audio_1": [
+      948,
+      462
+     ],
+     "edge-out": [
+      1271,
+      552
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     957,
+     239,
+     255,
+     26
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     957,
+     697,
+     89,
+     35
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1055,
+     697,
+     89,
+     35
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1153,
+     697,
+     89,
+     35
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1200,
+     760,
+     31,
+     18
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     957,
+     806,
+     74,
+     35
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s5-messy": {
+  "viewport": "translate(-258.412px, -208.435px) scale(1.60954)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     514,
+     49,
+     451,
+     357
+    ],
+    "tf": "translate(480px, 160px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      965,
+      237
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     -131,
+     811,
+     451,
+     264
+    ],
+    "tf": "translate(78.8911px, 633.076px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      -131,
+      978
+     ],
+     "edge-out": [
+      319,
+      952
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     1222,
+     113,
+     451,
+     918
+    ],
+    "tf": "translate(920px, 200px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      1222,
+      658
+     ],
+     "edge-in-text_input-2": [
+      1222,
+      658
+     ],
+     "edge-in-image_1": [
+      1222,
+      353
+     ],
+     "edge-in-image_2": [
+      1222,
+      353
+     ],
+     "edge-in-video_1": [
+      1222,
+      249
+     ],
+     "edge-in-audio_1": [
+      1222,
+      456
+     ],
+     "edge-out": [
+      1700,
+      590
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1237,
+     128,
+     377,
+     39
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1237,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1382,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1527,
+     804,
+     132,
+     52
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1595,
+     897,
+     46,
+     27
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1237,
+     965,
+     110,
+     52
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s5-submenu": {
+  "viewport": "translate(-217.511px, -152.61px) scale(1.44736)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     245,
+     634,
+     405,
+     321
+    ],
+    "tf": "translate(319.446px, 543.538px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      650,
+      803
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     245,
+     281,
+     405,
+     237
+    ],
+    "tf": "translate(319.446px, 299.538px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      245,
+      431
+     ],
+     "edge-out": [
+      650,
+      408
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     766,
+     125,
+     405,
+     825
+    ],
+    "tf": "translate(679.446px, 191.538px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      766,
+      615
+     ],
+     "edge-in-text_input-2": [
+      766,
+      615
+     ],
+     "edge-in-image_1": [
+      766,
+      340
+     ],
+     "edge-in-image_2": [
+      766,
+      340
+     ],
+     "edge-in-video_1": [
+      766,
+      246
+     ],
+     "edge-in-audio_1": [
+      766,
+      433
+     ],
+     "edge-out": [
+      1196,
+      553
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     779,
+     138,
+     339,
+     35
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     779,
+     745,
+     119,
+     46
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     909,
+     745,
+     119,
+     46
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1039,
+     745,
+     119,
+     46
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1101,
+     829,
+     42,
+     24
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     779,
+     891,
+     99,
+     46
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "3",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s5-vertical": {
+  "viewport": "translate(365.96px, -17.9736px) scale(0.744442)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     604,
+     790,
+     208,
+     165
+    ],
+    "tf": "translate(319.446px, 1085.54px)",
+    "sel": true,
+    "handles": {
+     "edge-out": [
+      812,
+      877
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     604,
+     609,
+     208,
+     122
+    ],
+    "tf": "translate(319.446px, 841.538px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      604,
+      686
+     ],
+     "edge-out": [
+      812,
+      674
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     604,
+     125,
+     208,
+     424
+    ],
+    "tf": "translate(319.446px, 191.538px)",
+    "sel": true,
+    "handles": {
+     "edge-in-text_input-1": [
+      604,
+      377
+     ],
+     "edge-in-text_input-2": [
+      604,
+      377
+     ],
+     "edge-in-image_1": [
+      604,
+      235
+     ],
+     "edge-in-image_2": [
+      604,
+      235
+     ],
+     "edge-in-video_1": [
+      604,
+      187
+     ],
+     "edge-in-audio_1": [
+      604,
+      283
+     ],
+     "edge-out": [
+      825,
+      345
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     610,
+     131,
+     174,
+     18
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     610,
+     444,
+     61,
+     24
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     677,
+     444,
+     61,
+     24
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     744,
+     444,
+     61,
+     24
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     776,
+     487,
+     21,
+     12
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     610,
+     519,
+     51,
+     24
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     651,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run Selected",
+    [
+     748,
+     1022,
+     130,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     476,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     512,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     548,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "3",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s6-assetspage": {
+  "viewport": null,
+  "nodes": {},
+  "edges": [],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1745,
+     1020,
+     151,
+     36
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1627,
+     16,
+     75,
+     24
+    ]
+   ],
+   [
+    "button",
+    "Upgrade",
+    [
+     1706,
+     16,
+     70,
+     24
+    ]
+   ],
+   [
+    "button",
+    "Enrong Xie",
+    [
+     1788,
+     12,
+     108,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Language English",
+    [
+     14,
+     996,
+     211,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Theme Dark",
+    [
+     14,
+     1036,
+     211,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Images",
+    [
+     480,
+     138,
+     81,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Videos",
+    [
+     569,
+     138,
+     78,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Audios",
+    [
+     655,
+     138,
+     79,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Worlds",
+    [
+     742,
+     138,
+     79,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Workflow Node Template",
+    [
+     829,
+     138,
+     201,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Default",
+    [
+     1536,
+     136,
+     144,
+     36
+    ]
+   ]
+  ]
+ },
+ "ep1-s6-dropped": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s6-fit": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s6-panel": {
+  "viewport": "translate(-346.85px, -73.4343px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     64,
+     173,
+     360,
+     286
+    ],
+    "tf": "translate(319.446px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      425,
+      324
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679.446px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039.45px, 191.538px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "All",
+    [
+     85,
+     511,
+     43,
+     35
+    ]
+   ],
+   [
+    "button",
+    "Images",
+    [
+     136,
+     511,
+     75,
+     35
+    ]
+   ],
+   [
+    "button",
+    "Videos",
+    [
+     219,
+     511,
+     72,
+     35
+    ]
+   ],
+   [
+    "button",
+    "Audios",
+    [
+     299,
+     511,
+     73,
+     35
+    ]
+   ],
+   [
+    "input",
+    "Search name, prompt, model",
+    [
+     85,
+     563,
+     312,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Default",
+    [
+     405,
+     563,
+     118,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s6-panelhover": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     64,
+     173,
+     360,
+     286
+    ],
+    "tf": "translate(319px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      425,
+      324
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "All",
+    [
+     85,
+     511,
+     43,
+     35
+    ]
+   ],
+   [
+    "button",
+    "Images",
+    [
+     136,
+     511,
+     75,
+     35
+    ]
+   ],
+   [
+    "button",
+    "Videos",
+    [
+     219,
+     511,
+     72,
+     35
+    ]
+   ],
+   [
+    "button",
+    "Audios",
+    [
+     299,
+     511,
+     73,
+     35
+    ]
+   ],
+   [
+    "input",
+    "Search name, prompt, model",
+    [
+     85,
+     563,
+     312,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Default",
+    [
+     405,
+     563,
+     118,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s7-grid": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Profile",
+    [
+     457,
+     127,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Billing",
+    [
+     457,
+     163,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Preferences",
+    [
+     457,
+     199,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Teams",
+    [
+     457,
+     271,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "English",
+    [
+     1250,
+     201,
+     192,
+     36
+    ]
+   ],
+   [
+    "button",
+    "PREVIEW Edit Hero_shot_2026-",
+    [
+     703,
+     331,
+     739,
+     59
+    ]
+   ],
+   [
+    "button",
+    "Project ID",
+    [
+     1369,
+     448,
+     73,
+     16
+    ]
+   ],
+   [
+    "input",
+    "#f8fafc",
+    [
+     1369,
+     489,
+     22,
+     22
+    ]
+   ],
+   [
+    "button",
+    "Dots",
+    [
+     1258,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "Grid",
+    [
+     1322,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "None",
+    [
+     1386,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1410,
+     701,
+     32,
+     18
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1410,
+     904,
+     32,
+     18
+    ]
+   ],
+   [
+    "button",
+    "Close",
+    [
+     1439,
+     79,
+     16,
+     16
+    ]
+   ]
+  ]
+ },
+ "ep1-s7-lighter": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Profile",
+    [
+     457,
+     127,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Billing",
+    [
+     457,
+     163,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Preferences",
+    [
+     457,
+     199,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Teams",
+    [
+     457,
+     271,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "English",
+    [
+     1250,
+     201,
+     192,
+     36
+    ]
+   ],
+   [
+    "button",
+    "PREVIEW Edit Hero_shot_2026-",
+    [
+     703,
+     331,
+     739,
+     59
+    ]
+   ],
+   [
+    "button",
+    "Project ID",
+    [
+     1369,
+     448,
+     73,
+     16
+    ]
+   ],
+   [
+    "input",
+    "#f8fafc",
+    [
+     1369,
+     489,
+     22,
+     22
+    ]
+   ],
+   [
+    "button",
+    "Dots",
+    [
+     1258,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "Grid",
+    [
+     1322,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "None",
+    [
+     1386,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1410,
+     701,
+     32,
+     18
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1410,
+     904,
+     32,
+     18
+    ]
+   ],
+   [
+    "button",
+    "Close",
+    [
+     1439,
+     79,
+     16,
+     16
+    ]
+   ]
+  ]
+ },
+ "ep1-s7-prefs": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Profile",
+    [
+     457,
+     127,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Billing",
+    [
+     457,
+     163,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Preferences",
+    [
+     457,
+     199,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Teams",
+    [
+     457,
+     271,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "English",
+    [
+     1250,
+     201,
+     192,
+     36
+    ]
+   ],
+   [
+    "button",
+    "PREVIEW Edit Hero_shot_2026-",
+    [
+     703,
+     331,
+     739,
+     59
+    ]
+   ],
+   [
+    "button",
+    "Project ID",
+    [
+     1369,
+     448,
+     73,
+     16
+    ]
+   ],
+   [
+    "input",
+    "#f8fafc",
+    [
+     1369,
+     489,
+     22,
+     22
+    ]
+   ],
+   [
+    "button",
+    "Dots",
+    [
+     1258,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "Grid",
+    [
+     1322,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "None",
+    [
+     1386,
+     528,
+     56,
+     58
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1410,
+     701,
+     32,
+     18
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1410,
+     904,
+     32,
+     18
+    ]
+   ],
+   [
+    "button",
+    "Close",
+    [
+     1439,
+     79,
+     16,
+     16
+    ]
+   ]
+  ]
+ },
+ "ep1-s7-restored": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s7-result": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Send feedback",
+    [
+     1249,
+     1020,
+     149,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ]
+  ]
+ },
+ "ep1-s7-settings": {
+  "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+  "nodes": {
+   "LoadImage": {
+    "rect": [
+     720,
+     302,
+     360,
+     446
+    ],
+    "tf": "translate(828.322px, 292.294px)",
+    "sel": false,
+    "handles": {
+     "edge-out": [
+      1102,
+      738
+     ]
+    }
+   },
+   "Text": {
+    "rect": [
+     528,
+     173,
+     360,
+     211
+    ],
+    "tf": "translate(679px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      528,
+      307
+     ],
+     "edge-out": [
+      888,
+      286
+     ]
+    }
+   },
+   "SeedancePro25OmniReferenceGenerate": {
+    "rect": [
+     991,
+     173,
+     360,
+     734
+    ],
+    "tf": "translate(1039px, 192px)",
+    "sel": false,
+    "handles": {
+     "edge-in-text_input-1": [
+      991,
+      609
+     ],
+     "edge-in-text_input-2": [
+      991,
+      609
+     ],
+     "edge-in-image_1": [
+      991,
+      364
+     ],
+     "edge-in-image_2": [
+      991,
+      364
+     ],
+     "edge-in-video_1": [
+      991,
+      281
+     ],
+     "edge-in-audio_1": [
+      991,
+      447
+     ],
+     "edge-out": [
+      1374,
+      554
+     ]
+    }
+   }
+  },
+  "edges": [
+   "LoadImage-71329618-edge-out_SeedancePro25OmniRefere",
+   "Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGe"
+  ],
+  "els": [
+   [
+    "button",
+    "Seedance 2.5 Omni Reference ",
+    [
+     1003,
+     185,
+     301,
+     31
+    ]
+   ],
+   [
+    "button",
+    "16:9",
+    [
+     1003,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "5″",
+    [
+     1119,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "720p",
+    [
+     1234,
+     725,
+     106,
+     41
+    ]
+   ],
+   [
+    "button",
+    "on",
+    [
+     1289,
+     800,
+     37,
+     21
+    ]
+   ],
+   [
+    "button",
+    "Run",
+    [
+     1003,
+     854,
+     88,
+     41
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     208,
+     1032,
+     32,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Share",
+    [
+     1204,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "3,608",
+    [
+     1285,
+     12,
+     79,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New",
+    [
+     671,
+     1024,
+     36,
+     36
+    ]
+   ],
+   [
+    "button",
+    "Run All",
+    [
+     768,
+     1022,
+     89,
+     40
+    ]
+   ],
+   [
+    "button",
+    "New Chat",
+    [
+     1446,
+     18,
+     99,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you help me create a l",
+    [
+     1522,
+     514,
+     304,
+     28
+    ]
+   ],
+   [
+    "button",
+    "I want to make a poster for ",
+    [
+     1559,
+     550,
+     230,
+     28
+    ]
+   ],
+   [
+    "button",
+    "Could you put my product int",
+    [
+     1542,
+     586,
+     265,
+     28
+    ]
+   ],
+   [
+    "button",
+    "2",
+    [
+     1491,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Agent",
+    [
+     1552,
+     1027,
+     102,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Auto-run",
+    [
+     1662,
+     1027,
+     96,
+     32
+    ]
+   ],
+   [
+    "button",
+    "0",
+    [
+     1766,
+     1027,
+     53,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Thinking",
+    [
+     1765,
+     1027,
+     94,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Profile",
+    [
+     457,
+     127,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Billing",
+    [
+     457,
+     163,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Preferences",
+    [
+     457,
+     199,
+     208,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Teams",
+    [
+     457,
+     271,
+     208,
+     32
+    ]
+   ],
+   [
+    "input",
+    "Enrong Xie",
+    [
+     703,
+     289,
+     362,
+     36
+    ]
+   ],
+   [
+    "input",
+    "enrong@youart.ai",
+    [
+     1081,
+     291,
+     362,
+     36
+    ]
+   ],
+   [
+    "button",
+    "None",
+    [
+     706,
+     377,
+     54,
+     29
+    ]
+   ],
+   [
+    "button",
+    "Image",
+    [
+     760,
+     377,
+     59,
+     29
+    ]
+   ],
+   [
+    "button",
+    "Video",
+    [
+     819,
+     377,
+     57,
+     29
+    ]
+   ],
+   [
+    "button",
+    "Drop an image here, or click",
+    [
+     703,
+     421,
+     370,
+     123
+    ]
+   ],
+   [
+    "input",
+    "e.g. Director, Animator (pre",
+    [
+     712,
+     742,
+     344,
+     24
+    ]
+   ],
+   [
+    "input",
+    "e.g. Blender, Photoshop (pre",
+    [
+     1090,
+     742,
+     344,
+     24
+    ]
+   ],
+   [
+    "button",
+    "Add your first link",
+    [
+     991,
+     954,
+     162,
+     32
+    ]
+   ],
+   [
+    "button",
+    "Close",
+    [
+     1439,
+     79,
+     16,
+     16
+    ]
+   ]
+  ]
+ }
+}

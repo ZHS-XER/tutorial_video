@@ -1,0 +1,902 @@
+{
+  "slot": "ep1-basics-m-zoomout",
+  "url": "https://youart.ai/workflow/357a2788-6c79-47d9-a147-64b2e30152f1",
+  "pageW": 1536,
+  "pageH": 864,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Add node",
+      "x": 18,
+      "y": 348,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Media Assets",
+      "x": 18,
+      "y": 401,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Node Assets",
+      "x": 18,
+      "y": 441,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Community Assets",
+      "x": 18,
+      "y": 481,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to replace Supports JPEG, PNG, WebP (max 1",
+      "testid": "rf__wrapper",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "g",
+      "text": "Edge from LoadImage-19dc4d48 to GptImage2Generate-c22f3d01",
+      "testid": "rf__edge-LoadImage-19dc4d48-edge-out_GptImage2Generate-c22f3d01-edge-in-1",
+      "x": 628,
+      "y": 356,
+      "w": 59,
+      "h": 152
+    },
+    {
+      "tag": "g",
+      "text": "Edge from Text-81934001 to SeedancePro25OmniReferenceGenerate-95b24421",
+      "testid": "rf__edge-Text-81934001-edge-out_SeedancePro25OmniReferenceGenerate-95b24421-edge-in-text_input-1",
+      "x": 628,
+      "y": 486,
+      "w": 281,
+      "h": 63
+    },
+    {
+      "tag": "g",
+      "text": "Edge from GptImage2Generate-c22f3d01 to SeedancePro25OmniReferenceGenerate-95b24",
+      "testid": "rf__edge-GptImage2Generate-c22f3d01-edge-out_SeedancePro25OmniReferenceGenerate-95b24421-edge-in-first_frame",
+      "x": 862,
+      "y": 491,
+      "w": 47,
+      "h": 48
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to replace Supports JPEG, PNG, WebP (max 1",
+      "testid": "rf__node-LoadImage-19dc4d48",
+      "x": 456,
+      "y": 198,
+      "w": 168,
+      "h": 230
+    },
+    {
+      "tag": "button",
+      "text": "Grid Split",
+      "x": 428,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Upscale",
+      "x": 449,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Image Inpaint",
+      "x": 471,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Change Angle",
+      "x": 493,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Remove Background",
+      "x": 514,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "More tools",
+      "x": 536,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 563,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 584,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 611,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 633,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 604,
+      "y": 300,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "tag": "div",
+      "text": "GPT Image 2 5 Prompt Photorealistic storefront sign for a boutique clothing stor",
+      "testid": "rf__node-GptImage2Generate-c22f3d01",
+      "x": 690,
+      "y": 198,
+      "w": 168,
+      "h": 423
+    },
+    {
+      "tag": "button",
+      "text": "Grid Split",
+      "x": 651,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Upscale",
+      "x": 673,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Image Inpaint",
+      "x": 694,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Change Angle",
+      "x": 716,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Remove Background",
+      "x": 737,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "More tools",
+      "x": 759,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 786,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 808,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 829,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 856,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 878,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "GPT Image 2 5",
+      "x": 695,
+      "y": 376,
+      "w": 104,
+      "h": 14
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 838,
+      "y": 376,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "tag": "label",
+      "text": "Prompt",
+      "x": 695,
+      "y": 395,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "tag": "button",
+      "text": "Edit fullscreen",
+      "x": 843,
+      "y": 395,
+      "w": 10,
+      "h": 10
+    },
+    {
+      "tag": "label",
+      "text": "Sources",
+      "x": 695,
+      "y": 487,
+      "w": 28,
+      "h": 10
+    },
+    {
+      "tag": "div",
+      "text": "Image1",
+      "x": 698,
+      "y": 503,
+      "w": 36,
+      "h": 47
+    },
+    {
+      "tag": "label",
+      "text": "Image1",
+      "x": 698,
+      "y": 541,
+      "w": 36,
+      "h": 10
+    },
+    {
+      "tag": "button",
+      "text": "1024 × 1024",
+      "x": 695,
+      "y": 563,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Balanced",
+      "x": 749,
+      "y": 563,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "x1",
+      "x": 803,
+      "y": 563,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Run",
+      "x": 695,
+      "y": 596,
+      "w": 41,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 736,
+      "y": 596,
+      "w": 14,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Advanced Settings",
+      "x": 833,
+      "y": 596,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "div",
+      "text": "Seedance 2.5 40/s Prompt 1 Logo reveal: the sign starts blank, then the logo let",
+      "testid": "rf__node-SeedancePro25OmniReferenceGenerate-95b24421",
+      "x": 912,
+      "y": 198,
+      "w": 168,
+      "h": 469
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 873,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Frame Extractor",
+      "x": 895,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Stitch Videos",
+      "x": 916,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Upscale",
+      "x": 938,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Audio track",
+      "x": 959,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Watermark & Subtitle Remover",
+      "x": 981,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1008,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1030,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1051,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1078,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1100,
+      "y": 154,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Play video",
+      "x": 912,
+      "y": 198,
+      "w": 168,
+      "h": 168
+    },
+    {
+      "tag": "button",
+      "text": "Seedance 2.5 40/s",
+      "x": 917,
+      "y": 376,
+      "w": 118,
+      "h": 14
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1060,
+      "y": 376,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "tag": "label",
+      "text": "Prompt",
+      "x": 917,
+      "y": 395,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "tag": "button",
+      "text": "Edit fullscreen",
+      "x": 1065,
+      "y": 395,
+      "w": 10,
+      "h": 10
+    },
+    {
+      "tag": "label",
+      "text": "Frames",
+      "x": 917,
+      "y": 506,
+      "w": 25,
+      "h": 10
+    },
+    {
+      "tag": "div",
+      "text": "First frame",
+      "x": 920,
+      "y": 522,
+      "w": 36,
+      "h": 47
+    },
+    {
+      "tag": "label",
+      "text": "First frame",
+      "x": 920,
+      "y": 560,
+      "w": 36,
+      "h": 10
+    },
+    {
+      "tag": "button",
+      "text": "4:3",
+      "x": 917,
+      "y": 582,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "10″",
+      "x": 971,
+      "y": 582,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "720p",
+      "x": 1025,
+      "y": 582,
+      "w": 49,
+      "h": 19
+    },
+    {
+      "tag": "label",
+      "text": "Real Faces Mode · On",
+      "x": 923,
+      "y": 617,
+      "w": 101,
+      "h": 10
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1028,
+      "y": 617,
+      "w": 8,
+      "h": 8
+    },
+    {
+      "tag": "button",
+      "text": "on",
+      "x": 1051,
+      "y": 617,
+      "w": 17,
+      "h": 10
+    },
+    {
+      "tag": "button",
+      "text": "Run",
+      "x": 917,
+      "y": 642,
+      "w": 41,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 958,
+      "y": 642,
+      "w": 14,
+      "h": 19
+    },
+    {
+      "tag": "button",
+      "text": "Advanced Settings",
+      "x": 1055,
+      "y": 642,
+      "w": 19,
+      "h": 19
+    },
+    {
+      "tag": "div",
+      "text": "Text Logo reveal: the sign starts blank, then the logo letters rise out of the s",
+      "testid": "rf__node-Text-81934001",
+      "x": 456,
+      "y": 474,
+      "w": 168,
+      "h": 127
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 604,
+      "y": 479,
+      "w": 14,
+      "h": 14
+    },
+    {
+      "tag": "button",
+      "text": "Edit fullscreen",
+      "x": 607,
+      "y": 501,
+      "w": 10,
+      "h": 10
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "testid": "rf__background",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "button",
+      "text": "60%",
+      "x": 16,
+      "y": 816,
+      "w": 48,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Node options",
+      "x": 64,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "Join Discord",
+      "x": 96,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 128,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Info",
+      "x": 172,
+      "y": 812,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Project menu",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1254,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "10,614",
+      "x": 1334,
+      "y": 12,
+      "w": 82,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Account menu",
+      "x": 1424,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Select",
+      "x": 669,
+      "y": 808,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Comments",
+      "x": 719,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Open Video Editor",
+      "x": 759,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run All",
+      "x": 816,
+      "y": 806,
+      "w": 89,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 905,
+      "y": 806,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Open Agent Chat",
+      "x": 1484,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    }
+  ],
+  "flow": {
+    "viewport": "translate(174px, 138px) scale(0.6)",
+    "nodes": [
+      {
+        "id": "LoadImage-19dc4d48",
+        "transform": "translate(470px, 100px)",
+        "x": 456,
+        "y": 198,
+        "w": 168,
+        "h": 230,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 624,
+            "cy": 365
+          }
+        ]
+      },
+      {
+        "id": "GptImage2Generate-c22f3d01",
+        "transform": "translate(860px, 100px)",
+        "x": 690,
+        "y": 198,
+        "w": 168,
+        "h": 423,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 690,
+            "cy": 478
+          },
+          {
+            "id": "edge-in-1",
+            "type": "target",
+            "cx": 690,
+            "cy": 500
+          },
+          {
+            "id": "edge-in-2",
+            "type": "target",
+            "cx": 690,
+            "cy": 521
+          },
+          {
+            "id": "edge-in",
+            "type": "target",
+            "cx": 692,
+            "cy": 496
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 858,
+            "cy": 500
+          }
+        ]
+      },
+      {
+        "id": "SeedancePro25OmniReferenceGenerate-95b24421",
+        "transform": "translate(1230px, 100px)",
+        "x": 912,
+        "y": 198,
+        "w": 168,
+        "h": 469,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 912,
+            "cy": 495
+          },
+          {
+            "id": "edge-in-text_input-2",
+            "type": "target",
+            "cx": 912,
+            "cy": 509
+          },
+          {
+            "id": "edge-in-first_frame",
+            "type": "target",
+            "cx": 912,
+            "cy": 531
+          },
+          {
+            "id": "edge-in-end_frame",
+            "type": "target",
+            "cx": 912,
+            "cy": 550
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 1090,
+            "cy": 525
+          }
+        ]
+      },
+      {
+        "id": "Text-81934001",
+        "transform": "translate(470px, 560px)",
+        "x": 456,
+        "y": 474,
+        "w": 168,
+        "h": 127,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 456,
+            "cy": 541
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 624,
+            "cy": 541
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "rf__edge-LoadImage-19dc4d48-edge-out_GptImage2Generate-c22f3d01-edge-in-1",
+        "d": "M756,378 C805,378 805,602.5 854,602.5"
+      },
+      {
+        "id": "rf__edge-Text-81934001-edge-out_SeedancePro25OmniReferenceGenerate-95b24421-edge-in-text_input-1",
+        "d": "M756,672 C990,672 990,594.59375 1224,594.59375"
+      },
+      {
+        "id": "rf__edge-GptImage2Generate-c22f3d01-edge-out_SeedancePro25OmniReferenceGenerate-95b24421-edge-in-first_frame",
+        "d": "M1146,602.5 C1185,602.5 1185,654.59375 1224,654.59375"
+      }
+    ]
+  }
+}

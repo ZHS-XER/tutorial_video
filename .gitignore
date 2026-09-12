@@ -1,0 +1,25 @@
+.DS_Store
+node_modules/
+.venv/
+
+# 采集运行态：Chrome profile、ws endpoint
+.cache/
+*.log
+
+# 渲染成片、QA、采集截图（可由工程重渲/重采）
+works/*/out/
+lab/avatar/out/
+lab/recon/
+lab/qa/
+lab/kbd-demo/
+lab/keyviz-demo/
+archive/*.tgz
+archive/*/out/
+
+# 本地设置与密钥
+.claude/settings.local.json
+.env*
+!.env.example
+
+# 根目录 chrome profile（登录态）
+/out/

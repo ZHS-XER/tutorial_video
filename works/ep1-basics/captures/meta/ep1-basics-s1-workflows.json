@@ -1,0 +1,1089 @@
+{
+  "slot": "ep1-basics-s1-workflows",
+  "url": "https://youart.ai/workflows",
+  "pageW": 1536,
+  "pageH": 3330,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Earn Credits",
+      "x": 1190,
+      "y": 12,
+      "w": 36,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "10,673",
+      "x": 1238,
+      "y": 16,
+      "w": 80,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Upgrade",
+      "x": 1322,
+      "y": 16,
+      "w": 70,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Enrong Xie",
+      "x": 1404,
+      "y": 12,
+      "w": 108,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YouArt",
+      "x": 14,
+      "y": 16,
+      "w": 97,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Collapse sidebar",
+      "x": 189,
+      "y": 16,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "x": 14,
+      "y": 76,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Workflow",
+      "x": 14,
+      "y": 116,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Image",
+      "x": 14,
+      "y": 156,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Video",
+      "x": 14,
+      "y": 196,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "AI UGC",
+      "x": 14,
+      "y": 236,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "MCP Server",
+      "x": 14,
+      "y": 276,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Projects",
+      "x": 14,
+      "y": 329,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Assets",
+      "x": 14,
+      "y": 369,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Events",
+      "x": 14,
+      "y": 422,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Release Note 9+ More than 9 new release notes",
+      "x": 14,
+      "y": 687,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Join Discord",
+      "x": 14,
+      "y": 727,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Language English",
+      "x": 14,
+      "y": 780,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Theme Dark",
+      "x": 14,
+      "y": 820,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "div",
+      "text": "YouArt Workflow Describe what you want to create... UGC Ads TVC Ads Branding E-c",
+      "testid": "home-hero",
+      "x": 240,
+      "y": 56,
+      "w": 1296,
+      "h": 440
+    },
+    {
+      "tag": "h1",
+      "text": "YouArt Workflow",
+      "x": 264,
+      "y": 128,
+      "w": 1248,
+      "h": 48
+    },
+    {
+      "tag": "button",
+      "text": "Upload Files",
+      "x": 521,
+      "y": 305,
+      "w": 36,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1223,
+      "y": 305,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "UGC Ads",
+      "x": 679,
+      "y": 370,
+      "w": 87,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "TVC Ads",
+      "x": 782,
+      "y": 370,
+      "w": 85,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Branding",
+      "x": 883,
+      "y": 370,
+      "w": 86,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "E-commerce",
+      "x": 985,
+      "y": 370,
+      "w": 112,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "My Projects",
+      "x": 320,
+      "y": 512,
+      "w": 138,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "View All",
+      "x": 1381,
+      "y": 524,
+      "w": 75,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "New Workflow",
+      "x": 320,
+      "y": 556,
+      "w": 224,
+      "h": 168
+    },
+    {
+      "tag": "button",
+      "text": "All",
+      "x": 320,
+      "y": 870,
+      "w": 49,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Cinematic",
+      "x": 377,
+      "y": 870,
+      "w": 99,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Animation",
+      "x": 484,
+      "y": 870,
+      "w": 99,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Social Media",
+      "x": 592,
+      "y": 870,
+      "w": 117,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "E-commerce",
+      "x": 717,
+      "y": 870,
+      "w": 118,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Visual & Design",
+      "x": 843,
+      "y": 870,
+      "w": 136,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "MV",
+      "x": 987,
+      "y": 870,
+      "w": 55,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Seedance 2.0",
+      "x": 1050,
+      "y": 870,
+      "w": 124,
+      "h": 32
+    },
+    {
+      "tag": "input",
+      "text": "Search community",
+      "x": 1232,
+      "y": 868,
+      "w": 224,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Tutorial: Motion Billboard",
+      "x": 320,
+      "y": 920,
+      "w": 272,
+      "h": 236
+    },
+    {
+      "tag": "h3",
+      "text": "Tutorial: Motion Billboard",
+      "x": 320,
+      "y": 1124,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YoITa",
+      "x": 320,
+      "y": 1168,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "5",
+      "x": 564,
+      "y": 1168,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "核爆姐妹花",
+      "x": 320,
+      "y": 1212,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "核爆姐妹花",
+      "x": 320,
+      "y": 1382,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "像素诗人D",
+      "x": 320,
+      "y": 1426,
+      "w": 95,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "2",
+      "x": 564,
+      "y": 1426,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Gogeta SSB vs Broly",
+      "x": 320,
+      "y": 1470,
+      "w": 272,
+      "h": 372
+    },
+    {
+      "tag": "h3",
+      "text": "Gogeta SSB vs Broly",
+      "x": 320,
+      "y": 1810,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "POD-miaouwai",
+      "x": 320,
+      "y": 1854,
+      "w": 151,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Like",
+      "x": 576,
+      "y": 1856,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "tag": "button",
+      "text": "Fate - Saber Excalibur",
+      "x": 320,
+      "y": 1898,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Fate - Saber Excalibur",
+      "x": 320,
+      "y": 2170,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "黑猫AIGC",
+      "x": 320,
+      "y": 2214,
+      "w": 91,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "11",
+      "x": 555,
+      "y": 2214,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Six-Tails Naruto vs. Pain (Deva Path)",
+      "x": 320,
+      "y": 2258,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Six-Tails Naruto vs. Pain (Deva Path)",
+      "x": 320,
+      "y": 2530,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "西瓜君",
+      "x": 320,
+      "y": 2574,
+      "w": 71,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "2",
+      "x": 564,
+      "y": 2574,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Akatsuki Joins the Battle of Marineford",
+      "x": 320,
+      "y": 2618,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Akatsuki Joins the Battle of Marineford",
+      "x": 320,
+      "y": 2890,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "西瓜君",
+      "x": 320,
+      "y": 2934,
+      "w": 71,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "5",
+      "x": 564,
+      "y": 2934,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Tutorial: Seedance 2.5 White Models Rendering",
+      "x": 608,
+      "y": 920,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Tutorial: Seedance 2.5 White Models Rendering",
+      "x": 608,
+      "y": 1090,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YoITa",
+      "x": 608,
+      "y": 1134,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "4",
+      "x": 852,
+      "y": 1134,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Daiko - Episode 1",
+      "x": 608,
+      "y": 1178,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Daiko - Episode 1",
+      "x": 608,
+      "y": 1348,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "POD-miaouwai",
+      "x": 608,
+      "y": 1392,
+      "w": 151,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "18",
+      "x": 843,
+      "y": 1392,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Monster 8 AI Remake",
+      "x": 608,
+      "y": 1436,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Monster 8 AI Remake",
+      "x": 608,
+      "y": 1606,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "像素诗人D",
+      "x": 608,
+      "y": 1650,
+      "w": 95,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "18",
+      "x": 843,
+      "y": 1650,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "【Fate|Nero】Open the Golden Theater!",
+      "x": 608,
+      "y": 1694,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "【Fate|Nero】Open the Golden Theater!",
+      "x": 608,
+      "y": 1966,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "黑猫AIGC",
+      "x": 608,
+      "y": 2010,
+      "w": 91,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "9",
+      "x": 852,
+      "y": 2010,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "One Piece: The Battle of Enies Lobby",
+      "x": 608,
+      "y": 2054,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "One Piece: The Battle of Enies Lobby",
+      "x": 608,
+      "y": 2326,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "西瓜君",
+      "x": 608,
+      "y": 2370,
+      "w": 71,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "3",
+      "x": 852,
+      "y": 2370,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Chainsaw Man AI Remake",
+      "x": 608,
+      "y": 2414,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Chainsaw Man AI Remake",
+      "x": 608,
+      "y": 2686,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "蒜泥好次",
+      "x": 608,
+      "y": 2730,
+      "w": 85,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "9",
+      "x": 852,
+      "y": 2730,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Tutorial: Orbit Shot",
+      "x": 896,
+      "y": 920,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Tutorial: Orbit Shot",
+      "x": 896,
+      "y": 1192,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YoITa",
+      "x": 896,
+      "y": 1236,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "4",
+      "x": 1140,
+      "y": 1236,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Tutorial: Seedance 2.5 Video Extension",
+      "x": 896,
+      "y": 1280,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Tutorial: Seedance 2.5 Video Extension",
+      "x": 896,
+      "y": 1552,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YoITa",
+      "x": 896,
+      "y": 1596,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Like",
+      "x": 1152,
+      "y": 1598,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "tag": "button",
+      "text": "Solo Leveling: AI Remake",
+      "x": 896,
+      "y": 1640,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Solo Leveling: AI Remake",
+      "x": 896,
+      "y": 1912,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "像素诗人D",
+      "x": 896,
+      "y": 1956,
+      "w": 95,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "11",
+      "x": 1131,
+      "y": 1956,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Dragon Raja - EP 1",
+      "x": 896,
+      "y": 2000,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Dragon Raja - EP 1",
+      "x": 896,
+      "y": 2272,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "蒜泥好次",
+      "x": 896,
+      "y": 2316,
+      "w": 85,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "11",
+      "x": 1131,
+      "y": 2316,
+      "w": 37,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Solo Leveling: Ant King Bell",
+      "x": 896,
+      "y": 2360,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Solo Leveling: Ant King Bell",
+      "x": 896,
+      "y": 2530,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "像素诗人D",
+      "x": 896,
+      "y": 2574,
+      "w": 95,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "1",
+      "x": 1140,
+      "y": 2574,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Smoking at the back door of the supermarket",
+      "x": 896,
+      "y": 2618,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Smoking at the back door of the supermarket",
+      "x": 896,
+      "y": 2788,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "蒜泥好次",
+      "x": 896,
+      "y": 2832,
+      "w": 85,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "5",
+      "x": 1140,
+      "y": 2832,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Tutorial: Depth Map",
+      "x": 1184,
+      "y": 920,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Tutorial: Depth Map",
+      "x": 1184,
+      "y": 1090,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YoITa",
+      "x": 1184,
+      "y": 1134,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "4",
+      "x": 1428,
+      "y": 1134,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Tutorial: Wan 3.0",
+      "x": 1184,
+      "y": 1178,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Tutorial: Wan 3.0",
+      "x": 1184,
+      "y": 1348,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YoITa",
+      "x": 1184,
+      "y": 1392,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "2",
+      "x": 1428,
+      "y": 1392,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "HIDDEN HIER: RISE OF PRINCE",
+      "x": 1184,
+      "y": 1436,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "HIDDEN HIER: RISE OF PRINCE",
+      "x": 1184,
+      "y": 1606,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "Atem Tufan",
+      "x": 1184,
+      "y": 1650,
+      "w": 128,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Like",
+      "x": 1440,
+      "y": 1652,
+      "w": 16,
+      "h": 16
+    },
+    {
+      "tag": "button",
+      "text": "Dragon Raja - EP2",
+      "x": 1184,
+      "y": 1694,
+      "w": 272,
+      "h": 304
+    },
+    {
+      "tag": "h3",
+      "text": "Dragon Raja - EP2",
+      "x": 1184,
+      "y": 1966,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "蒜泥好次",
+      "x": 1184,
+      "y": 2010,
+      "w": 85,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "8",
+      "x": 1428,
+      "y": 2010,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Naruto vs. One Piece",
+      "x": 1184,
+      "y": 2054,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Naruto vs. One Piece",
+      "x": 1184,
+      "y": 2224,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "西瓜君",
+      "x": 1184,
+      "y": 2268,
+      "w": 71,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "6",
+      "x": 1428,
+      "y": 2268,
+      "w": 28,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Monday",
+      "x": 1184,
+      "y": 2312,
+      "w": 272,
+      "h": 202
+    },
+    {
+      "tag": "h3",
+      "text": "Monday",
+      "x": 1184,
+      "y": 2482,
+      "w": 272,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "Wei Lynn",
+      "x": 1184,
+      "y": 2526,
+      "w": 88,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "6",
+      "x": 1428,
+      "y": 2526,
+      "w": 28,
+      "h": 20
+    }
+  ]
+}

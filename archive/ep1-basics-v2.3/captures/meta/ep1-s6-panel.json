@@ -1,0 +1,937 @@
+{
+  "slot": "ep1-s6-panel",
+  "url": "https://youart.ai/workflow/d933cf96-fe7e-4660-9189-3720611bdf8f",
+  "pageW": 1920,
+  "pageH": 1080,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Send feedback",
+      "x": 1249,
+      "y": 1020,
+      "w": 149,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 456,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 509,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 549,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 18,
+      "y": 589,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "label",
+      "text": "Media Assets",
+      "x": 73,
+      "y": 461,
+      "w": 126,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 205,
+      "y": 465,
+      "w": 20,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 467,
+      "y": 459,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 503,
+      "y": 459,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "All",
+      "x": 85,
+      "y": 511,
+      "w": 43,
+      "h": 35
+    },
+    {
+      "tag": "button",
+      "text": "Images",
+      "x": 136,
+      "y": 511,
+      "w": 75,
+      "h": 35
+    },
+    {
+      "tag": "button",
+      "text": "Videos",
+      "x": 219,
+      "y": 511,
+      "w": 72,
+      "h": 35
+    },
+    {
+      "tag": "button",
+      "text": "Audios",
+      "x": 299,
+      "y": 511,
+      "w": 73,
+      "h": 35
+    },
+    {
+      "tag": "input",
+      "text": "Search name, prompt, model",
+      "x": 85,
+      "y": 563,
+      "w": 312,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Default",
+      "x": 405,
+      "y": 563,
+      "w": 118,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 604,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 604,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 604,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 752,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 752,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 752,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 901,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 901,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 901,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1050,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1050,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1050,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1198,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1198,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1198,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1347,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1347,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1347,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1496,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1496,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1496,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1644,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1644,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1644,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1793,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1793,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1793,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 1942,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 235,
+      "y": 1942,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 383,
+      "y": 1942,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 86,
+      "y": 2090,
+      "w": 139,
+      "h": 139
+    },
+    {
+      "tag": "g",
+      "text": "",
+      "testid": "rf__edge-LoadImage-71329618-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-image_1",
+      "x": 433,
+      "y": 306,
+      "w": 551,
+      "h": 77
+    },
+    {
+      "tag": "g",
+      "text": "",
+      "testid": "rf__edge-Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-text_input-1",
+      "x": 896,
+      "y": 268,
+      "w": 88,
+      "h": 359
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to upload Supports JPEG, PNG, WebP (max 10",
+      "testid": "rf__node-LoadImage-71329618",
+      "x": 64,
+      "y": 173,
+      "w": 360,
+      "h": 286
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 382,
+      "y": 185,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "tag": "div",
+      "text": "Text",
+      "testid": "rf__node-Text-890d5e5c",
+      "x": 528,
+      "y": 173,
+      "w": 360,
+      "h": 211
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 846,
+      "y": 185,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 851,
+      "y": 231,
+      "w": 21,
+      "h": 21
+    },
+    {
+      "tag": "div",
+      "text": "Seedance 2.5 Omni Reference 200 Reference videos 0/10 Reference images 1/30 Refe",
+      "testid": "rf__node-SeedancePro25OmniReferenceGenerate-1e5a2a82",
+      "x": 991,
+      "y": 173,
+      "w": 360,
+      "h": 734
+    },
+    {
+      "tag": "button",
+      "text": "Seedance 2.5 Omni Reference 200",
+      "x": 1003,
+      "y": 185,
+      "w": 301,
+      "h": 31
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1309,
+      "y": 185,
+      "w": 31,
+      "h": 31
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1003,
+      "y": 257,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "div",
+      "text": "",
+      "x": 1003,
+      "y": 340,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1060,
+      "y": 340,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1003,
+      "y": 422,
+      "w": 52,
+      "h": 52
+    },
+    {
+      "tag": "label",
+      "text": "Prompt",
+      "x": 1003,
+      "y": 487,
+      "w": 53,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1319,
+      "y": 487,
+      "w": 21,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "16:9",
+      "x": 1003,
+      "y": 725,
+      "w": 106,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "5″",
+      "x": 1119,
+      "y": 725,
+      "w": 106,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "720p",
+      "x": 1234,
+      "y": 725,
+      "w": 106,
+      "h": 41
+    },
+    {
+      "tag": "label",
+      "text": "Real Faces Mode · On",
+      "x": 1014,
+      "y": 800,
+      "w": 218,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1240,
+      "y": 801,
+      "w": 18,
+      "h": 18
+    },
+    {
+      "tag": "button",
+      "text": "on",
+      "x": 1289,
+      "y": 800,
+      "w": 37,
+      "h": 21
+    },
+    {
+      "tag": "button",
+      "text": "Run",
+      "x": 1003,
+      "y": 854,
+      "w": 88,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1090,
+      "y": 854,
+      "w": 31,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1299,
+      "y": 854,
+      "w": 41,
+      "h": 41
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 16,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 48,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 80,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 112,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 144,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "",
+      "x": 176,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 208,
+      "y": 1032,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 252,
+      "y": 1028,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1204,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "3,608",
+      "x": 1285,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1372,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 621,
+      "y": 1024,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "New",
+      "x": 671,
+      "y": 1024,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 711,
+      "y": 1024,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run All",
+      "x": 768,
+      "y": 1022,
+      "w": 89,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 857,
+      "y": 1022,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "New Chat",
+      "x": 1446,
+      "y": 18,
+      "w": 99,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1834,
+      "y": 16,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1870,
+      "y": 16,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "h3",
+      "text": "Start a conversation",
+      "x": 1482,
+      "y": 455,
+      "w": 384,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Could you help me create a logo for my website ?",
+      "x": 1522,
+      "y": 514,
+      "w": 304,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "I want to make a poster for my event",
+      "x": 1559,
+      "y": 550,
+      "w": 230,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "Could you put my product into the model ?",
+      "x": 1542,
+      "y": 586,
+      "w": 265,
+      "h": 28
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1451,
+      "y": 1027,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "2",
+      "x": 1491,
+      "y": 1027,
+      "w": 53,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Agent",
+      "x": 1552,
+      "y": 1027,
+      "w": 102,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Auto-run",
+      "x": 1662,
+      "y": 1027,
+      "w": 96,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 1766,
+      "y": 1027,
+      "w": 53,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Thinking",
+      "x": 1765,
+      "y": 1027,
+      "w": 94,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1865,
+      "y": 1027,
+      "w": 32,
+      "h": 32
+    }
+  ],
+  "flow": {
+    "viewport": "translate(-346.276px, -74.0291px) scale(1.28727)",
+    "nodes": [
+      {
+        "id": "LoadImage-71329618",
+        "transform": "translate(319px, 192px)",
+        "x": 64,
+        "y": 173,
+        "w": 360,
+        "h": 286,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 425,
+            "cy": 324
+          }
+        ]
+      },
+      {
+        "id": "Text-890d5e5c",
+        "transform": "translate(679px, 192px)",
+        "x": 528,
+        "y": 173,
+        "w": 360,
+        "h": 211,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 528,
+            "cy": 307
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 888,
+            "cy": 286
+          }
+        ]
+      },
+      {
+        "id": "SeedancePro25OmniReferenceGenerate-1e5a2a82",
+        "transform": "translate(1039px, 192px)",
+        "x": 991,
+        "y": 173,
+        "w": 360,
+        "h": 734,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-in-text_input-1",
+            "type": "target",
+            "cx": 991,
+            "cy": 609
+          },
+          {
+            "id": "edge-in-text_input-2",
+            "type": "target",
+            "cx": 991,
+            "cy": 609
+          },
+          {
+            "id": "edge-in-image_1",
+            "type": "target",
+            "cx": 991,
+            "cy": 364
+          },
+          {
+            "id": "edge-in-image_2",
+            "type": "target",
+            "cx": 991,
+            "cy": 364
+          },
+          {
+            "id": "edge-in-video_1",
+            "type": "target",
+            "cx": 991,
+            "cy": 281
+          },
+          {
+            "id": "edge-in-audio_1",
+            "type": "target",
+            "cx": 991,
+            "cy": 447
+          },
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 1374,
+            "cy": 554
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "id": "rf__edge-LoadImage-71329618-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-image_1",
+        "d": "M605.0005888718835,309.0002552564609 C819.0002894593244,309.0002552564609 819.0002894593244,340.59406952006475 1032.9999900467656,340.59406952006475"
+      },
+      {
+        "id": "rf__edge-Text-890d5e5c-edge-out_SeedancePro25OmniReferenceGenerate-1e5a2a82-edge-in-text_input-1",
+        "d": "M965,280 C998.9999950233828,280 998.9999950233828,530.594447925042 1032.9999900467656,530.594447925042"
+      }
+    ]
+  }
+}

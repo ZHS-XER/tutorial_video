@@ -1,0 +1,288 @@
+{
+  "slot": "ep1-s6-assetspage",
+  "url": "https://youart.ai/assets",
+  "pageW": 1920,
+  "pageH": 1080,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Send feedback",
+      "x": 1745,
+      "y": 1020,
+      "w": 151,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 1579,
+      "y": 12,
+      "w": 36,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "3,608",
+      "x": 1627,
+      "y": 16,
+      "w": 75,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Upgrade",
+      "x": 1706,
+      "y": 16,
+      "w": 70,
+      "h": 24
+    },
+    {
+      "tag": "button",
+      "text": "Enrong Xie",
+      "x": 1788,
+      "y": 12,
+      "w": 108,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "YouArt",
+      "x": 14,
+      "y": 16,
+      "w": 97,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 189,
+      "y": 16,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Home",
+      "x": 14,
+      "y": 76,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Workflow",
+      "x": 14,
+      "y": 116,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Image",
+      "x": 14,
+      "y": 156,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Video",
+      "x": 14,
+      "y": 196,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Canvas",
+      "x": 14,
+      "y": 236,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "World",
+      "x": 14,
+      "y": 276,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Logo Animation",
+      "x": 14,
+      "y": 316,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "AI UGC",
+      "x": 14,
+      "y": 356,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "MCP Server",
+      "x": 14,
+      "y": 396,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Projects",
+      "x": 14,
+      "y": 449,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Assets",
+      "x": 14,
+      "y": 489,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Social accounts",
+      "x": 14,
+      "y": 529,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Events",
+      "x": 14,
+      "y": 582,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Release Note 9 9 new release notes",
+      "x": 14,
+      "y": 903,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "a",
+      "text": "Join Discord",
+      "x": 14,
+      "y": 943,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Language English",
+      "x": 14,
+      "y": 996,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Theme Dark",
+      "x": 14,
+      "y": 1036,
+      "w": 211,
+      "h": 36
+    },
+    {
+      "tag": "h1",
+      "text": "Assets",
+      "x": 480,
+      "y": 80,
+      "w": 1200,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Images",
+      "x": 480,
+      "y": 138,
+      "w": 81,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Videos",
+      "x": 569,
+      "y": 138,
+      "w": 78,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Audios",
+      "x": 655,
+      "y": 138,
+      "w": 79,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Worlds",
+      "x": 742,
+      "y": 138,
+      "w": 79,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Workflow Node Template",
+      "x": 829,
+      "y": 138,
+      "w": 201,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Default",
+      "x": 1536,
+      "y": 136,
+      "w": 144,
+      "h": 36
+    },
+    {
+      "tag": "h2",
+      "text": "Today",
+      "x": 480,
+      "y": 196,
+      "w": 1200,
+      "h": 20
+    },
+    {
+      "tag": "h2",
+      "text": "Yesterday",
+      "x": 480,
+      "y": 577,
+      "w": 1200,
+      "h": 20
+    },
+    {
+      "tag": "h2",
+      "text": "Previous 7 Days",
+      "x": 480,
+      "y": 937,
+      "w": 1200,
+      "h": 20
+    },
+    {
+      "tag": "h2",
+      "text": "July 2026",
+      "x": 480,
+      "y": 1347,
+      "w": 1200,
+      "h": 20
+    }
+  ]
+}

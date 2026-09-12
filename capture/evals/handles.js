@@ -1,0 +1,1 @@
+Object.fromEntries([...document.querySelectorAll('.react-flow__node')].map((n) => [n.getAttribute('data-id'), Object.fromEntries([...n.querySelectorAll('.react-flow__handle')].map((h) => { const r = h.getBoundingClientRect(); return [h.getAttribute('data-handleid'), [Math.round(r.x + r.width / 2), Math.round(r.y + r.height / 2)]]; }))]))

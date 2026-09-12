@@ -1,0 +1,378 @@
+{
+  "slot": "ep1-basics-s1-dbl",
+  "url": "https://youart.ai/workflow/d97e9e57-06c6-485c-b3f8-d9a54676dc85",
+  "pageW": 1536,
+  "pageH": 864,
+  "els": [
+    {
+      "tag": "button",
+      "text": "Add node",
+      "x": 18,
+      "y": 348,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Media Assets",
+      "x": 18,
+      "y": 401,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Node Assets",
+      "x": 18,
+      "y": 441,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Community Assets",
+      "x": 18,
+      "y": 481,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to replace Supports JPEG, PNG, WebP (max 1",
+      "testid": "rf__wrapper",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "div",
+      "text": "Image Loader Drop image here or click to replace Supports JPEG, PNG, WebP (max 1",
+      "testid": "rf__node-LoadImage-170c7710",
+      "x": 470,
+      "y": 100,
+      "w": 280,
+      "h": 382
+    },
+    {
+      "tag": "button",
+      "text": "Grid Split",
+      "x": 423,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Upscale",
+      "x": 459,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Image Inpaint",
+      "x": 495,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Change Angle",
+      "x": 531,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Remove Background",
+      "x": 567,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "More tools",
+      "x": 603,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 648,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 684,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 729,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 765,
+      "y": 27,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 717,
+      "y": 269,
+      "w": 24,
+      "h": 24
+    },
+    {
+      "tag": "svg",
+      "text": "",
+      "testid": "rf__background",
+      "x": 0,
+      "y": 0,
+      "w": 1536,
+      "h": 864
+    },
+    {
+      "tag": "button",
+      "text": "100%",
+      "x": 16,
+      "y": 816,
+      "w": 48,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Node options",
+      "x": 64,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "a",
+      "text": "Join Discord",
+      "x": 96,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "0",
+      "x": 128,
+      "y": 816,
+      "w": 32,
+      "h": 32
+    },
+    {
+      "tag": "button",
+      "text": "Info",
+      "x": 172,
+      "y": 812,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Project menu",
+      "x": 12,
+      "y": 12,
+      "w": 68,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Share",
+      "x": 1252,
+      "y": 12,
+      "w": 79,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "10,673",
+      "x": 1333,
+      "y": 12,
+      "w": 83,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Account menu",
+      "x": 1424,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Select",
+      "x": 669,
+      "y": 808,
+      "w": 46,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "New",
+      "x": 719,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Open Video Editor",
+      "x": 759,
+      "y": 808,
+      "w": 36,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Run All",
+      "x": 816,
+      "y": 806,
+      "w": 89,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "",
+      "x": 905,
+      "y": 806,
+      "w": 32,
+      "h": 40
+    },
+    {
+      "tag": "button",
+      "text": "Open Agent Chat",
+      "x": 1484,
+      "y": 12,
+      "w": 40,
+      "h": 40
+    },
+    {
+      "tag": "input",
+      "text": "Search nodes...",
+      "x": 800,
+      "y": 445,
+      "w": 166,
+      "h": 20
+    },
+    {
+      "tag": "button",
+      "text": "Upload",
+      "x": 770,
+      "y": 478,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Text",
+      "x": 770,
+      "y": 516,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Video models",
+      "x": 770,
+      "y": 554,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Image models",
+      "x": 770,
+      "y": 592,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Audio models",
+      "x": 770,
+      "y": 630,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Video tools",
+      "x": 770,
+      "y": 668,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Image tools",
+      "x": 770,
+      "y": 706,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "Audio tools",
+      "x": 770,
+      "y": 744,
+      "w": 204,
+      "h": 36
+    },
+    {
+      "tag": "button",
+      "text": "LLM Models",
+      "x": 770,
+      "y": 782,
+      "w": 204,
+      "h": 36
+    }
+  ],
+  "flow": {
+    "viewport": "translate(0px, 0px) scale(1)",
+    "nodes": [
+      {
+        "id": "LoadImage-170c7710",
+        "transform": "translate(470px, 100px)",
+        "x": 470,
+        "y": 100,
+        "w": 280,
+        "h": 382,
+        "selected": false,
+        "handles": [
+          {
+            "id": "edge-out",
+            "type": "source",
+            "cx": 767,
+            "cy": 382
+          }
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "youart-tutorial-video",
+  "version": "0.1.0",
+  "private": true,
+  "description": "YouArt 教程视频工作区：engine（screen-story 引擎）+ youart（产品适配）+ works/<slug>（每支视频自包含）",
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "compositions": "remotion compositions src/index.ts",
+    "render": "node tools/render.mjs",
+    "still": "node tools/render.mjs --still",
+    "new": "node tools/new-work.mjs",
+    "browser": "node capture/browser-daemon.mjs",
+    "j": "node capture/journey.mjs",
+    "replay": "node capture/verify-replay.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.520",
+    "@remotion/media": "4.0.520",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.520"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.18",
+    "puppeteer": "^25.0.0",
+    "typescript": "6.0.3"
+  }
+}
