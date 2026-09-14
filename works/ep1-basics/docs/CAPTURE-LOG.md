@@ -49,3 +49,19 @@
   舞台项目的 **Auto-collapse 处于开启**（账号级偏好，S3 采集时开过没关？），未选中节点全部收起；`plans/s1d.mjs` 右键 → Auto-collapse nodes 关掉再采，采完开回去。快照 **s1-files**，标题 `EP1 Basics`→`Untitled Project`、积分 10,5xx→10,673 由脚本回填；toast "Auto-collapse turned off" 成片 patchCss 隐藏。采完 `delete_nodes` 删掉三枚节点。
 - Finder 截图：`/tmp/Brand photos` 放三张样图，AppleScript 开 Finder 窗口（icon view、sidebar width 0、bounds 200,150→1000,650、icon size 96、按名排序），`screencapture -x -R 200,150,800,500` 三态各一张，PIL 抠圆角 26px 存 `captures/assets/finder/finder-{1,2,3}.png`（2x，1600×1000）。图标中心（窗口 pt）：tee (72,135)、tote (210,135)、hoodie (348,135)。
 - VO 项目：新增 3 句（s1-7b/7c/7d，run 6fb02562），3 个 Nano Banana Pro 节点（run 38a3855f，1K 1:1 各 1 张）。
+
+## v3.3 补采（2026-09-12 傍晚，舞台项目）
+- `plans/s2e.mjs`：E3 状态下 ⌃+拖竖线 (1185,430)→(1185,780) 切断进 Seedance 的两条线 → 快照 **s2-cut**（Seedance 失去输入后 Frames 区与提示词芯片消失）。舞台 Auto-collapse 仍是开启态，脚本先关后开。
+- `plans/s2f.mjs` / `s2g.mjs` / `s2h.mjs`：多选一起连线试验，全部只连一条（详见 SCRIPT.md v3.3）。s2-multisel / s2-multi 两张快照是失败试验产物，不进成片。
+  实测顺带确认：点节点标题栏**右半**才会选中（x+205），点左半会碰到模型切换器；⇧框选可靠；⌘Z 撤销一步连线有效。
+- 试验后舞台连线被撤销掉两条，用 MCP `add_edges` 补回 GPT→Seedance first_frame、Text→Seedance text_input-1；舞台现在与 E3 一致。
+- VO：新增 s2-12b / s2-12c，s8-1 改词重生成（run abf2e5bb）。旧 s8-1 音频留在 out/vo/brian/s8-1-chris-thatsthebasics.mp3。
+
+## v3.4（2026-09-13）
+- `plans/s2i.mjs`：按用户截图找选区右侧的蓝色共用输出点——本机无头 Chrome 里的产品仍是旧版（GPT 节点是 "Sources" 布局，用户截图是 "参考图片 1/16" 新布局），选区矩形存在但没有该点。重采了 **s2-multisel**（切断态 + GPT/Text 多选 + 选区工具栏）供成片用；蓝点与连线为 overlay 复刻。试验后 MCP `add_edges` 补回两条线，舞台仍与 E3 一致。
+- VO：s2-12c 重写重生成（run 2d75f718）。
+
+## v3.5（2026-09-13 下午，素材项目）
+- `plans/m9.mjs`（半途报错）+ `m9b.mjs`：Preferences → Edit → 点 Timestamp ✕ → 快照 **m-prefs-edit2** → 抓 YouArt 积木拖柄用真实鼠标拖到 Name 左侧 → 快照 **m-prefs-edit3**（预览 YouArt_Hero_shot_03.png）→ Done → 快照 **m-prefs-done**。积木编辑**即时保存**（m9 失败后重进仍是删掉 Timestamp 的状态），采完 Edit → Reset → Done 恢复默认文件名，并恢复默认色 + Dots（脚本校验）。
+- YouArt 积木是自定义文本块，label 在 `<input>` 里，innerText 为空——按 class `rounded-md border bg-background p-1` 找块。三张快照积分 10,498 手动 sed 成 10,673（patchMaterialHtml 只认 10,6xx）。
+- VO：s7-5 改词重生成，新增 s7-5b / s7-5c（run 1c6e6b80）。

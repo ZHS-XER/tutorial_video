@@ -38,9 +38,23 @@ export const seqLines = (ids: string[], opts: { start?: number; gap?: number; ex
   });
   return { t, end: cur };
 };
-/** 字幕表：每句从起点显示到下一句起点前 4 帧（或本句 until + 10） */
-export const capsOf = (t: Record<string, { from: number; until: number }>, ids: string[], tail = 10, top: string[] = []): Cap[] =>
-  ids.map((id, i) => ({ from: t[id].from, until: i < ids.length - 1 ? t[ids[i + 1]].from - 4 : t[id].until + tail, text: CAPS[id], ...(top.includes(id) ? { y: CAP_TOP } : {}) }));
+/** 一句字幕按 " | " 拆成几段先后显示（用户 2026-09-13：不要两行），各段时长按字数比例分配配音时长；最后一段延到 until */
+export const splitCap = (text: string, from: number, voEnd: number, until: number, y?: number): Cap[] => {
+  const parts = text.split(/\s*\|\s*/).filter(Boolean);
+  if (parts.length === 1) return [{ from, until, text, ...(y != null ? { y } : {}) }];
+  const total = parts.reduce((n, t) => n + t.replace(/\*/g, '').length, 0);
+  const out: Cap[] = []; let cur = from;
+  parts.forEach((t, i) => {
+    const dur = Math.round(((voEnd - from) * t.replace(/\*/g, '').length) / total);
+    const end = i === parts.length - 1 ? until : cur + dur;
+    out.push({ from: cur, until: i === parts.length - 1 ? end : end - 2, text: t, ...(y != null ? { y } : {}) });
+    cur = end;
+  });
+  return out;
+};
+/** 字幕表：每句从起点显示到下一句起点前 4 帧（或本句 until + 10）；含 " | " 的句子拆段 */
+export const capsOf = (t: Record<string, { from: number; voEnd: number; until: number }>, ids: string[], tail = 10, top: string[] = []): Cap[] =>
+  ids.flatMap((id, i) => splitCap(CAPS[id], t[id].from, t[id].voEnd, i < ids.length - 1 ? t[ids[i + 1]].from - 4 : t[id].until + tail, top.includes(id) ? CAP_TOP : undefined));
 
 /** 某 cut 内相对帧 → 光标页面坐标（含弹簧平滑，与 <Cursor> 一致） */
 export const curAtFrom = (shot: Shot, cutFrom: number) => (f: number): [number, number] => cursorPosAt(shot.curKeys, f + cutFrom);

@@ -1,4 +1,4 @@
-// S0 — 片头（沿用归档 v2.3 的 190 帧动画：点阵画布上迷你 workflow 长出来 → 徽标 + 大标题烟条显影 → 7 步轨道），
+// S0 — 片头：点阵画布上迷你 workflow 长出来 → 徽标 + 大标题烟条显影（第一屏）→ 切到第二屏：七步内容竖排清单从上到下点亮（2026-09-12 用户：横向轨道不好看，拆两屏、竖排），
 // 之后接一段"成片预览"：圆角矩形卡片里播放店招视频（s0-2 "…Like this."），淡出进第一章。无音效。
 import React from 'react';
 import { Img, OffthreadVideo, Sequence, staticFile } from 'remotion';
@@ -7,7 +7,7 @@ import { seg } from '@engine/ui/ux';
 import { BlurSlideText } from '@engine/ui/textFx';
 
 export type TitleStep = { n: number; title: string };
-export const TITLE_ANIM = 200; // 标题动画段
+export const TITLE_ANIM = 300; // 标题动画段（2026-09-12 拆成两屏：0–118 徽标+大标题，118–230 七步竖排清单）
 export const TITLE_PREVIEW = 143; // 成片预览段（2026-09-12 +23 帧 ≈ 0.75s：让示例视频播完）
 export const TITLE_DUR = TITLE_ANIM + TITLE_PREVIEW;
 
@@ -35,7 +35,7 @@ const EDGES = [
 ] as const;
 
 const MiniGraph: React.FC<{ u: number }> = ({ u }) => {
-  const gone = seg(u, 50, 68, E.inOut);
+  const gone = seg(u, 84, 102, E.inOut);
   if (gone >= 1) return null;
   return (
     <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: 'absolute', inset: 0, opacity: 1 - gone, transform: `scale(${1 + gone * 0.08})`, transformOrigin: '50% 50%', filter: gone > 0.02 ? `blur(${gone * 14}px)` : undefined }}>
@@ -64,27 +64,30 @@ const MiniGraph: React.FC<{ u: number }> = ({ u }) => {
 };
 
 export const S0Title: React.FC<{ u: number; title: string; ep: string; steps: TitleStep[]; previewSrc: string }> = ({ u, title, ep, steps, previewSrc }) => {
-  // —— 标题段 ——
-  const titleOut = 1 - seg(u, TITLE_ANIM - 14, TITLE_ANIM, E.inOut);
-  const lift = seg(u, 106, 124, E.inOut);
-  const badgeIn = seg(u, 58, 72, E.zoom);
-  const lineW = seg(u, 82, 102, E.zoom);
-  const glow = seg(u, 54, 94, E.zoom) * (1 - seg(u, 170, 198, E.inOut) * 0.6);
-  const railX0 = 300, railX1 = 1620, railY = 690;
-  const rail = seg(u, 114, 140, E.zoom);
+  // —— 第一屏：徽标 + 大标题 ——
+  const T1_OUT = 176; // 第一屏开始淡出（2026-09-13 用户：迷你 workflow 与大标题都多停一会）
+  const titleOut = 1 - seg(u, T1_OUT, T1_OUT + 12, E.inOut);
+  const badgeIn = seg(u, 92, 106, E.zoom);
+  const lineW = seg(u, 116, 136, E.zoom);
+  const glow = seg(u, 88, 128, E.zoom) * titleOut;
+  // —— 第二屏：七步竖排清单 ——
+  const L0 = T1_OUT + 10; // 清单入场帧
+  const listOut = 1 - seg(u, TITLE_ANIM - 14, TITLE_ANIM, E.inOut);
   const n = steps.length;
-  const gap = (railX1 - railX0) / (n - 1);
+  const ROW = 76, LIST_X = 700, LIST_W = 520;
+  const listTop = 540 - (n * ROW) / 2;
+  const railGrow = seg(u, L0, L0 + 30, E.zoom);
   // —— 预览段 ——
   const pv = seg(u, TITLE_ANIM - 6, TITLE_ANIM + 14, E.zoom);
   const pvOut = seg(u, TITLE_DUR - 12, TITLE_DUR, E.inOut);
   return (
     <div style={{ position: 'absolute', inset: 0, background: C.ink, overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: -60, backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.17) 1.2px, transparent 1.8px)', backgroundSize: '28px 28px', backgroundPosition: `${(u * 0.12).toFixed(2)}px ${(u * 0.06).toFixed(2)}px`, maskImage: 'radial-gradient(ellipse 70% 62% at 50% 50%, black 30%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 62% at 50% 50%, black 30%, transparent 100%)', opacity: 0.9 * (1 - pvOut) }} />
-      {u < TITLE_ANIM ? (
+      {u < T1_OUT + 12 ? (
         <div style={{ position: 'absolute', inset: 0, opacity: titleOut }}>
-          <div style={{ position: 'absolute', left: 960 - 700, top: 540 - 360 - lift * 150, width: 1400, height: 720, background: `radial-gradient(ellipse at center, rgba(244,245,92,${0.10 * glow}) 0%, transparent 60%)`, filter: 'blur(20px)' }} />
+          <div style={{ position: 'absolute', left: 960 - 700, top: 540 - 360, width: 1400, height: 720, background: `radial-gradient(ellipse at center, rgba(244,245,92,${0.10 * glow}) 0%, transparent 60%)`, filter: 'blur(20px)' }} />
           <MiniGraph u={u} />
-          <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `translateY(${-lift * 180}px) scale(${1 - lift * 0.12})`, transformOrigin: '50% 50%' }}>
+          <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${1 - (1 - titleOut) * 0.06})`, transformOrigin: '50% 50%' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 26 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 24px 12px 16px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.16)', background: 'rgba(255,255,255,0.05)', opacity: badgeIn, transform: `translateY(${(1 - badgeIn) * 14}px)` }}>
                 <Img src={staticFile('shared/brand/youart-logo-dark.svg')} style={{ width: 34, height: 34 }} />
@@ -93,31 +96,34 @@ export const S0Title: React.FC<{ u: number; title: string; ep: string; steps: Ti
                 <span style={{ fontFamily: F.sans, fontSize: 24, fontWeight: 700, letterSpacing: '0.04em', color: C.accent }}>{ep}</span>
               </div>
               <div style={{ fontFamily: F.sans, fontSize: 112, fontWeight: 700, letterSpacing: '-0.035em', lineHeight: 1.02, color: C.paper }}>
-                <BlurSlideText frame={u} from={64} words={[{ t: title }]} split="char" stagger={1.1} dur={16} dy={26} blurMax={12} />
+                <BlurSlideText frame={u} from={98} words={[{ t: title }]} split="char" stagger={1.1} dur={16} dy={26} blurMax={12} />
               </div>
               <div style={{ height: 4, width: 260 * lineW, background: C.accent, borderRadius: 2, boxShadow: `0 0 18px rgba(244,245,92,${0.5 * lineW})` }} />
             </div>
           </div>
-          <div style={{ position: 'absolute', inset: 0 }}>
-            <div style={{ position: 'absolute', left: railX0, top: railY - 1, width: (railX1 - railX0) * rail, height: 2, background: 'rgba(255,255,255,0.28)', borderRadius: 1 }} />
-            {steps.map((s, i) => {
-              const at = 120 + i * 5;
-              const dot = popScale(u, at, 12);
-              const label = seg(u, at + 3, at + 17, E.zoom);
-              const x = railX0 + gap * i;
-              return (
-                <div key={s.n} style={{ position: 'absolute', left: x, top: railY, width: 0 }}>
-                  <div style={{ position: 'absolute', left: -9, top: -9, width: 18, height: 18, borderRadius: 9, background: C.ink, border: `2px solid ${C.accent}`, transform: `scale(${Math.max(0, dot)})`, boxShadow: `0 0 14px rgba(244,245,92,${0.45 * Math.min(1, dot)})` }}>
-                    <div style={{ position: 'absolute', left: 4, top: 4, width: 6, height: 6, borderRadius: 3, background: C.accent }} />
-                  </div>
-                  <div style={{ position: 'absolute', left: -gap / 2, top: 26, width: gap, textAlign: 'center', opacity: label, transform: `translateY(${(1 - label) * 12}px)`, filter: label < 0.98 ? `blur(${(1 - label) * 6}px)` : undefined }}>
-                    <div style={{ fontFamily: F.mono, fontSize: 19, fontWeight: 600, letterSpacing: '0.1em', color: C.accent, marginBottom: 10 }}>{String(s.n).padStart(2, '0')}</div>
-                    <div style={{ fontFamily: F.sans, fontSize: 27, fontWeight: 600, letterSpacing: '-0.01em', lineHeight: 1.2, color: C.paper, padding: '0 6px' }}>{s.title}</div>
-                  </div>
+        </div>
+      ) : null}
+      {u >= L0 && u < TITLE_ANIM ? (
+        <div style={{ position: 'absolute', inset: 0, opacity: listOut }}>
+          {/* 左侧竖轨：从上到下长出 */}
+          <div style={{ position: 'absolute', left: LIST_X, top: listTop + ROW / 2, width: 2, height: (n - 1) * ROW * railGrow, background: 'rgba(255,255,255,0.22)' }} />
+          {steps.map((st, i) => {
+            const at = L0 + 6 + i * 6;
+            const dot = popScale(u, at, 12);
+            const label = seg(u, at + 3, at + 17, E.zoom);
+            const y = listTop + i * ROW;
+            return (
+              <div key={st.n} style={{ position: 'absolute', left: LIST_X, top: y, height: ROW, width: LIST_W, display: 'flex', alignItems: 'center' }}>
+                <div style={{ position: 'absolute', left: -8, top: ROW / 2 - 9, width: 18, height: 18, borderRadius: 9, background: C.ink, border: `2px solid ${C.accent}`, transform: `scale(${Math.max(0, dot)})`, boxShadow: `0 0 14px rgba(244,245,92,${0.45 * Math.min(1, dot)})` }}>
+                  <div style={{ position: 'absolute', left: 4, top: 4, width: 6, height: 6, borderRadius: 3, background: C.accent }} />
                 </div>
-              );
-            })}
-          </div>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: 22, marginLeft: 44, opacity: label, transform: `translateX(${(1 - label) * 16}px)`, filter: label < 0.98 ? `blur(${(1 - label) * 6}px)` : undefined }}>
+                  <span style={{ fontFamily: F.mono, fontSize: 24, fontWeight: 600, letterSpacing: '0.1em', color: C.accent, width: 44 }}>{String(st.n).padStart(2, '0')}</span>
+                  <span style={{ fontFamily: F.sans, fontSize: 40, fontWeight: 600, letterSpacing: '-0.015em', lineHeight: 1.1, color: C.paper, whiteSpace: 'nowrap' }}>{st.title}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
       ) : null}
       {/* 成片预览：圆角矩形卡片弹入，店招视频播放 */}

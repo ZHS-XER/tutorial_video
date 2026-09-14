@@ -19,7 +19,10 @@ export const Caption: React.FC<{
   until: number;
   words: Array<{ t: string; hi?: boolean }>;
   y?: number;
-}> = ({ u, from, until, words, y = 1002 }) => {
+  /** 固定字号（不随句长缩放，不换行——长句由编排拆段先后显示）。底部字幕以底边锚定 */
+  size?: number;
+  maxWidth?: number;
+}> = ({ u, from, until, words, y = 1002, size, maxWidth = 1500 }) => {
   if (u < from - 2 || u > until + 8) return null;
   const inn = seg(u, from, from + 8, E.zoom);
   const out = seg(u, until, until + 7, E.inOut);
@@ -27,14 +30,15 @@ export const Caption: React.FC<{
   if (op <= 0.005) return null;
   // 长句自动缩字号：46 字以内 56px，更长按比例缩到最小 36px（避免撑出 1920 宽）
   const chars = words.reduce((n, w) => n + w.t.length + 1, 0);
-  const fontSize = Math.min(56, Math.max(36, Math.round((56 * 46) / Math.max(46, chars))));
+  const fontSize = size ?? Math.min(56, Math.max(36, Math.round((56 * 46) / Math.max(46, chars))));
+  const anchorBottom = size != null && y > 540;
   return (
     <div
       style={{
         position: 'absolute',
         left: 0,
         right: 0,
-        top: y - 44,
+        ...(anchorBottom ? { bottom: 1080 - (y + 44) } : { top: y - 44 }),
         display: 'flex',
         justifyContent: 'center',
         pointerEvents: 'none',
@@ -43,7 +47,10 @@ export const Caption: React.FC<{
     >
       <div
         style={{
-          display: 'flex',
+          display: size != null ? 'inline-block' : 'flex',
+          textAlign: 'center',
+          maxWidth: size != null ? maxWidth : undefined,
+          lineHeight: size != null ? 1.22 : undefined,
           gap: '0.32em',
           alignItems: 'baseline',
           padding: '14px 34px',
@@ -72,6 +79,7 @@ export const Caption: React.FC<{
                 filter: `blur(${(1 - wi) * 6}px)`,
                 transform: `translateY(${(1 - wi) * 10}px)`,
                 display: 'inline-block',
+                marginRight: size != null && i < words.length - 1 ? '0.3em' : undefined,
               }}
             >
               {w.t}

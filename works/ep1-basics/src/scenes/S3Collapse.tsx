@@ -47,11 +47,8 @@ const build = () => {
     .go(B.rc3, RC).click(B.rc3, { cut: CTX3, cutDelay: 2 })
     .go(B.auto, AUTO_ITEM).click(B.auto, { cut: AUTO, cutDelay: 3 })
     .go(B.auto + 30, at(700, 780), 14).curHold(S3_DUR);
-  // 相机：推近一次（箭头/节点头是小目标），平移接力到右键菜单，结尾收回
-  shot
-    .zoomIn(B.chevron, focus(760, 340, 1.35), 1.35).camHold(B.select - 16).panTo(B.select - 2, focus(960, 420, 1.35))
-    .camHold(B.rc1 - 20).panTo(B.rc1 - 4, focus(420, 560, 1.35))
-    .camHold(B.auto + 10).zoomOut(B.auto + 16);
+  // 相机：箭头 / 选中 / ⌘[ ⌘] 全屏就看得清（2026-09-12 用户：推近反而截断），只为右键菜单推近一次，结尾收回
+  shot.zoomIn(B.rc1, focus(420, 560, 1.35), 1.35).camHold(B.auto + 10).zoomOut(B.auto + 16);
   // 点选 GPT 节点后立刻出现选中框（快照 C1 里它还未被选中）
   addDrive(shot, C1, nodeSelected(GPT_M, B.select - cutFrom(shot, C1)));
   const rings: RingCue[] = [

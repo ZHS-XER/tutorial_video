@@ -1,6 +1,6 @@
 # HANDOFF — ep1-basics v3.1 接手说明（2026-09-12 修改轮之后）
 
-v3.2 成片：`out/ep1-basics.mp4` 5:29 带配音（Chris；v3.1 为 5:14，多了 Finder 拖拽/粘贴一段），`out/ep1-basics-novo.mp4` 无配音；v3.0（Brian，5:52）留在 `out/ep1-basics-v3.0-brian.mp4`。修改内容见 SCRIPT.md「v3.1 修改轮」。这份文档给下一轮"按用户反馈修改"用：先读本文，再读 `SCRIPT.md`（台词 + 制作说明）与 `CAPTURE-LOG.md`（服务端痕迹 + 实测产品行为），工程通用规范与坑在根目录 `AGENTS.md`（"EP1 v3 采集经验"一节是本轮新增）。
+v3.5 成片：`out/ep1-basics.mp4` 5:53 带配音（Chris；v3.2 5:29 + ⌃拖切线/⌘Z 一段，S3 不再推近，结尾去大字），`out/ep1-basics-novo.mp4` 无配音；v3.0（Brian，5:52）留在 `out/ep1-basics-v3.0-brian.mp4`。修改内容见 SCRIPT.md「v3.1 修改轮」。这份文档给下一轮"按用户反馈修改"用：先读本文，再读 `SCRIPT.md`（台词 + 制作说明）与 `CAPTURE-LOG.md`（服务端痕迹 + 实测产品行为），工程通用规范与坑在根目录 `AGENTS.md`（"EP1 v3 采集经验"一节是本轮新增）。
 
 ## 1. 结构一句话
 `src/Main.tsx` 把 片头(S0Title) + 7×[章节卡(Chapter) + 场景 S1…S7] + 结尾(Outro) 串起来；`src/timeline.ts` 从各场景导出的 `Sx_DUR` 推段位；每个场景文件自带 台词节拍 / 光标编排 / 相机 / DOM 驱动 / 提示环 / 键帽，Main 只做平移与叠加。
@@ -13,6 +13,7 @@ v3.2 成片：`out/ep1-basics.mp4` 5:29 带配音（Chris；v3.1 为 5:14，多�
 | 光标路线 | 一律 `.go(f, aim)`（f−dur 前原地不动，dur 帧直达，默认按距离 12–24 帧）；只有拖拽用 `.click(f).cur(f+N, target)`。**不要**写相隔很久的两个 `.cur()`，那会整段慢慢漂移 | 否 |
 | 连线目标节点氛围光 / 点选选中框 | `nodeGlow(nodeId, from, to)`（可传多个窗口）/ `nodeSelected(nodeId, from)`，见 `youart/drivesFlow.ts` | 否 |
 | 相机推得不够近/偏 | 场景末尾 `.zoomIn/.panTo/.cam(...)`，锚点一律用 `focus(cx, cy, z)`（`_shared.tsx`，ScreenStage 是绕锚点缩放模型） | 否 |
+| 字幕太长 | 在 `out/vo/lines.json` 的 caption 里用 " | " 拆段（不换行，段落先后显示），重生成 lines.gen.ts | 否 |
 | 字幕挡住底部工具栏 | `capsOf(t, IDS, 10, ['s5-3', ...])` 第四参数列出要放顶部的句 id | 否 |
 | 提示环位置/时长 | 场景里 `rings: RingCue[]`（`at` 一般 = 点击帧−10，`dur` 14 点击后即消失） | 否 |
 | 键帽 | 场景里 `keys: KeyCue[]`（K 帧压下，产品状态在 K+6 切） | 否 |
@@ -22,17 +23,17 @@ v3.2 成片：`out/ep1-basics.mp4` 5:29 带配音（Chris；v3.1 为 5:14，多�
 
 ## 3. 场景 ↔ 快照 slot（前缀 `ep1-basics-`）
 - **S1Create**（舞台）：s1-workflows → s1-empty → s1-menu → s1-submenu → s1-search → s1-node1（patchCss 隐藏面板）→ s1-loaded → s1-files（拖入 1 枚，hoodie/tote 隐藏）→ s1-files（粘贴后 3 枚）→ s1-loaded（Delete 之后）→ s1-dbl → s1-dblsearch → s1-node2。Finder 窗口/文件影子是 S1Create.tsx 里的 overlay 组件，截图在 captures/assets/finder/
-- **S2Connect**（舞台→素材）：s1-node2 → s2-edge1 → s2-edgehover → s2-deleted → s2-edge1 → s2-prompt-focus → s2-prompt（假运行 nodeRunning + injectNodePreview 注入店招图）→ s2-dbltext → s2-dbltextsearch → s2-textnode → s2-text-focus → s2-textfilled → s2-dblvideo → s2-dblvideosearch → s2-videonode → s2-edge2 → s2-edge3 → s2-built（Run All 假运行）→ **m-built**（素材项目，视频用 OffthreadVideo 叠在 1230,100,280×280）。Text/Seedance 尚未"创建"的阶段用 patchCss HIDE_TV / HIDE_V 隐藏。
+- **S2Connect**（舞台→素材）：s1-node2 → s2-edge1 → s2-edgehover → s2-deleted → s2-edge1 → s2-prompt-focus → s2-prompt（假运行 nodeRunning + injectNodePreview 注入店招图）→ s2-dbltext → s2-dbltextsearch → s2-textnode → s2-text-focus → s2-textfilled → s2-dblvideo → s2-dblvideosearch → s2-videonode → s2-edge2 → s2-edge3 → s2-cut（⌃拖切断，overlay 红虚线）→ s2-multisel（GPT+Text 多选；overlay 蓝色共用输出点 SharedDot）→ s2-edge3（拖点落下，两节点仍选中）→ s2-edge3（点空白）→ s2-built（Run All 假运行）→ **m-built**（素材项目，视频用 OffthreadVideo 叠在 1230,100,280×280）。Text/Seedance 尚未"创建"的阶段用 patchCss HIDE_TV / HIDE_V 隐藏。
 - **S3Collapse**（素材）：m-built → m-c1 → m-c2 → m-x2 → m-ctx1 → m-allcollapsed → m-ctx2 → m-allexpanded → m-ctx3 → m-autoc
 - **S4Focus**（素材）：m-zoomout → m-sel2 → m-fit2 → m-focus1 → m-zoommenu → m-fitall（viewportLerp 复刻视口变化）
 - **S5Layout**（素材）：m-fitall → m-selall（工具栏隐藏）→ m-arranged → m-tidy（取消选中）→ m-arranged（再 ⌘A）→ m-almenu → m-horizontal（+ injectAlMenu 注入菜单）→ m-vertical → m-arranged（HIDE_TOAST）→ m-tidy → m-infomenu → m-shortcuts → m-tidy。选中态 cut 统一 patch `SEL_CSS`（隐藏底部 Run 胶囊 + 菜单向上弹）
 - **S6Assets**（素材）：m-tidy → m-assets（HIDE_GRID 只留 3 格）→ m-assetshover → m-assetdropped（MOVE_DROPPED 把新节点挪到 Seedance 右侧）→ m-assetspage（HIDE_PAGE 只留 Today 前三）
-- **S7Prefs**（素材）：m-tidy → m-settings → m-prefs → m-prefs-color → m-prefs-grid → m-prefs-edit（Edit 积木编辑态）→ m-prefs-grid（Done）→ m-result（全部 HIDE_EXTRA 隐藏多出的 LoadImage-e1d5c794）
+- **S7Prefs**（素材）：m-tidy → m-settings → m-prefs → m-prefs-color → m-prefs-grid → m-prefs-edit（Edit 积木编辑态）→ m-prefs-edit2（删 Timestamp）→ m-prefs-edit3（YouArt 拖到最前）→ m-prefs-done（Done，预览 YouArt_Hero_shot_03.png）→ m-result（全部 HIDE_EXTRA 隐藏多出的 LoadImage-e1d5c794）
 - 舞台节点 id：LoadImage-170c7710 / GptImage2Generate-d73a6f20 / Text-ecfad1d4 / SeedancePro25VideoGenerate-a934527d；素材节点 id 见 CAPTURE-LOG。
 - 快照页面坐标 = 1536×864 CSS px，viewport translate(0,0) scale(1)（素材 S4–S7 的视口各不相同，看 `captures/meta/<slot>.json` 的 `flow.viewport`）。
 
 ## 4. 时间线（TL 帧，30fps；改动后会变，用 `python3 out/plan/tl.py` 重算，它复刻了各场景的 extra/gap，改场景后要同步改它）
-title 0–343 · ch1 343 · s1 418–2282 · ch2 · s2 2357–4597 · ch3 · s3 4672–5846 · ch4 · s4 5921–6713 · ch5 · s5 6788–8048 · ch6 · s6 8123–8598 · ch7 · s7 8673–9473 · outro 9473–9863（≈5:29）。
+title 0–443 · ch1 443 · s1 518–2382 · ch2 · s2 2457–5118 · ch3 · s3 5193–6367 · ch4 · s4 6442–7234 · ch5 · s5 7309–8569 · ch6 · s6 8644–9119 · ch7 · s7 9194–10205 · outro 10205–10595（≈5:53）。
 各句起点：`out/plan/tl.py` 输出的 `Sx lines`。
 
 ## 5. 看效果与出片
@@ -50,6 +51,7 @@ title 0–343 · ch1 343 · s1 418–2282 · ch2 · s2 2357–4597 · ch3 · s3 
 片头示例视频多停 0.75s；s1-1 不念网址；光标全片 go() 直达不漂移、无摆动；S1/S6/S7 不推近、S2 只推 ✕；双击点离节点更远；连线目标节点蓝色氛围光；S3 点选立刻出选中框；S5 字幕顶部 + 隐藏底部胶囊 + 重新选中再点 Auto Layout + 菜单向上弹 + Horizontal 下再次悬停有菜单；S6 拖入节点不重叠、不缩放；S7 ⌘, 与 Preferences 分开、新增 Edit 演示；配音 Chris。
 
 ## 8. 已知可再打磨的点（未被用户提出，仅备忘）
+- "多选节点一起连线"的蓝点是 overlay 复刻（本机产品版本没有）；产品更新到新版后可重采 s2-multisel 把真点采进来、去掉 SharedDot。
 - S2 结尾 "That's a complete workflow" 时镜头收回 z=1，四节点底部略被字幕压住。
 - m-focus1 快照里 GPT 节点上方带着图片工具悬浮条（产品真实 UI）。
 - 片头 7 步轨道文字 27px，在 1080p 偏小。

@@ -11,6 +11,7 @@ import type { TutorialProps } from '../../registry';
 import './materials.gen';
 import { S, CHAPTERS, TOTAL_TL } from './timeline';
 import { VO_DUR } from './vo.gen';
+import { CAPS } from './lines.gen';
 import { S0Title, TITLE_ANIM } from './scenes/S0Title';
 import { Chapter } from './scenes/Chapter';
 import { Outro, OUTRO_RECAP } from './scenes/Outro';
@@ -21,7 +22,7 @@ import { S4Focus, S4_CAPTIONS, S4_KEYS, S4_SFX, S4_VO } from './scenes/S4Focus';
 import { S5Layout, S5_CAPTIONS, S5_KEYS, S5_SFX, S5_VO } from './scenes/S5Layout';
 import { S6Assets, S6_CAPTIONS, S6_KEYS, S6_SFX, S6_VO } from './scenes/S6Assets';
 import { S7Prefs, S7_CAPTIONS, S7_KEYS, S7_SFX, S7_VO } from './scenes/S7Prefs';
-import type { Cap } from './scenes/_shared';
+import { splitCap, type Cap } from './scenes/_shared';
 
 export { TOTAL_TL };
 const VIDEO = 'works/ep1-basics/captures/assets/sign-video.mp4';
@@ -41,15 +42,26 @@ const SECTIONS: Array<{ key: string; caps: Cap[]; keys: KeyCue[] | (() => KeyCue
 ];
 const voCue = (id: string, at: number): Cue => ({ at, src: `works/ep1-basics/audio/vo/${id}.mp3`, vol: 0.9, dur: VO_DUR[id] });
 
-const CAPTIONS: Cap[] = SECTIONS.flatMap((s) => shift(s.caps, S[s.key].from));
+const s01 = S.title.from + 8, s02 = S.title.from + TITLE_ANIM - 30;
+const s81 = S.outro.from + OUTRO_RECAP + 20, s82 = s81 + VO_DUR['s8-1'] + 14;
+const CAPTIONS: Cap[] = [
+  // 片头、结尾的配音句也上字幕（2026-09-12/13 用户要求）
+  ...splitCap(CAPS['s0-1'], s01, s01 + VO_DUR['s0-1'], s01 + VO_DUR['s0-1'] + 4),
+  ...splitCap(CAPS['s0-2'], s02, s02 + VO_DUR['s0-2'], s02 + VO_DUR['s0-2'] + 6),
+  ...SECTIONS.flatMap((s) => shift(s.caps, S[s.key].from)),
+  ...splitCap(CAPS['s8-1'], s81, s81 + VO_DUR['s8-1'], s82 - 4),
+  ...splitCap(CAPS['s8-2'], s82, s82 + VO_DUR['s8-2'], s82 + VO_DUR['s8-2'] + 6),
+];
+/** 字幕统一字号（用户 2026-09-12：字号尽量一致），长句自动换两行 */
+const CAP_SIZE = 46;
 const KEYS: KeyCue[] = SECTIONS.flatMap((s) => shift(typeof s.keys === 'function' ? s.keys() : s.keys, S[s.key].from));
 const SFX: Cue[] = SECTIONS.flatMap((s) => shift(s.sfx(), S[s.key].from));
 const VO: Cue[] = [
   voCue('s0-1', S.title.from + 8),
   voCue('s0-2', S.title.from + TITLE_ANIM - 30),
   ...SECTIONS.flatMap((s) => s.vo.map((v) => voCue(v.id, S[s.key].from + v.at))),
-  voCue('s8-1', S.outro.from + OUTRO_RECAP + 20),
-  voCue('s8-2', S.outro.from + OUTRO_RECAP + 20 + VO_DUR['s8-1'] + 14),
+  voCue('s8-1', s81),
+  voCue('s8-2', s82),
 ];
 
 const Scene: React.FC<{ from: number; dur: number; children: (u: number) => React.ReactNode }> = ({ from, dur, children }) => {
@@ -81,7 +93,7 @@ export const Main: React.FC<TutorialProps> = ({ bgm = false, vo = true, captions
       <Scene from={S.s7.from} dur={S.s7.dur}>{(su) => <S7Prefs u={su} />}</Scene>
       <Scene from={S.outro.from} dur={S.outro.dur}>{(su) => <Outro u={su} videoSrc={VIDEO} />}</Scene>
 
-      {captions ? CAPTIONS.map((c, i) => <Caption key={i} u={u} from={c.from} until={c.until} words={cap(c.text)} y={c.y} />) : null}
+      {captions ? CAPTIONS.map((c, i) => <Caption key={i} u={u} from={c.from} until={c.until} words={cap(c.text)} y={c.y} size={CAP_SIZE} />) : null}
       <KbdOverlay u={u} cues={KEYS} size={68} marginY={captions ? 150 : 100} />
       <AudioLayer bgm={bgm} bgmSrc={null} vo={vo} voCues={VO} sfx={SFX} totalTL={TOTAL_TL} />
     </AbsoluteFill>

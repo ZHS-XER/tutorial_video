@@ -1,4 +1,4 @@
-// Outro — 结尾：快捷键总表（大字键帽、停够 5s，能截图当备忘）→ 成片视频铺满播放 + "That's the basics." → EP2 预告
+// Outro — 结尾：快捷键总表（大字键帽、停够 5s，能截图当备忘）→ 成片视频铺满播放（配音 "That's all for EP1…"，不再叠大字）→ EP2 预告
 import React from 'react';
 import { Img, OffthreadVideo, Sequence, staticFile } from 'remotion';
 import { C, E, F, tl } from '@engine/tokens';
@@ -52,14 +52,12 @@ export const Outro: React.FC<{ u: number; videoSrc: string }> = ({ u, videoSrc }
       {u >= v0 ? (
         <div style={{ position: 'absolute', inset: 0, opacity: vIn * end }}>
           <Sequence from={tl(v0)} layout="none">
-            <OffthreadVideo src={staticFile(videoSrc)} muted style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1.04 - 0.04 * vIn})` }} />
+            {/* Seedance 成片前 3 帧是参考图（完整招牌），跳过再从空招牌开始（2026-09-13 用户指出片尾闪一帧完整招牌） */}
+            <OffthreadVideo src={staticFile(videoSrc)} startFrom={5} muted style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1.04 - 0.04 * vIn})` }} />
           </Sequence>
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 45%, rgba(0,0,0,0.72) 100%)' }} />
-          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 150, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 18, opacity: textIn, transform: `translateY(${(1 - textIn) * 16}px)` }}>
-              <Img src={staticFile('shared/brand/youart-logo-dark.svg')} style={{ width: 54, height: 54 }} />
-              <div style={{ fontFamily: F.sans, fontSize: 64, fontWeight: 700, letterSpacing: '-0.03em', color: C.paper }}>That's the basics.</div>
-            </div>
+          <div style={{ position: 'absolute', left: 0, right: 0, bottom: 250, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22 }}>
+            <Img src={staticFile('shared/brand/youart-logo-dark.svg')} style={{ width: 54, height: 54, opacity: textIn, transform: `translateY(${(1 - textIn) * 16}px)` }} />
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '12px 22px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.18)', background: 'rgba(0,0,0,0.42)', opacity: nextIn, transform: `translateY(${(1 - nextIn) * 12}px)` }}>
               <span style={{ fontFamily: F.mono, fontSize: 24, fontWeight: 600, letterSpacing: '0.1em', color: C.accent }}>NEXT · EP 02</span>
               <span style={{ fontFamily: F.sans, fontSize: 28, fontWeight: 600, color: C.paper }}>Generating images and video</span>

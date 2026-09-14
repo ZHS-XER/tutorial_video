@@ -40,6 +40,8 @@
 - s2-10 And a video model: *Seedance 2.5*.
 - s2-11 Connect the image to Seedance, then the text to Seedance.
 - s2-12 Image to first frame, text to prompt. Each one finds its matching port.
+- s2-12b To cut connections, hold *Control* and drag across them.（v3.3 新增：⌃拖切线）
+- s2-12c Or select both source nodes: a shared output dot appears. | Drag it to Seedance, and both connect at once.（v3.4：多选一起连线，替换掉 v3.3 的 ⌘Z）
 - s2-13 Click *Run All* at the bottom, and skip the wait.
 - s2-14 There's our video, playing right in the node.
 - s2-15 That's a complete workflow: reference image, image model, text prompt, video model.
@@ -78,11 +80,13 @@
 - s7-2 Pick a canvas background color.
 - s7-3 And a pattern: dots, grid, or none.
 - s7-4 Right above, you can set how downloaded files are *named*.
-- s7-5 Click *Edit* to rearrange the blocks that build the name, then click *Done*.（v3.1 新增：演示文件名积木编辑态，快照 m-prefs-edit）
+- s7-5 Click *Edit*. The name is built from blocks.（v3.5 改写）
+- s7-5b Remove the *Timestamp*, | and drag *YouArt* to the front.（v3.5 新增：真操作积木，快照 m-prefs-edit2 / edit3）
+- s7-5c The preview updates. | Click *Done* to keep it.（v3.5 新增：快照 m-prefs-done，预览变成 YouArt_Hero_shot_03.png）
 - s7-6 Press Esc, and your canvas is updated.
 
 ### s8 结尾
-- s8-1 That's the basics. You built a workflow and made a video from a single logo.
+- s8-1 That's all for EP1: the basics of the workflow canvas.（v3.3 改写；画面不再叠 "That's the basics." 大字）
 - s8-2 Next up, EP2: generating images and video, with parameters, credits, and troubleshooting.
 
 ## 实测产品行为（2026-09-11 侦察，1536×864，英文界面）
@@ -118,6 +122,28 @@
 - 片头示例视频多停 23 帧（0.75s）。
 - 配音全部换 ElevenLabs Chris（iP95p4xoKVk53GoZ742B，stability 0.4），语速自然比 Brian 快约 16%（209s vs 249s，约 185 wpm），未再加速。旧 Brian 音频留在 `out/vo/brian/`。
 - 时间线：片头 343 → 7 节 → 结尾 390，总长 9430 帧 ≈ 5:14（v3.0 为 5:52）。s1 1431 / s2 2240 / s3 1174 / s4 792 / s5 1260 / s6 475 / s7 800。
+
+## v3.5.1（2026-09-13 晚）
+- 片尾成片视频开头闪一帧完整招牌：Seedance 输出的前 3 帧（0.125s）就是参考图（完整招牌），之后才切到空招牌开始 reveal。Outro 的 OffthreadVideo 改 `startFrom={5}` 跳过。只重渲了 outro 段（`--frames=10205-10594`）再与主片 concat。
+
+## v3.5（2026-09-13 下午）
+- 第 7 节文件名编辑真操作：Edit → 点 Timestamp 的 ✕ 删掉 → 拖 YouArt 积木到最前 → 预览从 Hero_shot_2026-08-22-14-29-53_03_YouArt.png 变成 YouArt_Hero_shot_03.png → Done。三张新快照 m-prefs-edit2 / edit3 / done（`plans/m9.mjs` + `m9b.mjs`，积木用真实鼠标拖拽即可重排，编辑即时保存；采完 Reset 恢复）。拖动中的积木用 overlay 影子（BlockGhost）表现。
+- 总长 10595 帧 ≈ 5:53。
+
+## v3.4（2026-09-13）
+- **多选一起连线**：用户截图确认新版产品多选后选区右侧会出现一个蓝色共用输出点，拖它到目标节点即把所有选中节点连上。本机无头 Chrome 里的产品版本没有这个点（节点 UI 也还是旧版 "Sources"），无法真采：多选态用真实快照 s2-multisel（GPT + Text 选中、选区矩形、选区工具栏），蓝点与拖出的连线由 overlay 复刻（`SharedDot`），落下切到 s2-edge3（两节点保持选中的驱动），再点空白取消选中。s2-12c 台词重写，⌘Z 段删除。
+- 字幕不再换行：长句在 lines.json 里用 " | " 拆成 2–3 段先后显示，各段时长按字数比例分配（`_shared.tsx` splitCap）；字号固定 46px；片头、结尾的配音也有字幕（结尾 logo/EP2 芯片上移到 bottom 250 让位）。
+- 片头两屏都多停：迷你 workflow 长完停到 84 帧再退散，大标题停到 176 帧，七步清单 186–300；TITLE_ANIM 300、片头总长 443 帧。
+- 总长 10384 帧 ≈ 5:46。
+
+## v3.3 追加（2026-09-12 傍晚）
+- 第 2 节两条连线接好后加"⌃ + 拖切断连线"（覆盖快捷键面板里的 Cut connections ⌃+Drag）→ ⌘Z 撤销恢复。切线是 overlay 画的红色虚线，切断后的状态是新快照 s2-cut（Seedance 失去输入后 Frames 区与提示词芯片消失，产品真实行为），⌘Z 回到 s2-edge3。
+- 用户要求的"选中多个节点一起连接"**实测不存在**：在舞台上试了 6 种手势（多选源节点后从任一输出口 / + 圆钮拖到目标主体或具体输入口、反向从目标输入口拖到选中节点、多选目标节点后从一个输出口拖入），每次都只连一条；选区矩形上也没有共用接口 DOM。v2.3 归档里同样没有这一段（edgesel 快照弃用）。因此改成"切断 → ⌘Z 撤销"，待用户给出触发方式再补。
+- 第 3 节箭头 / 点选 / ⌘[ ⌘] 不再推近（推近反而把节点截断），只在右键菜单推近一次。
+- 结尾去掉 "That's the basics." 大字，只留 logo 与 EP2 预告芯片；配音改为 "That's all for EP1: the basics of the workflow canvas."。
+- 片头两句也上字幕；全片字幕改为固定 46px（`Caption size` 属性，长句自动平衡换两行，底部字幕以底边锚定向上长），不再按句长缩到 36px。
+- 片头拆成两屏：0–2:00 秒徽标 + 大标题（迷你 workflow 长出后退散），随后七步内容改为**竖排清单**从上到下点亮（用户：横向轨道不好看）；TITLE_ANIM 200→230。
+- 总长 10161 帧 ≈ 5:39。
 
 ## v3.2 追加（2026-09-12 下午，用户两条补充）
 - 第 1 节上传 logo 之后加"另外两种加图方式"：从 Finder 拖文件到画布（1 个文件）、Finder 里 ⌘C 两个文件回画布 ⌘V（多文件），然后 ⇧ 加选三枚新节点按 Delete 删掉回到原状态。

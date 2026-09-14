@@ -69,7 +69,7 @@ tutorial_video/
 
 **字幕**
 - 每步一句完整句子，不用 "…" 悬挂半句，不用破折号；关键词用 `*词*` 标成品牌黄。
-- 字幕底板是圆角矩形（`engine/ui/ux.tsx` Caption borderRadius 18），Inter 600 / 56px。
+- 字幕底板是圆角矩形（`engine/ui/ux.tsx` Caption borderRadius 18），Inter 600。**字号要全片一致**（用户 2026-09-12）：传 `size={46} maxWidth={1500}`，长句 `text-wrap: balance` 自动换两行、底部字幕以底边锚定向上长；不传 size 时才是旧的按句长 56→36px 缩放。片头/结尾的配音句也要有字幕。
 
 **按键可视化**（shadcn Kbd 风格，`engine/ui/kbd/`；2026-09-10 起默认，keyviz 键帽已弃用）
 - 在 Main 里声明 `KEYS: KeyCue[]`，如 `{ at, keys: ['cmd','['], hold: 10, linger: 30 }`、`{ at, keys: ['right click'] }`。键名别名沿用 keymaps.ts（cmd/shift/option/ctrl/enter/esc/drag/click/right click/单字母/数字/标点）。
@@ -193,7 +193,7 @@ lark-cli wiki +node-create --parent-node-token C1uDwq2BGiyc29k3omEl9UvegwI --tit
   - 上传：`page.waitForFileChooser` 在 Image Loader 上传区不触发；改 MCP `create_asset_upload` → PUT → `set_upload_node_asset`。双击节点标题栏会碰到模型切换器，双击节点**主体**才是 Focus。无选中按 F 视口不变，全览走缩放菜单 Fit view。
   - 结果预览渲染在卡片上方（节点 position = 预览顶部），舞台快照上用 `injectNodePreview` 注入真图即可无缝切到素材项目快照；"运行中"用 `nodeRunning`（Run 文案在 `<span>` 里，改文字要遍历文本节点）。
   - ScreenStage 是"绕锚点缩放"模型，不是居中：目标在画面边缘时要用 `focus(cx,cy,z)` 反推锚点（`_shared.tsx`），否则推近后目标被推出画面。底部工具栏（Run All、缩放菜单、(i) 菜单、选区工具栏）永远压在字幕底下，这些镜头把字幕放顶部（Cap.y = 120）。
-  - Remotion 延后起播视频要包 `<Sequence from>`，`OffthreadVideo startFrom` 是裁掉片头不是延时（片头 / 节点内视频 / 结尾都踩过）。
+  - Remotion 延后起播视频要包 `<Sequence from>`，`OffthreadVideo startFrom` 是裁掉片头不是延时（片头 / 节点内视频 / 结尾都踩过）。**Seedance（首帧模式）成片的前 3 帧是参考图本身**，铺满播放时会闪一帧"完整结果"，用 `startFrom={5}` 跳过；改局部后可用 `remotion render --frames=a-b` 只渲该段再 ffmpeg concat 重编，不必全片重渲。
   - ElevenLabs v3 并发 >16 节点会 `service.busy`，分批 scoped 重跑；失败 run 里已完成节点的 credit_status 显示 RELEASED 但音频正常可下。声线 Sarah（EXAVITQu4vr4xnSDxMaL）被用户否为太机械，EP1 v3 起用 Brian（nPczCjzI2devNBz1zQrb，stability 0.4）。
 
 - **EP1 v3.1 修改轮经验（2026-09-12，用户 17 条看片反馈）**：
@@ -204,10 +204,11 @@ lark-cli wiki +node-create --parent-node-token C1uDwq2BGiyc29k3omEl9UvegwI --tit
   - 选区工具栏是 `div[style*="z-index: 40"][style*="translateX(-50%)"]`（fixed，随选区下缘），⌘A 全选大节点时会被排到画面底边外；底部中央 Run 胶囊是 `[data-feedback-recorder-avoid="bottom"]`，与工具栏贴在一起时用户要求避免（成片隐藏胶囊）。Auto Layout 悬停菜单是按钮 wrapper 里的 `[role=group][aria-label="Default / Horizontal / Vertical"]`（absolute top-full），贴底边时改 `bottom:100%` 向上弹，图标位置关于按钮中心镜像。
   - 产品 Auto Layout（Horizontal/Default）的结果**不可复现**：同一组节点两次采集排出不同坐标和缩放，补采"某布局下的悬停态"不能指望和旧快照对齐——改为只取菜单 DOM 注入旧快照（`works/ep1-basics/src/scenes/_almenu.ts` + `injectAlMenu`）。补采后记得 `move_nodes` 挪回。
   - 双击弹出的节点搜索框是 `div.min-w-48.p-0.text-popover-foreground`（position:fixed，left/top = 双击点），可 patchCss 挪位；创建的节点位置与双击点不严格一致（(766,437) 双击 → 节点在 (860,380)），挪 90px 内没人看得出。
-  - Download Filename 的 Edit 是行内积木编辑器（Name/Timestamp/Index/自定义块 + Connector，右上 Done），不是弹窗；Esc 会关整个 Settings。
+  - Download Filename 的 Edit 是行内积木编辑器（Name/Timestamp/Index/自定义块 + Connector，右上 Done），不是弹窗；Esc 会关整个 Settings。积木可用真实鼠标拖拽重排、✕ 删除，**编辑即时保存**（采完必须 Reset）；自定义块的文字在 input 里，innerText 为空。patchMaterialHtml 的积分回填只认 10,6xx，积分掉到 10,5xx/10,4xx 后要手动 sed。
   - ElevenLabs v3 换声线只改 dialogue JSON 里的 `voice`；**Chris**（iP95p4xoKVk53GoZ742B）被用户指定，自然语速约 185 wpm，比 Brian 快 16%，不用再 atempo。每批 14 节点仍有 1–3 个随机 `workflow_node_failed`，scoped 补跑即可（6 批约 60 积分）。节点无 speed 参数。
   - 每次 `still` 约 60–100s，4 张并行；关键帧抽查比整片重渲便宜得多，改编排后先抽 8–10 张再渲。
 
+- **EP1 v3.3/3.4（2026-09-12/13）**："多选节点一起连线"在新版产品里是选区右侧的蓝色共用输出点（用户截图，新版节点 UI 为"参考图片 1/16"），本机无头 Chrome 拿到的仍是旧版没有该点——产品分版本灰度，采不到的新版功能用 overlay 复刻并在留档标明。字幕规则：固定字号、**不换行**，长句用 " | " 拆段先后显示（`splitCap`）。⌃+拖切线可用（切断后目标节点的输入区会收起）；⌘Z 撤销一步连线有效。点节点标题栏要点右半（x+205），左半是模型切换器。
 - **EP1 v3.2 追加经验（2026-09-12 下午）**：
   - 需要 macOS 系统 UI（Finder 窗口）进画面时：真实截图叠加最省事——AppleScript 建 Finder 窗口（`set sidebar width of w to 0`、icon view、固定 bounds、icon size），`screencapture -x -R x,y,w,h` 取区域（本机已有屏幕录制权限），PIL 抠 26px 圆角；每个选中态各截一张，在同一脚本里连拍保证布局一致（分次开窗 Finder 会记住不同图标尺寸）。侧栏含个人文件夹名和中文，必须隐藏。
   - 舞台/素材项目的 Auto-collapse 是账号级偏好，开着时所有未选中节点收起——补采前查 `.react-flow__node` 高度，关掉再采、采完开回。
