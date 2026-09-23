@@ -123,6 +123,14 @@
 - 配音全部换 ElevenLabs Chris（iP95p4xoKVk53GoZ742B，stability 0.4），语速自然比 Brian 快约 16%（209s vs 249s，约 185 wpm），未再加速。旧 Brian 音频留在 `out/vo/brian/`。
 - 时间线：片头 343 → 7 节 → 结尾 390，总长 9430 帧 ≈ 5:14（v3.0 为 5:52）。s1 1431 / s2 2240 / s3 1174 / s4 792 / s5 1260 / s6 475 / s7 800。
 
+## v3.6（2026-09-17 晚）
+- **共用输出点换成产品实采样式**：发现采集浏览器 UA 含 "HeadlessChrome" 时 youart.ai 渲染旧版节点 UI（没有该点），`capture/browser-daemon.mjs` 改成普通 Chrome UA 后在舞台上真采到：24px 深底圆点、2px 蓝/绿分段彩环、数字 2，位于选区包围盒右缘 +24px 垂直居中；拖到 Seedance 一次接上两条线（`plans/s2j.mjs`，快照 s2-multisel-new / s2-multi-new 仅作参考，成片仍用旧 UI 快照 + `scenes/_shareddot.ts` 注入圆点 DOM）。拖拽中两条源输出蓝线汇入圆点、圆点引蓝线到光标（`DragLines`），替换原 overlay 蓝点。
+- v3.6.1（09-18）用户指出圆点有重影、拖拽态难看：重影 = 旧快照 GPT 输出口 (1163,600) 与圆点 (1164,588) 重叠（新 UI 里相距 24px），圆点期间用 `hideSel` 隐藏该输出口；拖拽态按产品实测重做（`lab/recon/s2j-dragging.png`）：圆点变整圈蓝环 + 白字并放大 1.1、连线 1.6px `#3b82f6` 按 React Flow 贝塞尔（curvature 0.25）、光标右上 "Connect 2" 蓝色芯片（中文版 "连接 2"，产品词表无此新条目，按 "Connect input {n}"→"连接输入" 模式推断，`lang.ts` UI.connectChip）。
+- v3.6.2（09-18）用户仍嫌拖拽连线丑：改为 "源输出口 → 圆点" 的汇聚线注入 React Flow edges svg（`bundleLines`，走在节点之下，只在节点间隙可见，不再横穿 GPT 节点的缩略图），"圆点 → 光标" 一段留在叠加层 1.5px；GPT 输出口离圆点 12px 且已隐藏，不画。另出无字幕版 `--nocap`（`tools/render.mjs` 新增，`ep1-basics-nocap.mp4` / `-zh-nocap.mp4` 及各自 `-novo`）。
+- 结尾成片视频 `startFrom` 5 → 90（从 3.0s 起播）："That's all for EP1" 出现时招牌上的 YouArt 已长到 "YouAr"，约 1s 后完整，不再从空招牌开始。
+- 出片：只重渲第 2 节（2457–5117）与结尾（10205–10594），`out/plan/splice-*.sh` 从 `qa/backup-0917-*` 原片 trim 头尾、concat 一次重编；英文 / 中文及各自 novo 版四个文件同步。总长不变 10595 帧。
+- 留档：全部成片快照是旧 UI（见 AGENTS.md "采集浏览器 UA 决定产品 UI 版本"）。
+
 ## v3.5.1（2026-09-13 晚）
 - 片尾成片视频开头闪一帧完整招牌：Seedance 输出的前 3 帧（0.125s）就是参考图（完整招牌），之后才切到空招牌开始 reveal。Outro 的 OffthreadVideo 改 `startFrom={5}` 跳过。只重渲了 outro 段（`--frames=10205-10594`）再与主片 concat。
 
@@ -163,6 +171,26 @@
 - 与计划稿的出入：s4-4/s4-5 改用缩放菜单 Fit view；多选"共同接口"不存在，s2-11 逐条连接；S5 结尾回到 Default 排版用 m-arranged 复用（隐藏 toast）；S6 /assets 页只留 Today 分组前三张；S7 快照里多出的拖入节点用 patchCss 隐藏。
 - 成片：`out/ep1-basics.mp4`（带配音）、`out/ep1-basics-novo.mp4`（无配音，音轨单渲后 ffmpeg 合成）。
 
+## 中文版 zh（2026-09-17，同一 work 内的语言变体）
+- 口径：**时间线、总时长（10595 帧 ≈ 5:53）、节奏、编排一律不变**，只换字幕 / 配音 / 卡片文案；产品界面快照、示例 prompt、键帽芯片文字（right click / drag / Delete）、片头徽标 "YouArt Tutorial · EP 01"、Finder 截图保持英文。
+  字幕里的产品名词（Image Loader、GPT Image 2、Seedance、Run All、Fit view、Auto Layout、Media Assets、Preferences、Collapse All Nodes…）保留英文原词嵌在中文句子里，仍标品牌黄；配音里产品名词念英文，快捷键读 "Command 加左方括号 / Command A / Command 加逗号 / ESC"。
+- 开关：`src/lang.ts` 读 `REMOTION_LANG`（Remotion 打包时注入 REMOTION_* 环境变量），`zh` 时切 `lines.zh.gen.ts`（字幕）、`audio/vo-zh/`（配音）、`UI` 字典（片头大标题 "工作流基础"、7 张章节卡、结尾 RECAP 六行 + "本集学到的快捷键" + "生成图片和视频"、第 2 节接口颜色图例 "接口颜色 / 文本 图像 视频 音频"）。
+  节拍仍用英文 `vo.gen.ts`（`seqLines` 未改），`vo.zh.gen.ts` 只给 AudioLayer 播放长度。根节点加 `lang="zh-Hans"`，中文字形走系统 PingFang SC（Inter 无 CJK）。
+- 中文字幕 tokenizer `capL`：`*词*` 品牌黄、后随标点同色；空格 = 词距；无空格相接的词标 `glue`，Caption（engine/ui/ux.tsx 新增 `glue` 字段）对 glue 词不留 0.3em 词距，中文里高亮字与前后文才能连着。
+- 配音：ElevenLabs v3 `language_code: zh`、声线仍用 Chris（试音 chris / brian / george 各 3 句，whisper 均可准确听写；YouArt 里没有海螺语音节点，只有 MiniMax Music）。专用项目 **"EP1 Basics · VO zh (中文配音)"** `3c42469c-d6f9-4ef4-8359-ccaabd952c9d`，63 节点，node↔台词映射 `out/vo-zh/nodes.json`，台词表 `out/vo-zh/lines.zh.json`（`gen-lines.py` 生成 `src/lines.zh.gen.ts`）。
+  规则：dialogue 至少 10 字（s2-5 / s2-8 / s7-2 因此加词）；每批 ≤16 节点仍有 2–3 个 `service.busy`，scoped 补跑；共 6 轮约 90 积分。
+- 塞进英文拍位：中文 Chris 约每秒 5 字，但顿号 / 逗号列举句会插入 0.4–0.7s 的停顿（s2-1 四色列举原始 8.1s vs 拍位 5.7s）。`out/vo-zh/fit.py`：原始 mp3 存 `out/vo-zh/raw/`，超拍位 >0.3s 的句子先把句内 >0.25s 静音压到 0.18s（silencedetect 区间 + atrim/concat），仍超再 atempo ≤1.15，仍超则改词重配（s2-1 改成 "绿色文本、蓝色图像…" 才塞进去；s1-5 去掉句尾英文词）。
+  终态 63 句全部 ≤ 英文拍位 +0.22s（句间 gap 14–18 帧兜住），17 句做过压停顿，7 句 atempo 1.04–1.15。全部用 whisper small（多语言模型 `~/.cache/whisper-cpp/ggml-small.bin`）逐句核对过，见 `out/vo-zh/transcript-check.txt`。
+- 命令：`node tools/render.mjs ep1-basics --lang=zh` → `out/ep1-basics-zh.mp4`；无配音版音轨与英文版相同（只有点击音效），直接 `ffmpeg -i ep1-basics-zh.mp4 -i qa/novo-audio.mp3 -map 0:v -map 1:a -c:v copy -c:a aac` → `out/ep1-basics-zh-novo.mp4`；静帧 `node tools/render.mjs ep1-basics <frame> --still --lang=zh --out=out/qa/zh/f<frame>.png`。
+- **界面也中文化（2026-09-17 下午，用户要求；不重采快照）**：产品有官方中文界面（`NEXT_LOCALE=zh` cookie → `/zh/...`），把 next-intl 文案包从页面 HTML 的 `self.__next_f.push` 内联 RSC 里抠出来（`plans/dump-i18n.mjs` 抓 en/zh 两版页面 → `out/i18n/extract.py` 得 20k 条 key→string → en 值→zh 值词表 `glossary.json`，冲突项按命名空间优先级取：context_menu > selection_toolbar > sidebar > node_params > workflow.editor > flow_canvas > navigation…），
+  再用 `out/i18n/scan.py` 扫 67 张快照的可见文本节点 + placeholder/aria-label 属性，只保留出现过的 295 条生成 `src/ui.zh.gen.ts`（`build-ui-glossary.py`；设置面板内用 settings.* 译法如 Text→固定文字 / Timestamp→时间戳，列表页 slot 用 navigation.* 译法如 Image→图片生成；模板串 Connect input {n} / Selected all {n} nodes / Edited {time} 用正则）。
+  渲染时 `scenes/_i18n.ts` 的 `localizeUi(slot)` 作为每个 cut 最后一个驱动逐帧替换文本节点与 placeholder/aria-placeholder/data-placeholder（tiptap）属性；运行时按英文找元素的驱动改成中英都认（`nodeRunning` 的 Run/Running ↔ 运行/运行中，S5 的 Auto Layout/整理节点）。
+  字体：产品中文栈 Inter + MiSans（cdn.jsdelivr misans@4.1.0 按 unicode-range 拆 400 个 woff2，8.2MB）已下载到 `captures/fonts/misans/`，`src/misans.gen.ts` 把这些 @font-face 挂在 **Inter** 名下注入快照（patchCss），Inter 没有的 CJK 字形按 unicode-range 落到 MiSans，快照 CSS 不用改。
+  未翻译（保持原样）：模型名 / 项目名 / 用户名 / 文件名 / 示例 prompt / Finder 截图；键帽鼠标虚拟键改中文键面（右键 / 拖拽 / 点击，`KbdOverlay faces`），片头迷你图节点标签中文。
+  台词随界面改用官方中文术语（工作流 / 新建工作流 / 图像加载 / 文本节点 / 运行 / 运行全部 / 收起全部节点 / 展开全部节点 / 节点自动收起 / 适应视图 / 整理节点 / 快捷键 / 媒体资产 / 素材库 / 偏好设置 / 编辑 / 时间戳 / 完成），18 句重配（约 25 积分）后重新 fit，全部 ≤ 拍位 +0.26s。
+- 成片：`out/ep1-basics-zh.mp4`（中文界面 + 中文字幕 + 中文配音）、`out/ep1-basics-zh-novo.mp4`（无配音）。英文版文件与源码行为不变（未设 REMOTION_LANG 时一切走原表）。
+
 ## 飞书 Storyboard
 - https://f3vaq8z51vv.sg.larksuite.com/wiki/DFZhwKC3Ii29sqkdUn1lG0zug4d （父节点 C1uDwq2BGiyc29k3omEl9UvegwI；2026-09-11 计划稿 → 2026-09-12 成片后原地覆盖为正式 Storyboard，9 节 9 图）
 - 本地 Markdown：docs/ep1-basics-storyboard.md
+- 2026-09-17 在同一文档末尾追加 "中文版（2026-09-17）" 一节（三张中文界面终渲帧：工作流页、右键菜单、设置面板，存 `out/storyboard/zh/`）。

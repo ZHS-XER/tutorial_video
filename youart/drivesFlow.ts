@@ -296,7 +296,7 @@ export const nodeRunning =
   (doc, f) => {
     const n = doc.querySelector(`.react-flow__node[data-id="${nodeId}"]`) as HTMLElement | null;
     if (!n) return;
-    const btn = Array.from(n.querySelectorAll('button')).find((b) => /^(Run|Running)$/.test((b.textContent || '').trim())) as HTMLElement | undefined;
+    const btn = Array.from(n.querySelectorAll('button')).find((b) => /^(Run|Running|运行|运行中)$/.test((b.textContent || '').trim())) as HTMLElement | undefined;
     let ring = n.querySelector('[data-run-ring]') as HTMLElement | null;
     const active = f >= startF && f < endF;
     if (!ring) {
@@ -307,14 +307,14 @@ export const nodeRunning =
     }
     if (!active) {
       if (ring.style.display !== 'none') ring.style.display = 'none';
-      if (btn && btn.dataset.runOrig) { const w = doc.createTreeWalker(btn, 4); for (let tn = w.nextNode(); tn; tn = w.nextNode()) if ((tn.textContent || '').trim() === 'Running') tn.textContent = 'Run'; delete btn.dataset.runOrig; }
+      if (btn && btn.dataset.runOrig) { const w = doc.createTreeWalker(btn, 4); for (let tn = w.nextNode(); tn; tn = w.nextNode()) { const t = (tn.textContent || '').trim(); if (t === 'Running') tn.textContent = 'Run'; else if (t === '运行中') tn.textContent = '运行'; } delete btn.dataset.runOrig; }
       return;
     }
     if (btn) {
       if (!btn.dataset.runOrig) btn.dataset.runOrig = btn.textContent || 'Run';
       // 保留图标，只改文字节点（文字可能包在 <span> 里，深度遍历）
       const walker = doc.createTreeWalker(btn, 4 /* NodeFilter.SHOW_TEXT */);
-      for (let tn = walker.nextNode(); tn; tn = walker.nextNode()) if ((tn.textContent || '').trim() === 'Run') tn.textContent = 'Running';
+      for (let tn = walker.nextNode(); tn; tn = walker.nextNode()) { const t = (tn.textContent || '').trim(); if (t === 'Run') tn.textContent = 'Running'; else if (t === '运行') tn.textContent = '运行中'; } // 中文版界面已被 localizeUi 翻成 运行
       const br = btn.getBoundingClientRect();
       const nr = n.getBoundingClientRect();
       const s = parseViewport((doc.querySelector('.react-flow__viewport') as HTMLElement | null)?.style.transform || '').s || 1;

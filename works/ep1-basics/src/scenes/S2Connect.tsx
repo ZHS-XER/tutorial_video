@@ -14,6 +14,8 @@ import { C, E, F, tl } from '@engine/tokens';
 import { seg } from '@engine/ui/ux';
 import type { KeyCue } from '@engine/ui/kbd';
 import { Stage, seqLines, capsOf, curAtFrom, addDrive, cutFrom, clicksOf, voOf, focus, type Cap } from './_shared';
+import { injectSharedDot, bundleLines, LINE_BLUE } from './_shareddot';
+import { UI } from '../lang';
 import { cursorPosAt } from '@engine/cursor/Cursor';
 
 const P0 = 'ep1-basics-';
@@ -23,11 +25,13 @@ const DV = P0 + 's2-dblvideo', DVS = P0 + 's2-dblvideosearch', VN = P0 + 's2-vid
 export const S2_SLOTS = [N2, E1, EH, DEL, PF, PR, DT, DTS, TN, TF, TFI, DV, DVS, VN, E2, E3, CUT, MSEL, BU, MB];
 const IDS = ['s2-1', 's2-2', 's2-3', 's2-4', 's2-5', 's2-6', 's2-7', 's2-8', 's2-9', 's2-10', 's2-11', 's2-12', 's2-12b', 's2-12c', 's2-13', 's2-14', 's2-15'];
 // 2026-09-12 追加：⌃拖切断进 Seedance 的两条线（快照 s2-cut）。切线用 overlay 画一条随光标延伸的虚线。
-// 2026-09-13：切断后多选 GPT + Text（快照 s2-multisel），选区右侧出现共用输出蓝点（overlay 复刻，本机产品版本未见该点），拖它到 Seedance → 两条线一起接回（E3）。
+// 2026-09-13：切断后多选 GPT + Text（快照 s2-multisel），选区右侧出现共用输出点，拖它到 Seedance → 两条线一起接回（E3）。
+// 2026-09-17：共用输出点按产品新版 UI 实采（s2-multisel-new，见 _shareddot.ts）：24px 深底圆点 + 蓝/绿分段彩环 + 数字 2，位于选区右缘 +24px 垂直居中；
+//   旧快照里没有该点，用 injectSharedDot 注入；拖拽时两条源输出的蓝线汇入圆点、再由圆点引一条蓝线到光标（DragLines 叠加层）。
 const CUT_A = at(1185, 430), CUT_B = at(1185, 780);
 const GPT_HEAD = at(1065, 400), TEXT_HEAD = at(675, 580); // 标题栏右半（左半是模型切换器）
 const SEL_RECT = { x: 470, y: 380, w: 670, h: 417 }; // s2-multisel 里的选区矩形
-const SHARED_DOT = at(SEL_RECT.x + SEL_RECT.w + 10, SEL_RECT.y + SEL_RECT.h / 2);
+const SHARED_DOT = at(SEL_RECT.x + SEL_RECT.w + 24, SEL_RECT.y + SEL_RECT.h / 2); // 实测：包围盒右缘 +24，垂直居中
 const VID_BODY_CUT = at(1370, 560); // 切断后 Seedance 变矮，主体中部
 
 const GPT = 'GptImage2Generate-d73a6f20', LOADER = 'LoadImage-170c7710', TEXT = 'Text-ecfad1d4', VID = 'SeedancePro25VideoGenerate-a934527d';
@@ -74,6 +78,8 @@ const build = () => {
   const textOut = handleAim(E2, 'Text', 'edge-out');
   const vidFirst = handleAim(E2, 'Seedance', 'edge-in-first_frame');
   const vidText = handleAim(E3, 'Seedance', 'edge-in-text_input-1');
+  const gptOutM = handleAim(MSEL, 'GptImage2', 'edge-out');
+  const textOutM = handleAim(MSEL, 'Text', 'edge-out');
   const B = {
     grab1: P('s2-2', 0.3), drop1: 0,
     hover: P('s2-4', 0.3), del: V('s2-4', -4),
@@ -156,6 +162,12 @@ const build = () => {
   addDrive(shot, E3, nodeSelected(TEXT, -1), 1);
   addDrive(shot, E3, nodeGlow(VID, B.dropDot - GLOW_LEAD - cutFrom(shot, E3, 1), 1e9), 1);
   addDrive(shot, MSEL, nodeGlow(VID, B.dropDot - GLOW_LEAD - cutFrom(shot, MSEL), 1e9));
+  // 旧快照里 GPT 输出口 (1163,600) 与圆点 (1164,588) 重叠（新 UI 里相距 24px），圆点期间把该输出口隐藏，否则像重影
+  const GPT_OUT_SEL = `.react-flow__node[data-id="${GPT}"] .react-flow__handle[data-handleid="edge-out"]`;
+  addDrive(shot, MSEL, injectSharedDot(SHARED_DOT.cx, SHARED_DOT.cy, B.selText + 4 - cutFrom(shot, MSEL), 1e9, { activeFrom: B.grabDot - cutFrom(shot, MSEL), hideSel: GPT_OUT_SEL }));
+  addDrive(shot, E3, injectSharedDot(SHARED_DOT.cx, SHARED_DOT.cy, -1e6, 1e9, { hideSel: GPT_OUT_SEL }), 1);
+  // 汇聚线（Text 输出口 → 圆点；GPT 输出口离圆点仅 12px、已隐藏，不画）注入 edges svg，走在节点之下，不横穿 GPT 节点内容
+  addDrive(shot, MSEL, bundleLines([textOutM], SHARED_DOT, B.grabDot + 1 - cutFrom(shot, MSEL), B.dropDot - cutFrom(shot, MSEL)));
   addDrive(shot, TN, nodePulse('Text-', 0, 14));
   addDrive(shot, TF, typeCE(TEXT_PROMPT_SEL, B.focusT + 2 - cutFrom(shot, TF), CPS_TEXT));
   addDrive(shot, VN, nodePulse('Seedance', 0, 14));
@@ -183,7 +195,7 @@ const build = () => {
     { at: B.cutStart - 2, keys: ['ctrl', 'drag'], stagger: 2, hold: B.cutEnd - B.cutStart + 2, linger: 24 },
     { at: B.selText - 4, keys: ['shift', 'click'], stagger: 2, hold: 12, linger: 22 },
   ];
-  return { shot, rings, keys, B };
+  return { shot, rings, keys, B, gptOutM, textOutM };
 };
 let cached: ReturnType<typeof build> | null = null;
 const get = () => (cached ??= build());
@@ -193,16 +205,16 @@ const PortLegend: React.FC<{ u: number; from: number; until: number }> = ({ u, f
   const inn = seg(u, from, from + 12, E.zoom);
   const out = seg(u, until - 10, until, E.inOut);
   if (inn <= 0 || out >= 1) return null;
-  const rows = [['#34d399', 'Text'], ['#60a5fa', 'Image'], ['#a78bfa', 'Video'], ['#f472b6', 'Audio']];
+  const rows = ['#34d399', '#60a5fa', '#a78bfa', '#f472b6'].map((c, i) => [c, UI.legend[i]] as const);
   return (
     <div style={{ position: 'absolute', left: 1140, top: 96, padding: '20px 30px 22px', borderRadius: 16, background: 'rgba(20,20,20,0.95)', border: '1px solid rgba(255,255,255,0.16)', boxShadow: '0 18px 60px rgba(0,0,0,0.6)', opacity: inn * (1 - out), transform: `translateY(${(1 - inn) * 12}px)`, fontFamily: F.sans }}>
-      <div style={{ fontSize: 16, fontWeight: 600, letterSpacing: '0.08em', color: 'rgba(250,250,250,0.55)', marginBottom: 10 }}>PORT COLORS</div>
+      <div style={{ fontSize: 16, fontWeight: 600, letterSpacing: '0.08em', color: 'rgba(250,250,250,0.55)', marginBottom: 10, whiteSpace: 'nowrap' }}>{UI.legendTitle}</div>
       {rows.map(([c, l], i) => {
         const ri = seg(u, from + 6 + i * 6, from + 18 + i * 6, E.zoom);
         return (
           <div key={l} style={{ display: 'flex', alignItems: 'center', gap: 18, height: 50, opacity: ri, transform: `translateX(${(1 - ri) * -10}px)` }}>
             <span style={{ width: 22, height: 22, borderRadius: 11, background: c, border: '3px solid #000', boxShadow: `0 0 14px ${c}99` }} />
-            <span style={{ fontSize: 30, fontWeight: 600, color: C.paper, letterSpacing: '0.01em' }}>{l}</span>
+            <span style={{ fontSize: 30, fontWeight: 600, color: C.paper, letterSpacing: '0.01em', whiteSpace: 'nowrap' }}>{l}</span>
           </div>
         );
       })}
@@ -223,22 +235,25 @@ const CutLine: React.FC<{ u: number; from: number; until: number; a: { cx: numbe
   );
 };
 
-/** 多选后选区右侧的共用输出点（产品：蓝底白边圆点）+ 拖出时从点到光标的连线 */
-const SharedDot: React.FC<{ u: number; from: number; grab: number; drop: number; curAt: (f: number) => [number, number] }> = ({ u, from, grab, drop, curAt }) => {
-  if (u < from || u > drop) return null;
-  const pop = seg(u, from, from + 10, E.zoom);
-  const sc = 0.6 + 0.4 * pop + (pop < 1 ? Math.sin(pop * Math.PI) * 0.18 : 0);
-  const dragging = u > grab && u <= drop;
-  const [cx, cy] = dragging ? curAt(u) : [SHARED_DOT.cx, SHARED_DOT.cy];
+/** 拖共用输出点时 圆点 → 光标 的连线（页面坐标，节点之上；源 → 圆点的汇聚线由 bundleLines 画在节点之下）：React Flow 式贝塞尔细蓝线，光标右上挂 "Connect 2" 蓝色芯片；松手后 6 帧淡出 */
+const DragLines: React.FC<{ u: number; grab: number; drop: number; curAt: (f: number) => [number, number] }> = ({ u, grab, drop, curAt }) => {
+  if (u <= grab || u > drop + 6) return null;
+  const [cx, cy] = u <= drop ? curAt(u) : curAt(drop);
+  const op = u <= drop ? 1 : 1 - (u - drop) / 6;
+  const d = SHARED_DOT;
+  // React Flow getBezierPath（curvature 0.25）：控制点水平偏移 = 0.25 × 25 × sqrt(|dx|)，dx 为负时用其绝对值
+  const off = (a: number, b: number) => { const dx = b - a; return dx >= 0 ? dx * 0.5 : 0.25 * 25 * Math.sqrt(-dx); };
+  const bez = (a: { cx: number; cy: number }, b: { cx: number; cy: number }) => { const o = off(a.cx, b.cx); return `M${a.cx},${a.cy} C${a.cx + o},${a.cy} ${b.cx - o},${b.cy} ${b.cx},${b.cy}`; };
+  const chipIn = Math.min(1, Math.max(0, (u - grab - 2) / 6));
   return (
-    <>
-      {dragging ? (
-        <svg width={1536} height={864} style={{ position: 'absolute', left: 0, top: 0, pointerEvents: 'none' }}>
-          <path d={`M${SHARED_DOT.cx},${SHARED_DOT.cy} C${SHARED_DOT.cx + 80},${SHARED_DOT.cy} ${cx - 80},${cy} ${cx},${cy}`} fill="none" stroke="oklch(0.371 0 0)" strokeWidth={2} />
-        </svg>
+    <div style={{ position: 'absolute', left: 0, top: 0, width: 1536, height: 864, pointerEvents: 'none', opacity: op }}>
+      <svg width={1536} height={864} style={{ position: 'absolute', left: 0, top: 0 }}>
+        <path d={bez(d, { cx, cy })} fill="none" stroke={LINE_BLUE} strokeWidth={1.5} strokeLinecap="round" />
+      </svg>
+      {u <= drop ? (
+        <div style={{ position: 'absolute', left: cx + 14, top: cy - 26, padding: '3px 8px', borderRadius: 6, background: LINE_BLUE, color: '#fff', fontFamily: F.sans, fontSize: 12, fontWeight: 500, lineHeight: '16px', whiteSpace: 'nowrap', opacity: chipIn, transform: `translateY(${(1 - chipIn) * 4}px)` }}>{UI.connectChip}</div>
       ) : null}
-      <div style={{ position: 'absolute', left: SHARED_DOT.cx - 14, top: SHARED_DOT.cy - 14, width: 28, height: 28, borderRadius: 14, background: '#3b82f6', border: '3px solid #fff', boxShadow: '0 0 0 2px rgba(59,130,246,0.35), 0 4px 14px rgba(0,0,0,0.5)', opacity: pop, transform: `scale(${sc})`, pointerEvents: 'none' }} />
-    </>
+    </div>
   );
 };
 
@@ -254,7 +269,7 @@ export const S2Connect: React.FC<{ u: number }> = ({ u }) => {
       <TargetRing u={u} cues={rings} />
       <PortLegend u={u} from={t['s2-1'].from + 8} until={t['s2-2'].from + 20} />
       <CutLine u={u} from={B.cutStart} until={B.cutEnd} a={CUT_A} curAt={(f) => cursorPosAt(shot.curKeys, f)} />
-      <SharedDot u={u} from={B.selText + 4} grab={B.grabDot} drop={B.dropDot} curAt={(f) => cursorPosAt(shot.curKeys, f)} />
+      <DragLines u={u} grab={B.grabDot} drop={B.dropDot} curAt={(f) => cursorPosAt(shot.curKeys, f)} />
       {videoOn ? (
         <Sequence from={tl(B.done + 6)} layout="none">
           <div style={{ position: 'absolute', left: VIDEO_RECT.x, top: VIDEO_RECT.y, width: VIDEO_RECT.w, height: VIDEO_RECT.h, overflow: 'hidden', background: '#000', opacity: seg(u, B.done + 6, B.done + 14, E.zoom) }}>

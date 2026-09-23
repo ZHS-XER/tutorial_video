@@ -20,6 +20,8 @@ const browser = await puppeteer.launch({
     '--window-size=1920,1200',
     '--lang=en-US',
     '--disable-blink-features=AutomationControlled',
+    // 2026-09-17：UA 带 "HeadlessChrome" 时 youart.ai 会渲染旧版节点 UI（无"参考图片 1/16"、无多选共用输出点），伪装成普通 Chrome 才拿到真实用户看到的界面
+    '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
   ],
   ignoreDefaultArgs: ['--enable-automation'],
 });

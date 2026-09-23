@@ -65,3 +65,8 @@
 - `plans/m9.mjs`（半途报错）+ `m9b.mjs`：Preferences → Edit → 点 Timestamp ✕ → 快照 **m-prefs-edit2** → 抓 YouArt 积木拖柄用真实鼠标拖到 Name 左侧 → 快照 **m-prefs-edit3**（预览 YouArt_Hero_shot_03.png）→ Done → 快照 **m-prefs-done**。积木编辑**即时保存**（m9 失败后重进仍是删掉 Timestamp 的状态），采完 Edit → Reset → Done 恢复默认文件名，并恢复默认色 + Dots（脚本校验）。
 - YouArt 积木是自定义文本块，label 在 `<input>` 里，innerText 为空——按 class `rounded-md border bg-background p-1` 找块。三张快照积分 10,498 手动 sed 成 10,673（patchMaterialHtml 只认 10,6xx）。
 - VO：s7-5 改词重生成，新增 s7-5b / s7-5c（run 1c6e6b80）。
+
+## v3.6（2026-09-17，舞台项目）
+- 采集浏览器 UA 改为普通 Chrome（`capture/browser-daemon.mjs`）后产品渲染新版节点 UI；`plans/s2j.mjs`：⌃拖切断两条进 Seedance 的线 → ⇧框选 GPT + Text → 快照 **s2-multisel-new**（含共用输出点 `button[data-group-output-handle]`，位置 (1164,595)）→ 拖圆点到 Seedance 主体 → 两条线同时接上（first_frame / text_input-1）→ 快照 **s2-multi-new** → 取消选中。圆点 DOM 与计算样式存 `out/plan/shared-dot.json`。
+- 侦察阶段多次切线 / 试选，舞台连线用 MCP `add_edges` 补回两次（canvas v84、v97），最终由 s2j 真拖接回，舞台与 E3 一致（3 条边）。误点收起过 Text 节点，已 ⌘] 展开。
+- 期间清过一次 youart.ai 的 localStorage / IndexedDB（排查 UI 差异），登录 cookie 未动；账号偏好未改。素材项目 357a2788 只做了只读侦察（选中 / 取消选中），未改动。

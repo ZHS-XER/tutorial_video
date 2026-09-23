@@ -17,7 +17,8 @@ export const Caption: React.FC<{
   u: number;
   from: number;
   until: number;
-  words: Array<{ t: string; hi?: boolean }>;
+  /** glue：该词与前一词之间不留词距（中文字幕里高亮词与前后文相接，2026-09-17） */
+  words: Array<{ t: string; hi?: boolean; glue?: boolean }>;
   y?: number;
   /** 固定字号（不随句长缩放，不换行——长句由编排拆段先后显示）。底部字幕以底边锚定 */
   size?: number;
@@ -79,7 +80,7 @@ export const Caption: React.FC<{
                 filter: `blur(${(1 - wi) * 6}px)`,
                 transform: `translateY(${(1 - wi) * 10}px)`,
                 display: 'inline-block',
-                marginRight: size != null && i < words.length - 1 ? '0.3em' : undefined,
+                marginRight: size != null && i < words.length - 1 && !words[i + 1]?.glue ? '0.3em' : undefined,
               }}
             >
               {w.t}

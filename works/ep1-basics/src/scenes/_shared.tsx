@@ -11,7 +11,9 @@ import type { DriveFn } from '@engine/stage/HtmlSnap';
 import { compose } from '@engine/stage/drives';
 import { fixZoomLabel } from '@youart/drivesFlow';
 import { VO_DUR } from '../vo.gen';
-import { CAPS } from '../lines.gen';
+import { CAPS_L as CAPS, IS_ZH } from '../lang';
+import { localizeUi } from './_i18n';
+import { MISANS_CSS } from '../misans.gen';
 
 export type Cap = { from: number; until: number; text: string; y?: number };
 /** 底部工具栏镜头时字幕改放顶部（页面 y 120） */
@@ -86,7 +88,12 @@ export const Missing: React.FC<{ slots: string[] }> = ({ slots }) => (
 export const Stage: React.FC<{ u: number; shot: Shot; slots: string[]; overlay?: React.ReactNode; appearAt?: number; enterAt?: number }> = ({ u, shot, slots, overlay, appearAt = 6, enterAt }) => {
   const missing = slots.filter((s) => !MATERIALS[s]);
   if (missing.length) return <Missing slots={missing} />;
-  const cuts = React.useMemo(() => shot.cuts.map((c) => ({ ...c, drive: c.drive ? compose(c.drive, fixZoomLabel()) : fixZoomLabel() })), [shot]);
+  // 中文版：每个 cut 最后叠 localizeUi（产品界面英文 → 官方中文），并注入 MiSans 字体（挂在 Inter 名下补 CJK 字形）
+  const cuts = React.useMemo(() => shot.cuts.map((c) => {
+    const base = c.drive ? compose(c.drive, fixZoomLabel()) : fixZoomLabel();
+    if (!IS_ZH) return { ...c, drive: base };
+    return { ...c, drive: compose(base, localizeUi(c.slot)), patchCss: (c.patchCss ?? '') + '\n' + MISANS_CSS };
+  }), [shot]);
   return (
     <ScreenStage frame={u} cuts={cuts} camera={shot.camKeys} cursor={shot.curKeys} clicks={shot.clicks} cursorTypes={shot.curTypes} cursorAppearAt={appearAt} enterAt={enterAt} overlay={overlay} cursorSway={0} cursorBounce={1.2} />
   );

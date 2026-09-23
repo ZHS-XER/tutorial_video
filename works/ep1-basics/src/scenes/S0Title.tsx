@@ -5,6 +5,7 @@ import { Img, OffthreadVideo, Sequence, staticFile } from 'remotion';
 import { C, E, F, tl } from '@engine/tokens';
 import { seg } from '@engine/ui/ux';
 import { BlurSlideText } from '@engine/ui/textFx';
+import { UI } from '../lang';
 
 export type TitleStep = { n: number; title: string };
 export const TITLE_ANIM = 300; // 标题动画段（2026-09-12 拆成两屏：0–118 徽标+大标题，118–230 七步竖排清单）
@@ -52,7 +53,7 @@ const MiniGraph: React.FC<{ u: number }> = ({ u }) => {
           <g key={n.key} transform={`translate(${cx} ${cy}) scale(${s}) translate(${-cx} ${-cy})`} opacity={Math.min(1, s * 1.4)}>
             <rect x={n.x} y={n.y} width={n.w} height={n.h} rx={14} fill="#161616" stroke="#3a3a3a" strokeWidth={1.5} />
             <rect x={n.x + 18} y={cy - 9} width={18} height={18} rx={4} fill="none" stroke="#9CA3AF" strokeWidth={1.6} />
-            <text x={n.x + 48} y={cy + 6.5} fontFamily={F.sans} fontSize={19} fontWeight={600} fill="#E5E5E5">{n.label}</text>
+            <text x={n.x + 48} y={cy + 6.5} fontFamily={F.sans} fontSize={19} fontWeight={600} fill="#E5E5E5">{UI.mini[n.label] ?? n.label}</text>
             {hasIn ? <circle cx={n.x} cy={n.key === 'vid' ? cy - 9 : cy} r={6} fill="oklch(0.76 0.14 242)" stroke="#000" strokeWidth={2} /> : null}
             {n.key === 'vid' ? <circle cx={n.x} cy={cy + 9} r={6} fill="oklch(0.78 0.16 163)" stroke="#000" strokeWidth={2} /> : null}
             <circle cx={n.x + n.w} cy={cy} r={6} fill={n.port} stroke="#000" strokeWidth={2} />

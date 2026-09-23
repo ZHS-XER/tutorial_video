@@ -54,6 +54,12 @@ tutorial_video/
 - 素材数据口径：用户个人项目卡采集前 DOM 移除（参照 `capture/evals/`），
   临时凭据只落 `.cache/` 或 `works/<slug>/out/`。服务端影响写进 `works/<slug>/docs/CAPTURE-LOG.md`。
 - 成片默认带英文配音；无配音版命名 `<slug>-novo.mp4`（只渲音轨再 ffmpeg 合成，见"配音流程"），无 BGM 版 `<slug>-nobgm.mp4`。
+- **语言变体在同一 work 内做**（EP1 zh 2026-09-17 范式）：不新建 work、不动编排与时间线。work 内 `src/lang.ts` 读 `REMOTION_LANG`（Remotion 打包注入 REMOTION_* 环境变量）切 `lines.<lang>.gen.ts` / `audio/vo-<lang>/` / 卡片文案字典 `UI`；节拍仍按英文 `vo.gen.ts`，`vo.<lang>.gen.ts` 只给播放长度。
+  渲染 `node tools/render.mjs <slug> --lang=zh` → `<slug>-zh.mp4`（`--lang` 设环境变量 + 加后缀；still 用 `--out=` 指到 `out/qa/zh/`）。无配音版音轨与英文相同，直接复用 `out/qa/novo-audio.mp3` 合成 `<slug>-zh-novo.mp4`。
+- **产品界面中文化不重采快照**（EP1 zh 2026-09-17）：YouArt 有官方中文界面（`NEXT_LOCALE=zh` cookie / `/zh/` 路径）。文案包在页面 HTML 的 `self.__next_f.push` 内联 RSC 里（`"messages":{...}` 约 20k 条），用 puppeteer 在已登录页 `fetch(location.href)` 抓 en/zh 两版 HTML 抠出来即得 en→zh 词表（`works/ep1-basics/plans/dump-i18n.mjs` + `out/i18n/extract.py`）；`journey evalf` 输出截 6000 字，大结果要走 puppeteer 脚本写文件。
+  同一英文值多译法很常见（Text→文本/固定文字/文字、Timestamp→时间戳/定格时间、Group→编组/分组、Image→图像/图片/图片生成），按 key 命名空间选：画布用 workflow.editor.context_menu > selection_toolbar > sidebar > node_params，设置面板 `[data-slot="dialog-content"]` 内用 settings.*，工作流列表页 / 素材库页用 navigation.*。
+  替换在渲染时做：work 内 `scenes/_i18n.ts` `localizeUi(slot)` 逐帧走文本节点 + placeholder/aria-label/aria-placeholder/data-placeholder（tiptap 占位符），叠在每个 cut 驱动链最后；凡是运行时按英文文本找元素的驱动（`nodeRunning` Run/Running、S5 Auto Layout）要中英都认。dialogue/DOM 里的 react-flow a11y 隐藏文本不用管。
+  字体：产品中文栈是 Inter + MiSans（jsdelivr misans@4.1.0 按 unicode-range 拆的 woff2），下载后把 @font-face 改挂在 **Inter** 名下注入快照，CJK 字形自动落到 MiSans，快照 CSS 不用改、英文外观不变。
 
 ## 教程调性规范（用户 2026-09-09/10 看 EP1 后定，所有教程默认遵守；"好看、简洁、实用，首要目的是看清，不是炫"）
 
@@ -115,6 +121,9 @@ tutorial_video/
 - 对齐：写脚本检查相邻两句不重叠、不溢出小节（见 SCRIPT.md v2.3）；配音长于字幕就顺延后续拍位（B 表 + `.cur` 帧 + captions）。
 - 无配音版：`npx remotion render src/index.ts <slug> works/<slug>/out/qa/novo-audio.mp3 --codec=mp3 --props='{"vo":false}'` 只渲音轨，再 `ffmpeg -i <slug>.mp4 -i novo-audio.mp3 -map 0:v -map 1:a -c:v copy -c:a aac` 合成 `<slug>-novo.mp4`，省一次全片渲染。
 - 校对：`whisper-cli`（base.en）对成片整段听写会漏词、错切，按句切片段再听写才准。
+- **中文配音（EP1 zh 2026-09-17）**：YouArt 只有 ElevenLabs v3 一个 TTS 节点（海螺在 YouArt 里只有音乐 / 视频节点），`language_code: zh` 可用，Chris 中文可懂、约每秒 5 字，与英文版同声线。dialogue 文本 **至少 10 个字符**，否则 run 直接校验失败。
+  中文顿号 / 逗号列举句会插 0.4–0.7s 停顿（四色列举 8.1s vs 英文拍位 5.7s），要塞进固定拍位：先压句内停顿（`works/ep1-basics/out/vo-zh/fit.py`：silencedetect 区间 + atrim/concat，>0.25s 静音留 0.18s），再 atempo ≤1.15，仍超就改词（列举句去 "是"、英文词别放句尾）。
+  中文核对用多语言模型 `~/.cache/whisper-cpp/ggml-small.bin`（`-l zh`），繁简 / 同音字混写是模型问题，"A 加" 会被听成 "+"；base.en 不能用于中文。
 
 ## 并行会话协作（用户常同时开 2–3 个 Claude 会话改本工程）
 
@@ -193,7 +202,7 @@ lark-cli wiki +node-create --parent-node-token C1uDwq2BGiyc29k3omEl9UvegwI --tit
   - 上传：`page.waitForFileChooser` 在 Image Loader 上传区不触发；改 MCP `create_asset_upload` → PUT → `set_upload_node_asset`。双击节点标题栏会碰到模型切换器，双击节点**主体**才是 Focus。无选中按 F 视口不变，全览走缩放菜单 Fit view。
   - 结果预览渲染在卡片上方（节点 position = 预览顶部），舞台快照上用 `injectNodePreview` 注入真图即可无缝切到素材项目快照；"运行中"用 `nodeRunning`（Run 文案在 `<span>` 里，改文字要遍历文本节点）。
   - ScreenStage 是"绕锚点缩放"模型，不是居中：目标在画面边缘时要用 `focus(cx,cy,z)` 反推锚点（`_shared.tsx`），否则推近后目标被推出画面。底部工具栏（Run All、缩放菜单、(i) 菜单、选区工具栏）永远压在字幕底下，这些镜头把字幕放顶部（Cap.y = 120）。
-  - Remotion 延后起播视频要包 `<Sequence from>`，`OffthreadVideo startFrom` 是裁掉片头不是延时（片头 / 节点内视频 / 结尾都踩过）。**Seedance（首帧模式）成片的前 3 帧是参考图本身**，铺满播放时会闪一帧"完整结果"，用 `startFrom={5}` 跳过；改局部后可用 `remotion render --frames=a-b` 只渲该段再 ffmpeg concat 重编，不必全片重渲。
+  - Remotion 延后起播视频要包 `<Sequence from>`，`OffthreadVideo startFrom` 是裁掉片头不是延时（片头 / 节点内视频 / 结尾都踩过）。**Seedance（首帧模式）成片的前 3 帧是参考图本身**，铺满播放时会闪一帧"完整结果"，用 `startFrom={5}` 跳过；改局部后可用 `remotion render --frames=a-b` 只渲该段再 ffmpeg concat 重编，不必全片重渲。 拼接脚本范式 `works/ep1-basics/out/plan/splice-outro.sh`（trim/atrim + concat filter 一次重编，头部从 `qa/backup-*` 原片取，避免多代重编；关键帧不在切点上时不能 -c copy）。
   - ElevenLabs v3 并发 >16 节点会 `service.busy`，分批 scoped 重跑；失败 run 里已完成节点的 credit_status 显示 RELEASED 但音频正常可下。声线 Sarah（EXAVITQu4vr4xnSDxMaL）被用户否为太机械，EP1 v3 起用 Brian（nPczCjzI2devNBz1zQrb，stability 0.4）。
 
 - **EP1 v3.1 修改轮经验（2026-09-12，用户 17 条看片反馈）**：
@@ -208,7 +217,14 @@ lark-cli wiki +node-create --parent-node-token C1uDwq2BGiyc29k3omEl9UvegwI --tit
   - ElevenLabs v3 换声线只改 dialogue JSON 里的 `voice`；**Chris**（iP95p4xoKVk53GoZ742B）被用户指定，自然语速约 185 wpm，比 Brian 快 16%，不用再 atempo。每批 14 节点仍有 1–3 个随机 `workflow_node_failed`，scoped 补跑即可（6 批约 60 积分）。节点无 speed 参数。
   - 每次 `still` 约 60–100s，4 张并行；关键帧抽查比整片重渲便宜得多，改编排后先抽 8–10 张再渲。
 
-- **EP1 v3.3/3.4（2026-09-12/13）**："多选节点一起连线"在新版产品里是选区右侧的蓝色共用输出点（用户截图，新版节点 UI 为"参考图片 1/16"），本机无头 Chrome 拿到的仍是旧版没有该点——产品分版本灰度，采不到的新版功能用 overlay 复刻并在留档标明。字幕规则：固定字号、**不换行**，长句用 " | " 拆段先后显示（`splitCap`）。⌃+拖切线可用（切断后目标节点的输入区会收起）；⌘Z 撤销一步连线有效。点节点标题栏要点右半（x+205），左半是模型切换器。
+- **EP1 zh 中文版（2026-09-17）**：Inter 无 CJK，根节点加 `lang="zh-Hans"` 让 Chrome 回退 PingFang SC（不用打包字体）。Caption 词与词之间固定 0.3em 词距，中文里 `*高亮*` 前后会出现"空格"——`engine/ui/ux.tsx` 的 words 新增可选 `glue`（与前一词不留词距），work 内 `capL()` 按"源文本里有没有空格"打 glue，英文句子结果与 `cap()` 一致。
+  舞台 `overlay` 槽里的绝对定位叠加层按 min-content 收缩，CJK 每个字都是断行点，会一字一行竖排（第 2 节接口图例）——CJK 文字的叠加层加 `whiteSpace: 'nowrap'`。中文字幕 46px 全句不换行，长句仍用 " | " 拆段。
+- **EP1 v3.3/3.4（2026-09-12/13）**："多选节点一起连线"在新版产品里是选区右侧的蓝色共用输出点（用户截图，新版节点 UI 为"参考图片 1/16"），本机无头 Chrome 拿到的仍是旧版没有该点——**根因是 UA**（见下条 2026-09-17），不是灰度。字幕规则：固定字号、**不换行**，长句用 " | " 拆段先后显示（`splitCap`）。⌃+拖切线可用（切断后目标节点的输入区会收起）；⌘Z 撤销一步连线有效。点节点标题栏要点右半（x+205），左半是模型切换器。
+- **采集浏览器 UA 决定产品 UI 版本（2026-09-17，重要）**：youart.ai 对 UA 含 "HeadlessChrome" 的客户端渲染**旧版节点 UI**（GPT 节点 "Sources / Image1"、无"参考图片 1/16"、多选无共用输出点、选区工具栏少项）；同一账号、同一 URL、同一部署 id（`__dpl` cookie）下，只要把 UA 换成普通 Chrome，界面立刻变成真实用户看到的新版。
+  已修：`capture/browser-daemon.mjs` 启动加 `--user-agent=Mozilla/5.0 (Macintosh…) Chrome/141…`（改后 `npm run browser` 重启生效；计划里可用 `navigator.userAgent` 自检）。
+  **后果：EP1 v3 全部 67 张快照（2026-09-11～13）都是旧 UI**，与用户实际界面有差异（节点标题栏、Seedance 参数区、Real Faces Mode、连线时无关节点变暗等）；是否按新 UI 重采 EP1 由用户决定，新 EP 一律用新 UA 采。
+  多选共用输出点实采（`works/ep1-basics/plans/s2j.mjs`，快照 s2-multisel-new / s2-multi-new）：body 级 `button[data-group-output-handle]`（fixed，24px，深底 oklch(0.269 0 0)，2px conic-gradient 彩环按选中节点输出类型分段：图像 `--handle-image-plus-border` 蓝、文本 `--handle-text-plus-border` 绿，数字 = 可连出输出数），位置 = 选区包围盒右缘 +24px、垂直居中；拖它到目标节点主体一次接上全部（first_frame / text_input 各自匹配），落下后仍选中、圆点仍在。拖拽中：两条源输出蓝线汇入圆点，圆点引一条蓝线到光标，光标旁有 "Connect…" 蓝色芯片。旧快照上用 `scenes/_shareddot.ts` 的 `injectSharedDot` 注入等价内联样式 DOM。
+  puppeteer 里 ⇧+点节点标题栏在新 UI 下不能加选（会取消全部选中，点到右端会顺带收起节点），多选一律用 ⇧ 框选（部分覆盖即选中，起点避开不想选的节点）；收起了就选中后 ⌘] 展开。`page.setCookie` 设 NEXT_LOCALE（about:blank 页上 document.cookie 会报 SecurityError）。
 - **EP1 v3.2 追加经验（2026-09-12 下午）**：
   - 需要 macOS 系统 UI（Finder 窗口）进画面时：真实截图叠加最省事——AppleScript 建 Finder 窗口（`set sidebar width of w to 0`、icon view、固定 bounds、icon size），`screencapture -x -R x,y,w,h` 取区域（本机已有屏幕录制权限），PIL 抠 26px 圆角；每个选中态各截一张，在同一脚本里连拍保证布局一致（分次开窗 Finder 会记住不同图标尺寸）。侧栏含个人文件夹名和中文，必须隐藏。
   - 舞台/素材项目的 Auto-collapse 是账号级偏好，开着时所有未选中节点收起——补采前查 `.react-flow__node` 高度，关掉再采、采完开回。
@@ -263,3 +279,28 @@ Seedance 2.5 audioref `node-b12dea9f…` / nativevoice `node-55794c80…`、Klin
 **积分实测**：Nano Banana Pro 2K×4 张 40；GPT Image 2 2K high×4 张 80；Seedream 5.0 Pro 2K 18/张；
 LTX-2.5 Pro 1080p 一条 272（约 45s）；Seedance 2.0 Stable 1080p 8s 一条 520（约 6.5 分钟）；
 Seedance 2.5 1080p 8s 一条 800（约 5 分钟）；Kling v3.0 Pro 1080p 8s + sound 一条 192（约 3 分钟）。
+
+## 产品化方向（用户 2026-09-22 对齐，回顾/规划时以此为准）
+
+- **目标**：把本工作流做成 YouArt 的 Web 功能，让 **YouArt 用户为自己的 Web 产品**制作教程视频。采集对象是用户自己的网站，**不是** youart.ai；本工程现有的 EP1 只是用 YouArt 自身当第一个样例。
+- **承载**：开发机 env0 `ai_art` 的 Workflow Agent 基础设施（E2B 沙盒 + Codex App Server + 沙盒内置 MCP：get_credit_balance / flush_workflow / run_workflow / wait_workflow / cancel_workflow / publish_tmp_asset；持久模式 `WORKFLOW_AGENT_PERSISTENT_APP_SERVER` 下沙盒 pause 保留、空闲 300s、租约 900s、单轮 3600s）。motion-graphics E2B 模板已预装 Chromium + Remotion + ffmpeg，渲染侧直接沿用。沙盒出网是白名单（`allow_out`），成片必须在轮次结束前 `publish_tmp_asset` 发布。
+- **采集路线已定：云端浏览器（A）**。独立的浏览器会话服务起 Chrome，CDP screencast 投屏到网页，用户亲自登录自己的产品并摆好起始状态，随后沙盒内 agent 通过内部接口连同一 Chrome 的 CDP，先探索页面结构再跑 `capture/run.mjs` 风格的采集计划。浏览器放沙盒外（需访问任意站点）。内网 / 本机产品后续用浏览器扩展补充（B）。**已否决**：一次性登录令牌 `create_editor_signin_url`（只能登 youart.ai）、操控用户电脑采集、用户录屏后期。
+- **通用 vs 专用**：`engine/`、MHTML 快照链（snap/mhtml/localize-fonts）、渲染、配音全部通用；`youart/`（flowMeta / drivesFlow）只服务 YouArt 画布，产品化后由 agent 现场探索页面结构替代。
+- **输入输出契约（草案）**：输入 `spec.json`（slug / title / lang / sections[{id,title,lines,actions}]，target 只允许节点 id、端口名、坐标三种）；中间产物沿用 `works/<slug>/` 结构；输出 `out/manifest.json`（videos 按语言的 URL、duration_seconds、sections 起止秒、captions VTT、storyboard_frames）。
+- **env0 测试用户账号（2026-09-23 核实）**：本地 YouArt 前端 `/tutorial-studio` 等功能测试统一用 `enrong+dev@youart.ai`（用户名 `enrongdev`，普通用户、无后台管理权限，10 万积分，Notes 沙盒任务即在此账号下）。账号由 `manage.py shell` 直接建、跳过邮箱验证，**只存在于 env0 数据库**（env1 / env2 要用得各自再建）；明文密码写在开发机 `~/DEVBOX-SETUP-HANDOFF.md` §10「测试账号」，不抄进本仓库。与之区分：`tutorial_kit/sandbox/fixtures/login-app` 的 `demo / demo123` 是沙盒自测用假产品 Notes 的登录，不能登 YouArt。
+- **E2B 凭据（2026-09-23 已打通）**：开发机 `youart-enrong-devbox`（角色 `ai-art-devbox-enrong-role`）已获准读 Secrets Manager `youart/staging/workflow-agent/runtime`（us-west-2），字段 `WORKFLOW_AGENT_E2B_API_KEY` 即 E2B key，取法 `aws secretsmanager get-secret-value --secret-id youart/staging/workflow-agent/runtime --region us-west-2 --query SecretString --output text`；key 只留在开发机环境变量里，不落文件、不发聊天。该 key 下可见模板：youart-workflow-agent-runtime、youart-motion-graphics-runtime、youart-logo-animation-runtime、youart-workflow-blender-runtime 等；现网沙盒规格 2 vCPU / 4096 MB / 13 GB 盘。`broker-provider` 那条密钥是 Workflow Agent 的模型中转用，本功能不需要。
+- **沙盒化 demo 已跑通（2026-09-23）**：实现放在泛化仓库 `../tutorial_kit/sandbox/`（模板 / 编排 / 投屏登录 / Codex 任务说明 / 自测站点），开发机镜像 `~/tutorial-kit`，用法与坑见其 README。两次实测（内置 Notes 登录站点、公开 TodoMVC）均一次成功，按"开始"到成片约 14 分钟。报告：`https://f3vaq8z51vv.sg.larksuite.com/wiki/ScILwt45EipgRZkdRVDlvFgggVg`。后续在 tutorial_kit 里继续，本工程只保留 YouArt EP 系列。
+- **已并入 env0 后端（2026-09-23）**：正式实现在开发机 `~/codes-enrong-env0/ai_art`（分支 `feat/tutorial-video`）：`ai_art_backend/features/tutorial_video/`（模型 / 接口 `api/tutorial-video/` / worker / job_runner，复用 workflow_agent 的 `E2BSandbox` 与 `AppServerClient`）+ `tutorial_video_runtime/`（E2B 模板、投屏服务、JOB.md、kit 拷贝）；前端 `ai-art-frontend`（同名分支）`/tutorial-studio`。沙盒用 `secure=True` + `allow_public_traffic=True`（无 traffic token，viewer 公网可达；给共享客户端传占位 token）；Codex 走 App Server，OpenAI 直连（`write_codex_home(capability_base_url=https://api.openai.com/v1)`）。本机 `tutorial_kit/sandbox/` 那版 Node 编排是原型，已被取代。
+- 飞书总览文档：`https://f3vaq8z51vv.sg.larksuite.com/wiki/RnCjwnVqXi2ja9ktEv4lLhj1glc`（全流程 + 工具清单 + 复现路线，Sanity 不在其中）。
+
+## 网站发布（youart.ai /tutorial/lessons/<slug>）：不在默认工作流内，只在用户亲自指挥时执行
+
+- **硬规则（用户 2026-09-21 定）：Sanity 的任何读写（patch / publish / 草稿 / 章节 / VTT 字段）以及 R2 上传、devbox 操作，都不属于教程工作流，出片 + 飞书 Storyboard 之后流程即结束。**
+  回顾、梳理、产品化本工作流时一律不把 Sanity 算进去；只有用户在当次对话里明确说"改 Sanity / 上线"才做，做之前先复述要改的字段并等确认。下面保留的是 EP1 2026-09-16/18/20 的实测操作记录，供届时参考。
+- 网站不存视频：页面从 Sanity（项目 `gmwxsayu`，唯一 dataset `production`）读 `workflowVideoTutorial` 文档（EP1 = `workflow-video-tutorial-ep1-en` / `-zh`，slug `workflow-basics`），`video.url / posterUrl / subtitlesUrl / durationSeconds` 指向 R2 CDN `static.youart.ai/tutorial/<ep-prefix>/…`；进度条章节标记、"看本节"跳转全按 `sections[].startSeconds/endSeconds` 画，字幕是独立 VTT（en/zh 各一份，时间码一致），播放器自带字幕开关，所以**上传的是 nocap 版**。
+- 操作都在 devbox `youart-enrong-devbox` 的 `~/codes-enrong-env1/ai-art-frontend`（先 `git checkout main && git merge --ff-only origin/main`）：
+  1. scp 成片到 `~/codes-enrong-env1/web-materials-<date>/`；上传用 `.agents/skills/upload-to-r2-cdn/scripts/r2.sh upload <file> tutorial/<prefix>/<name>-vN.ext`，**只有生产桶**，键名走版本号、旧对象保留回滚；先 `r2.sh info` 确认新键不存在，上传报告 `live … <- matches local` + 本地/CDN SHA-256 一致才算成。
+  2. （仅用户指挥时）Sanity 用 MCP `patch_documents`（改草稿）→ `query_documents` 核对 → `publish_documents`（带 ifRevisionId）；发布前后用公开 API `https://gmwxsayu.api.sanity.io/v2026-07-01/data/query/production?query=*[_type in ["tutorialChapter","workflowVideoTutorial"]]&perspective=published` 全量快照存 `.context/ep1-video-replacement-*/`，diff 确认只有目标字段变、其余 18 篇不变。
+  3. 同步仓库留档：`docs/tutorial-ep1-cdn-upload-report.md`（追加一节）、`docs/tutorial-ep1-sanity.md`（字段表 + 章节表）、`docs/tutorial-ep1-sanity.json` / `.zh.json`（用文本替换而不是 json.dump 重写，原文件是 prettier 风格 `"marks": ["strong"]` 单行）、`docs/tutorial-ep1-basics.zh.vtt`。提交到分支不建 PR（用户 2026-09-20）。
+- **换了时长不同的成片必须联动**：章节起止、两份 VTT 全部按比例重算（1.1 倍速版 = 旧值 ÷ 1.1；帧数 10595→9632 可验证比例），章节点再向上取整到新片帧边界（ceil(旧帧/1.1)/30），否则跳转落在章节卡前一帧；用 ffmpeg 抽旧片 t 与新片 t/1.1 两帧算 PSNR 验证映射（相同或差一帧 25–29 dB，错位对照只有 18 dB）。EP1 v3 值：13.433333 / 72.2 / 155.1 / 192.966667 / 219.233333 / 259.666667 / 276.333333 / 309.266667，时长 321.096。
+- 本地验收：cmux 开工作区跑 `ssh -t -L 3001:localhost:3001 youart-enrong-devbox 'cd ~/codes-enrong-env1/ai-art-frontend && FRONTEND_PORT=3001 pnpm dev'`（env1 固定 3001；3002 是 env2 的服务别动），首次编译约 40s；Next 的 60s 内容缓存会落盘跨 dev 重启，改完 Sanity 后页面可能先回旧数据，隔 60s 再请求两次即刷新。curl 页面 HTML grep `ep1-basics-vN.mp4` / 时长 / 章节秒数即可确认。

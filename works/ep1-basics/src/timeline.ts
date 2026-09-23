@@ -8,6 +8,7 @@ import { S4_DUR } from './scenes/S4Focus';
 import { S5_DUR } from './scenes/S5Layout';
 import { S6_DUR } from './scenes/S6Assets';
 import { S7_DUR } from './scenes/S7Prefs';
+import { UI } from './lang';
 
 export const CH = 75;
 const seq = (parts: Array<[string, number]>) => {
@@ -28,12 +29,5 @@ const built = seq([
 ]);
 export const S = built.S;
 export const TOTAL_TL = built.TOTAL;
-export const CHAPTERS: Array<{ key: string; n: number; title: string; sub: string }> = [
-  { key: 'ch1', n: 1, title: 'Create a node', sub: 'the + menu · search · double-click the canvas' },
-  { key: 'ch2', n: 2, title: 'Connect nodes', sub: 'ports are color-coded · drop anywhere on the node' },
-  { key: 'ch3', n: 3, title: 'Expand & collapse', sub: 'arrow · ⌘[ ⌘] · Collapse All · Auto-collapse' },
-  { key: 'ch4', n: 4, title: 'Focus view', sub: 'select + F · double-click a node · Fit view' },
-  { key: 'ch5', n: 5, title: 'Auto layout', sub: '⌘A then L · horizontal / vertical · shortcuts panel' },
-  { key: 'ch6', n: 6, title: 'Reuse your assets', sub: 'Media Assets panel · the Assets page' },
-  { key: 'ch7', n: 7, title: 'Preferences', sub: '⌘, · canvas background · download filename' },
-];
+// 章节标题/副标题按语言取自 lang.ts（英文文案原样保留在那里）
+export const CHAPTERS: Array<{ key: string; n: number; title: string; sub: string }> = UI.chapters.map((c, i) => ({ key: `ch${i + 1}`, n: i + 1, ...c }));

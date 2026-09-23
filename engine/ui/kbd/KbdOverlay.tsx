@@ -26,7 +26,8 @@ export const keyCueSpan = (c: KeyCue) => {
 };
 
 /** 键面文字：修饰键只给符号（⌘ ⇧ ⌥ ⌃），特殊键给符号或简称（Esc / ↩），字母数字标点原样，鼠标虚拟键给词（Drag / Click） */
-const faceOf = (name: string): string => {
+const faceOf = (name: string, faces?: Record<string, string>): string => {
+  if (faces && faces[name]) return faces[name];
   const d = keymaps[name];
   if (!d) return name;
   if (d.category === 'modifier') return d.glyph ?? d.label;
@@ -61,7 +62,8 @@ export const Kbd: React.FC<{ text: string; pressed: number; size: number }> = ({
 
 export type Anchor = 'bottom-center' | 'bottom-left' | 'bottom-right' | 'top-center';
 
-export const KbdOverlay: React.FC<{ u: number; cues: KeyCue[]; size?: number; anchor?: Anchor; marginX?: number; marginY?: number }> = ({ u, cues, size = 68, anchor = 'bottom-center', marginX = 100, marginY = 100 }) => {
+/** faces：按键名覆盖键面文字（如中文版 Right→右键、Drag→拖拽、Left→点击） */
+export const KbdOverlay: React.FC<{ u: number; cues: KeyCue[]; size?: number; anchor?: Anchor; marginX?: number; marginY?: number; faces?: Record<string, string> }> = ({ u, cues, size = 68, anchor = 'bottom-center', marginX = 100, marginY = 100, faces }) => {
   const visible = cues.filter((c) => u >= c.at && u <= keyCueSpan(c).hideAt);
   if (!visible.length) return null;
   const [v, h] = anchor.split('-') as ['top' | 'bottom', 'left' | 'center' | 'right'];
@@ -80,7 +82,7 @@ export const KbdOverlay: React.FC<{ u: number; cues: KeyCue[]; size?: number; an
               const pressed = u >= pressAt && u < release ? 1 : 0;
               return (
                 <div key={`${name}-${i}`} style={{ opacity: t, transform: `scale(${0.9 + 0.1 * t})` }}>
-                  <Kbd text={faceOf(name)} pressed={pressed} size={size} />
+                  <Kbd text={faceOf(name, faces)} pressed={pressed} size={size} />
                 </div>
               );
             })}

@@ -46,7 +46,7 @@ const both = (a: string, b: string, d = D) => compose(viewportLerp(viewportOf(a)
 const injectAlMenu =
   (fromF: number): DriveFn =>
   (doc, f) => {
-    const btn = Array.from(doc.querySelectorAll('button')).find((b) => (b.textContent || '').trim() === 'Auto Layout') as HTMLElement | undefined;
+    const btn = Array.from(doc.querySelectorAll('button')).find((b) => /^(Auto Layout|整理节点)$/.test((b.textContent || '').trim())) as HTMLElement | undefined;
     const wrap = btn?.parentElement as HTMLElement | null;
     if (!wrap) return;
     let menu = wrap.querySelector('[data-al-menu]') as HTMLElement | null;
