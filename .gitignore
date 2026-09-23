@@ -23,3 +23,6 @@ archive/*/out/
 
 # 根目录 chrome profile（登录态）
 /out/
+
+# 本机内部信息（账号 / 项目 id / 飞书 / 开发机），不进公开仓库
+docs/INTERNAL.md

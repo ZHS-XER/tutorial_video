@@ -27,5 +27,10 @@
     "youart",
     "works",
     "lab/demos"
+  ],
+  "exclude": [
+    "node_modules",
+    "works/*/out",
+    "archive"
   ]
 }
